@@ -1,0 +1,163 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>常见问题与术语 · SHUMC鼠鼠茶屋 新手百科</title>
+<meta name="description" content="新茶客最常问的问题、本服专有名词术语表，以及各玩法的星级与品质对照">
+<link rel="icon" href="images/brand/pack.png">
+<link rel="stylesheet" href="assets/css/site.css">
+<!-- meta:start -->
+<meta name="theme-color" content="#603e31">
+<link rel="apple-touch-icon" href="images/brand/pack.png">
+<link rel="canonical" href="https://imleyson.github.io/SHUMCwiki/faq.html">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="SHUMC鼠鼠茶屋 新手百科">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:title" content="常见问题与术语 · SHUMC鼠鼠茶屋 新手百科">
+<meta property="og:description" content="新茶客最常问的问题、本服专有名词术语表，以及各玩法的星级与品质对照">
+<meta property="og:url" content="https://imleyson.github.io/SHUMCwiki/faq.html">
+<meta property="og:image" content="https://imleyson.github.io/SHUMCwiki/images/brand/og-card.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<!-- meta:end -->
+</head>
+<body>
+<header class="topbar">
+  <button class="menu-toggle" type="button" aria-label="打开目录">☰ 目录</button>
+  <a class="brand" href="index.html">
+    <img class="logo px" src="images/brand/pack.png" alt="SHUMC">
+    <span class="brand-text"><span class="brand-name">SHUMC鼠鼠茶屋</span><span class="brand-sub">新手百科 · Wiki</span></span>
+  </a>
+  <div class="search-wrap">
+    <img class="search-icon px" src="images/art/journal.png" alt="">
+    <input id="search" type="search" placeholder="搜索玩法、指令、物品…（按 / 聚焦）" autocomplete="off" aria-label="站内搜索">
+    <div id="search-results" class="search-results" role="listbox"></div>
+  </div>
+</header>
+<div class="layout">
+<nav id="sidebar" aria-label="目录"></nav>
+<main class="content">
+<div class="page-head"><img class="px" src="images/art/corkboard.png" alt=""><div><h1>常见问题与术语</h1><p class="lead">新茶客最常问的问题、本服专有名词一览，以及各玩法的星级 / 品质对照</p></div></div>
+
+<h2>常见问题</h2>
+
+<h3>菜单打不开 / 不知道从哪开始？</h3>
+<p>按住 <kbd>Shift</kbd> 再按 <kbd>F</kbd>，或者右键背包里的 ☕ 鼠鼠茶屋手账，就能打开总菜单（也可以输入 <code class="cmd">/menu</code>）。手账丢了，下次进服会自动补发。第一次玩先看 <a href="index.html#前-10-分钟">前 10 分钟</a>，再看 <a href="route.html">新手成长路线</a>。</p>
+
+<h3>菜单和物品看起来是原版的样子？</h3>
+<p>多半是进服时没接受服务器资源包。本服的手账、菜单、鱼、作物和道具都靠资源包显示专属贴图，退出后在多人游戏列表里编辑这个服务器，把「服务器资源包」改成「启用」再进一次就好。</p>
+
+<h3>新手见面礼在哪领？</h3>
+<p>输入 <code class="cmd">/guide</code> 打开新手绘本，点左下角 🎁：30 茶屋币 + 面包 ×8 + 樱花树苗 ×2，每人限领一次。</p>
+
+<h3>在哪里盖房子？</h3>
+<p>三种选择：主城里租 31×31 庄园（<code class="cmd">/dipi</code>，30 币 / 7 天）、商业街租旺铺（<code class="cmd">/playershop</code>，50 币 / 7 天），或者走出任意城门去樱花山谷自由建造、用金铲子圈地（永久、免费）。详见 <a href="land.html">领地与家</a>。</p>
+
+<h3>可以在资源世界盖房子吗？</h3>
+<p>不要。资源世界、下界、末地每 7 天整个重置，里面的东西都会消失。那里是挖矿、砍树、刷怪用的（死亡不掉落）。家请盖在主世界。</p>
+
+<h3>主城里为什么不能挖、不能放方块？</h3>
+<p>主城和环城规划区（中心周围约 ±116 格）受保护，只能在自己租的庄园、旺铺里，或搭子 / 好友授权的地方建造。出城门就能随便建。</p>
+
+<h3>死了怎么办？</h3>
+<p>资源世界、下界、末地都是死亡不掉落。在主世界死亡后可以用 <code class="cmd">/back</code> 回到死亡地点。</p>
+
+<h3>怎么回家、回主城、去朋友那？</h3>
+<p><code class="cmd">/spawn</code> 回主城，<code class="cmd">/sethome</code> 设家、<code class="cmd">/home</code> 回家，<code class="cmd">/back</code> 回上一个位置，<code class="cmd">/tpa 玩家名</code> 请求传送到朋友身边。租了庄园可以 <code>/dipi home</code>。</p>
+
+<h3>为什么同样的东西越卖越便宜？</h3>
+<p>出货有两层额度：每类玩法（鱼 / 作物 / 牧场 / 昆虫 / 工坊 / 冒险）每天前 5,000 币全价，之后 70%、超过 10,000 币后 40%；同一种东西每天前 64 件全价，之后 75%、50%。第二天零点重置。换一样东西卖就不受影响，详见 <a href="economy.html#每日额度-换着玩最划算">每日额度</a>。</p>
+
+<h3>/sell 会把我的装备卖掉吗？</h3>
+<p>不会。<code class="cmd">/sell</code> 只扫描主背包里的星级鱼、作物、牧场品、昆虫、工坊成品、香料和魔物核心，不碰盔甲栏和副手，石头、木头这类原版方块也不收。</p>
+
+<h3>为什么有些作物卖不上价？</h3>
+<p>自己在农田里种出来的作物、在服里钓起来的鱼才带「星级」标签，按星级卖钱、能进图鉴、能交专精突破任务。打怪掉的、村民换的胡萝卜马铃薯是没有星级的白板原版物品，只能按 1–6 币的原版价卖，也不能交突破任务，喂牧场动物不涨好感。</p>
+
+<h3>选错专精了能换吗？</h3>
+<p>能。<code class="cmd">/job</code> 左键选主修后 7 天内不能再换。每个专精的等级各自保存，换回来不会清空；但只有当前主修的加成和天赋生效，经验也只给当前主修。天赋每周可以免费洗点一次。</p>
+
+<h3>专精经验卡住不涨了？</h3>
+<p>到 Lv5 / 10 / 15 / 20 时经验会存满停住，要先完成<strong>突破任务</strong>，再去天赋页点「完成突破」。另外每天前 600 经验全额，之后减半。见 <a href="jobs.html#突破任务">突破任务</a>。</p>
+
+<h3>非当季的作物种不了？</h3>
+<p>12 种特色作物只能在对应季节露天种。想反季种，在耕地正上方 12 格内盖个玻璃屋顶，那块地就算温室。原版小麦、胡萝卜、马铃薯、甜菜根、地狱疣四季都能种。</p>
+
+<h3>钓鱼大赛、庆典、流星雨什么时候有？</h3>
+<p>钓鱼大赛每天 13:00 和 20:30（北京时间，至少 2 人在线）；四季庆典每季一场，在该季第一个有人在线的晚上 21:00–22:00 开幕；流星雨夜里随机出现，大约几个小时一场。开始时全服都会播报。</p>
+
+<h3>/wish 和 /pool 有什么区别？</h3>
+<p><code class="cmd">/wish</code> 只能在流星雨期间对夜空许愿，送幸运和 20 币；<code class="cmd">/pool</code> 是锦鲤许愿池，大家投茶屋币攒全服狂欢，自己攒福气值。</p>
+
+<h3>朋友不在线，怎么给他东西？</h3>
+<p>茶屋币可以用 <code class="cmd">/pay 玩家名 金额</code> 转给<strong>在线</strong>玩家。想收别人的东西，可以在委托板 <code>/order post</code> 挂悬赏，对方交货后东西会存进你的收件箱，用 <code>/order claim</code> 领。</p>
+
+<h3>家具、洒水器摆错了怎么收回？</h3>
+<p>3D 家具左键或潜行右键收回（只有主人和搭子能收）；洒水器像普通方块一样挖掉就能完整收回；宴席灶台潜行右键收回。</p>
+
+<h2>术语表</h2>
+<div class="table-wrap"><table>
+<tr><th>名词</th><th>意思</th></tr>
+<tr><td><img class="px" src="images/items/mochi_coin.png" alt="">茶屋币</td><td>全服通用货币。出货、委托、签到、钓鱼都能赚，<code class="cmd">/money</code> 看余额。</td></tr>
+<tr><td><img class="px" src="images/items/pool_sakura_meter.png" alt="">福气值</td><td>不能交易的荣誉点数，靠投许愿池、签到、献祭、试炼、点赞攒，在 <code>/pool shop</code> 换永久特效和称号；≥100 时主城商店 9 折。</td></tr>
+<tr><td>星级 / 品质</td><td>鱼、作物、牧场品、昆虫、工坊成品都分 1–4 星，星越高越值钱，见下方对照表。</td></tr>
+<tr><td>👑 珍品 / 鱼王 / 大师特调</td><td>各玩法里的 4 星（最高品质）叫法不同：作物叫珍品，鱼叫鱼王，工坊叫大师特调。</td></tr>
+<tr><td>传说鱼</td><td>每个钓区里最稀有、最大的鱼，图鉴里是金框。</td></tr>
+<tr><td>奇物</td><td>钓鱼捞到的「不是鱼」的东西（小黄鸭、旧雨靴……），也算图鉴，全水域都能捞。</td></tr>
+<tr><td>出货</td><td>用 <code class="cmd">/sell</code> 把物产卖给茶屋换币。</td></tr>
+<tr><td>热卖 / 今日特需</td><td>每天有一样东西出货涨价（多数翻倍，鲜鱼日 ×1.5）。</td></tr>
+<tr><td>每日额度 / 饱和</td><td>每类玩法、每种物产每天的全价出货上限，超出后打折，零点重置。</td></tr>
+<tr><td><img class="px" src="images/art/strawhat.png" alt="">专精（主修）</td><td>四门生活职业：农艺师、垂钓客、酿造师、探矿匠。只有主修的那门涨经验、生效。</td></tr>
+<tr><td>突破</td><td>专精到 Lv5 / 10 / 15 / 20 时要完成的任务，完成才能继续升级。</td></tr>
+<tr><td>天赋点 / 大师天赋 / 怪趣天赋</td><td>每升 1 级得 1 个天赋点；Lv20 突破后三选一一个大师天赋；怪趣天赋是纯好玩的小效果。</td></tr>
+<tr><td>专精特产</td><td>晨露茶芽、鲜润鱼露、茶具星砂，只有对应主修会掉，用来做饰品和委托。</td></tr>
+<tr><td>当季香料</td><td>采摘成熟作物时随机掉的四季香料，做隐藏秘方用。</td></tr>
+<tr><td>温室</td><td>耕地正上方 12 格内有玻璃屋顶，非当季作物也能种。</td></tr>
+<tr><td>好感（心）</td><td>牧场动物对你的亲密度，越高产物星级越高。</td></tr>
+<tr><td>牧场执照</td><td>牧场等级（Lv0–3），升级后涨好感更快、加工更快。</td></tr>
+<tr><td><img class="px" src="images/items/star_iron_ingot.png" alt="">合金</td><td>锻造坊精炼出的四种材料：星露精铁锭、樱花秘银锭、星辉紫晶核、红莲淬火石。</td></tr>
+<tr><td>淬火升星 / 铭刻</td><td>锻造坊给装备从 ★0 升到 ★5，或刻一条特效词条。</td></tr>
+<tr><td>饰品匣</td><td>1 个戒指槽 + 1 个护符槽，戴上的饰品不占手和盔甲栏。</td></tr>
+<tr><td><img class="px" src="images/items/guild_token.png" alt="">星辉徽章</td><td>冒险公会货币，打悬赏、讨伐、试炼得到，召唤进阶试炼、换神兵护甲。</td></tr>
+<tr><td><img class="px" src="images/items/monster_trophy.png" alt="">魔物核心</td><td>星辉精英和试炼首领掉的战利品，可以出货。</td></tr>
+<tr><td>星辉精英</td><td>夜晚野外和矿洞里随机出现的精英怪。</td></tr>
+<tr><td>秘境试炼</td><td>在野外召唤的限时 Boss 战，三个难度。</td></tr>
+<tr><td><img class="px" src="images/art/cottage.png" alt="">庄园 / 旺铺</td><td>主城里按周租的 31×31 住宅地皮（H01–H12）和商业街 15×15 店铺（01–08）。</td></tr>
+<tr><td>领地 / 领地额度</td><td>城外用金铲子圈的保护区域；圈多大扣多少额度，在线时间越长额度越多。</td></tr>
+<tr><td>自由区</td><td>城门外永久不重置、可以自由建造的樱花山谷。</td></tr>
+<tr><td>资源世界</td><td>每 7 天重置的采集世界（含下界、末地），死亡不掉落。</td></tr>
+<tr><td><img class="px" src="images/art/mice.png" alt="">搭子</td><td>用 <code class="cmd">/partner</code> 结成的 2–4 人合居小队，共享家园，在一起有加成。</td></tr>
+<tr><td>收集包 / 献祭</td><td>全服一起交物资修的 6 个收集包，修好后全服永久多一项特权。</td></tr>
+<tr><td>主城奇观</td><td>全服一起捐建材修的温泉和水族馆，竣工后主城有永久光环。</td></tr>
+<tr><td>狂欢</td><td>锦鲤许愿池投满后开启的 30 分钟全服活动。</td></tr>
+<tr><td>气氛值</td><td>四季庆典期间大家一起攒的进度，满 50% / 100% 发全服奖励。</td></tr>
+<tr><td>箱子商店</td><td>玩家自己摆的箱子摊位，<code class="cmd">/cshop</code> 开店和逛全服名录。</td></tr>
+<tr><td>委托 / 悬赏</td><td><code class="cmd">/quest</code> 是每天 8 项个人委托；<code class="cmd">/order</code> 委托板是 NPC 收购和玩家之间的悬赏。</td></tr>
+</table></div>
+
+<h2>星级与品质对照</h2>
+<p>同样是「星」，不同玩法叫法不一样。下面是各玩法从低到高的品质名称和出货倍率：</p>
+<div class="table-wrap"><table>
+<tr><th>玩法</th><th>1 星</th><th>2 星</th><th>3 星</th><th>4 星（最高）</th></tr>
+<tr><td><img class="px" src="images/items/crop_strawberry.png" alt="">农耕作物</td><td>★ 普通 ×1.0</td><td>★★ 银星 ×1.25</td><td>★★★ 金星 ×1.55</td><td>👑 珍品 ×2.0</td></tr>
+<tr><td><img class="px" src="images/items/fish_koi.png" alt="">鱼</td><td>★ 普通（底价 6 币）</td><td>★★ 银星（14 币）</td><td>★★★ 金星（32 币）</td><td>👑 鱼王（90 币）</td></tr>
+<tr><td><img class="px" src="images/items/sakura_oolong.png" alt="">工坊成品</td><td>★ 凡品 ×1.0</td><td>★★ 醇香 ×1.35</td><td>★★★ 珍藏 ×1.9</td><td>👑 大师特调 ×2.8</td></tr>
+<tr><td><img class="px" src="images/items/feast_royal_banquet.png" alt="">宴席大餐</td><td colspan="2">普通</td><td>秘制（食材平均 2.5★）</td><td>御膳（食材平均 3.5★）</td></tr>
+<tr><td><img class="px" src="images/items/galaxy_sword.png" alt="">锻造装备</td><td colspan="4">★0 → ★5（饰品最高 ★3），每星武器攻击 +1、护甲 +0.8，升星必定成功</td></tr>
+</table></div>
+<p>鱼的价格还会按尺寸再乘一个系数，越大越值钱；牧场品和昆虫也分 1–4 星。另外还有「🎃 巨型作物」（农艺师天赋才种得出，出货 ×3）。</p>
+
+<h2>还有问题？</h2>
+<p>先试试右上角搜索（按 <kbd>/</kbd> 聚焦），输指令名或物品名都行。游戏里 <code class="cmd">/guide</code> 新手绘本的每一页也有按钮直接打开对应玩法。</p>
+</main>
+</div>
+<footer class="site-footer">
+  SHUMC鼠鼠茶屋 新手百科 · 内容依据服务器当前版本整理（CozyLife 1.6.8 / CozyFish 1.5.5 / CozySeasons 1.0.4 / CozySpawn 1.1.5）<br>
+  图片均来自 SHUMC 材质包与菜单预览渲染 · 数值以游戏内菜单为准
+</footer>
+<script src="assets/js/nav.js"></script>
+<script src="assets/js/site.js"></script>
+</body>
+</html>
