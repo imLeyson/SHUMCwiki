@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>经济 · 茶屋币 · SHUMC鼠鼠茶屋 新手百科</title>
+<meta name="description" content="茶屋币是全服通用货币：出货、委托、签到、钓鱼都能赚，商店、地皮、锻造、萌宠都要花">
+<link rel="icon" href="images/brand/pack.png">
+<link rel="stylesheet" href="assets/css/site.css">
+</head>
+<body>
+<header class="topbar">
+  <button class="menu-toggle" type="button" aria-label="打开目录">☰ 目录</button>
+  <a class="brand" href="index.html">
+    <img class="logo px" src="images/brand/pack.png" alt="SHUMC">
+    <span class="brand-text"><span class="brand-name">SHUMC鼠鼠茶屋</span><span class="brand-sub">新手百科 · Wiki</span></span>
+  </a>
+  <div class="search-wrap">
+    <img class="search-icon px" src="images/art/journal.png" alt="">
+    <input id="search" type="search" placeholder="搜索玩法、指令、物品…（按 / 聚焦）" autocomplete="off" aria-label="站内搜索">
+    <div id="search-results" class="search-results" role="listbox"></div>
+  </div>
+</header>
+<div class="layout">
+<nav id="sidebar" aria-label="目录"></nav>
+<main class="content">
+<div class="page-head"><img class="px" src="images/art/purse.png" alt=""><div><h1>经济 · 茶屋币</h1><p class="lead">茶屋币是全服通用货币：出货、委托、签到、钓鱼都能赚，商店、地皮、锻造、萌宠都要花</p></div></div>
+<h2>茶屋币从哪来</h2>
+<div class="table-wrap"><table>
+<tr><th>来源</th><th>说明</th></tr>
+<tr><td><img class="px" src="images/art/crate.png" alt="">一键出货 <code class="cmd">/sell</code></td><td>最主要的收入。把背包里的星级鱼、作物、牧场品、昆虫、工坊成品、魔物核心一键卖掉</td></tr>
+<tr><td><img class="px" src="images/art/checklist.png" alt="">每日委托 <code class="cmd">/quest</code></td><td>每天 8 项，每项 80–120 币 + 补给，全部领完再开全勤礼盒</td></tr>
+<tr><td><img class="px" src="images/art/corkboard.png" alt="">委托板 <code class="cmd">/order</code></td><td>茶屋 NPC 每日收购 + 玩家互相挂的悬赏</td></tr>
+<tr><td><img class="px" src="images/items/mochi_coin.png" alt="">签到 <code class="cmd">/qiandao</code></td><td>每天 50 币，每满 7 天额外 100 币</td></tr>
+<tr><td><img class="px" src="images/art/creel.png" alt="">钓鱼里程碑 / 大赛</td><td>图鉴里程碑最多一次 2000 币；钓鱼大赛前三名 200 / 120 / 80 币</td></tr>
+<tr><td><img class="px" src="images/art/wanted.png" alt="">冒险公会</td><td>讨伐悬赏、试炼 Boss 奖励大量茶屋币和徽章</td></tr>
+<tr><td><img class="px" src="images/art/stalls.png" alt="">开店</td><td>在自己的店铺里用 <code class="cmd">/cshop</code> 开箱子商店卖给其他玩家</td></tr>
+<tr><td><img class="px" src="images/art/geode.png" alt="">晶洞</td><td>挖矿掉的晶洞敲开能出 15–140 币</td></tr>
+</table></div>
+
+<h2>一键出货 /sell</h2>
+<p><code class="cmd">/sell</code>（别名 <code>/出货</code>、<code>/chuhuo</code>）只扫描<strong>主背包</strong>，不会卖掉盔甲栏和副手里的东西（比如副手诱饵）。原版石头、木头这类东西不收。</p>
+<h3>今日热卖</h3>
+<p>每天会有一样东西热卖，出货单价翻倍（例如「🎃 秋实南瓜收购：南瓜 12 币 / 个」）。上线时聊天栏会提示，主菜单的「茶屋钱包」也会显示。</p>
+<h3>每日额度：换着玩最划算</h3>
+<p>为了不让某一个玩法一枝独秀，出货收入按<strong>六类玩法</strong>分别计算每日额度：鱼、作物（含香料和原版作物）、牧场、昆虫、工坊、冒险。</p>
+<div class="table-wrap"><table>
+<tr><th>同一类今天已经卖了</th><th>按多少结算</th></tr>
+<tr><td>0 – 5,000 币</td><td>全价</td></tr>
+<tr><td>5,000 – 10,000 币</td><td>70%</td></tr>
+<tr><td>10,000 币以上</td><td>40%</td></tr>
+</table></div>
+<ul>
+  <li>专精、天赋、自然学家等<strong>个人出货加成</strong>合计最多 +35%；社区献祭、热卖日、运势、节日的加成另算。</li>
+  <li>同一种物产卖太多也会慢慢降价（每日饱和），4 星珍品同样计入。</li>
+  <li>所以：今天钓鱼卖够了，就去种种田、捕捕虫、做做工坊，收入不会被压。</li>
+</ul>
+
+<h2>钱包、转账与富豪榜</h2>
+<ul>
+  <li><code class="cmd">/money</code>（别名 <code>/bal</code>、<code>/余额</code>、<code>/茶屋币</code>）：看余额和全服富豪榜前 5；<code>/money 玩家名</code> 看别人的余额。</li>
+  <li><code class="cmd">/pay</code>（别名 <code>/转账</code>）：不带参数打开头像面板选在线好友；或 <code>/pay 玩家名 金额</code>。</li>
+</ul>
+<figure class="menu-shot"><a href="images/menus/full/wallet.png"><img src="images/menus/wallet.png" alt="茶屋币钱包（/money）" loading="lazy"></a><figcaption>茶屋币钱包（/money） · <span class="zoom">点图看每个按钮的说明</span></figcaption></figure>
+
+<h2>每日委托 /quest</h2>
+<p>每天刷新 8 项小委托，完成后在 <code class="cmd">/quest</code> 里点领奖。8 项全部领完再开一个<strong>全勤礼盒</strong>：150 茶屋币 + 5 福气值 + 当季香料 ×1。</p>
+<div class="table-wrap"><table>
+<tr><th>委托</th><th>目标</th><th>奖励</th></tr>
+<tr><td>🎣 茶屋垂钓手</td><td>钓起 5 条鱼</td><td>120 币 + 附魔之瓶 ×4</td></tr>
+<tr><td>📦 勤劳出货人</td><td>用一键出货卖出 10 件物产</td><td>100 币 + 金胡萝卜 ×4</td></tr>
+<tr><td>🍵 茶屋美食家</td><td>签到，或吃 1 份茶屋美食 / 工坊饮品</td><td>80 币 + 樱花抹茶拿铁</td></tr>
+<tr><td>💎 矿洞鉴宝师</td><td>敲开 1 个神秘晶洞</td><td>90 币 + 铁锭 ×3</td></tr>
+<tr><td>⚒ 铁匠学徒</td><td>在锻造坊精炼 / 升星 / 铭刻 / 修补任意 1 次</td><td>110 币 + 星露精铁锭</td></tr>
+<tr><td>🐮 星露牧场主</td><td>喂牧场动物或收 3D 加工机，累计 3 次</td><td>100 币 + 樱花精料 ×2</td></tr>
+<tr><td>🦋 生态捕虫客</td><td>用捕虫网抓 3 只昆虫</td><td>100 币 + 附魔之瓶 ×4</td></tr>
+<tr><td>🍳 茶屋掌勺人</td><td>在 3D 宴席灶台出锅 1 道大餐</td><td>120 币 + 樱花抹茶拿铁</td></tr>
+</table></div>
+
+<h2>委托板与悬赏 /order</h2>
+<p><code class="cmd">/order</code>（别名 <code>/悬赏板</code>）分两部分：</p>
+<ul>
+  <li><strong>茶屋 NPC 收购</strong>：每天几单（例如三花猫可可收 6 条生鳕鱼），每人每天每单 1 次，报酬是茶屋币 + 福气值 + 经验。还有一单「主厨委托」专收专精特产或工坊成品，报酬更高。</li>
+  <li><strong>玩家悬赏</strong>：主手拿 1 个想收的物品当样本，输入 <code>/order post &lt;数量&gt; &lt;赏金&gt;</code> 挂单（数量 1–64，赏金至少 10 币，发布时先扣）。每人最多 3 单，全板最多 14 单。别人交货后，你不在线时货会存进收件箱，用 <code>/order claim</code> 领。</li>
+</ul>
+<figure class="menu-shot"><a href="images/menus/full/orders.png"><img src="images/menus/orders.png" alt="委托板（/order）" loading="lazy"></a><figcaption>委托板（/order） · <span class="zoom">点图看每个按钮的说明</span></figcaption></figure>
+
+<h2>茶屋杂货铺 /shop</h2>
+<p><code class="cmd">/shop</code>（别名 <code>/商店</code>、<code>/杂货铺</code>）有三个分页：茶屋神器、礼盒与珍藏、装饰家具。</p>
+<h3>茶屋神器</h3>
+<div class="item-grid">
+<div class="item"><img src="images/items/claim_wand.png" alt="" loading="lazy"><div><div class="i-name">茶屋金铲圈地杖</div><div class="i-sub">120 币 · 右键两点圈地</div></div></div>
+<div class="item"><img src="images/items/water_wand.png" alt="" loading="lazy"><div><div class="i-name">甘露浇水壶</div><div class="i-sub">580 币 · 湿润 3×3 耕地并概率催熟</div></div></div>
+<div class="item"><img src="images/items/mochi_bell.png" alt="" loading="lazy"><div><div class="i-name">茶屋传呼铃</div><div class="i-sub">450 币 · 右键一键回主城</div></div></div>
+<div class="item"><img src="images/items/sakura_umbrella.png" alt="" loading="lazy"><div><div class="i-name">樱花纸伞</div><div class="i-sub">680 币 · 缓降 + 速度 I</div></div></div>
+<div class="item"><img src="images/items/mochi_backpack.png" alt="" loading="lazy"><div><div class="i-name">随身茶屋背包</div><div class="i-sub">680 币 · 27 格随身储物</div></div></div>
+<div class="item"><img src="images/items/magnet_ring.png" alt="" loading="lazy"><div><div class="i-name">星露磁铁指环</div><div class="i-sub">520 币 · 吸附掉落物和经验球</div></div></div>
+<div class="item"><img src="images/items/harvest_sickle.png" alt="" loading="lazy"><div><div class="i-name">星露丰收镰</div><div class="i-sub">780 币 · 3×3 收割并自动补种</div></div></div>
+<div class="item"><img src="images/items/lucky_charm.png" alt="" loading="lazy"><div><div class="i-name">芝芝幸运御守</div><div class="i-sub">980 币 · 常驻幸运 I</div></div></div>
+</div>
+<h3>礼盒与珍藏</h3>
+<p>抹茶拿铁、冰美式、命名牌、樱花建造礼盒、柔光建筑礼盒、烟花，以及限购的附魔之瓶 ×16（每日 2 次）、金苹果 ×2（每日 2 次）、不死图腾（每周 1 次，2800 币）、潜影盒（每周 2 次，2400 币）、经验修补附魔书（每周 1 次，3800 币）、鞘翅（终身 1 次，6800 币）。</p>
+<h3>装饰家具</h3>
+<p>能摆在家里、右键互动的 3D 家具：桌面茶具（品茶回血）、星露樱花盆栽、暖黄小台灯、晴天风铃、芝芝软垫坐垫；另有两件要全服完成「❄ 冬季暖炉包」献祭后才能买。</p>
+<div class="inline-icons"><img class="px" src="images/items/tea_set.png" alt=""> <img class="px" src="images/items/sakura_bonsai.png" alt=""> <img class="px" src="images/items/cozy_lamp.png" alt=""> <img class="px" src="images/items/wind_chime.png" alt=""> <img class="px" src="images/items/mochi_cushion.png" alt=""> <img class="px" src="images/items/jam_shelf.png" alt=""> <img class="px" src="images/items/junimo_plush.png" alt=""></div>
+<div class="shots">
+<figure class="menu-shot"><a href="images/menus/full/shop_tools.png"><img src="images/menus/shop_tools.png" alt="杂货铺 · 茶屋神器" loading="lazy"></a><figcaption>杂货铺 · 茶屋神器 · <span class="zoom">点图看每个按钮的说明</span></figcaption></figure>
+<figure class="menu-shot"><a href="images/menus/full/shop_supplies.png"><img src="images/menus/shop_supplies.png" alt="杂货铺 · 礼盒与珍藏" loading="lazy"></a><figcaption>杂货铺 · 礼盒与珍藏 · <span class="zoom">点图看每个按钮的说明</span></figcaption></figure>
+</div>
+<div class="callout tip"><img class="px" src="images/art/koi.png" alt=""><div><p>许愿池里福气值 ≥100 时，主城商店打 9 折；换到「👑 锦鲤大善人」称号后永久 9 折。见 <a href="social.html#锦鲤许愿池-pool">锦鲤许愿池</a>。</p></div></div>
+
+<h2>荣誉称号 /title</h2>
+<p><code class="cmd">/title</code> 解锁并切换聊天名字前的小称号，已解锁的随时免费切换，也可以隐藏。</p>
+<div class="table-wrap"><table>
+<tr><th>称号</th><th>价格</th></tr>
+<tr><td>🌸 樱花茶客</td><td>免费（新人默认）</td></tr>
+<tr><td>🎣 垂钓大师</td><td>200 币</td></tr>
+<tr><td>🍳 茶屋主厨</td><td>300 币</td></tr>
+<tr><td>🐾 萌宠饲养员</td><td>400 币</td></tr>
+<tr><td>⚔ 秘境勇者</td><td>600 币</td></tr>
+<tr><td>👑 茶屋名誉镇长</td><td>1200 币</td></tr>
+</table></div>
+<p>另外，专精到 Lv10 / Lv20 会自动获得专精称号，许愿池福气商店能换「👑 锦鲤大善人」。</p>
+</main>
+</div>
+<footer class="site-footer">
+  SHUMC鼠鼠茶屋 新手百科 · 内容依据服务器当前版本整理（CozyLife 1.6.8 / CozyFish 1.5.5 / CozySeasons 1.0.4 / CozySpawn 1.1.5）<br>
+  图片均来自 SHUMC 材质包与菜单预览渲染 · 数值以游戏内菜单为准
+</footer>
+<script src="assets/js/nav.js"></script>
+<script src="assets/js/site.js"></script>
+</body>
+</html>

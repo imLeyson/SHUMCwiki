@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>社交 · 萌宠 · 许愿池 · SHUMC鼠鼠茶屋 新手百科</title>
+<meta name="description" content="和朋友一起玩：搭子合居、串门点赞、干杯、漂流瓶、骰子；萌宠；锦鲤许愿池与福气值；全服一起修的社区献祭和主城奇观">
+<link rel="icon" href="images/brand/pack.png">
+<link rel="stylesheet" href="assets/css/site.css">
+</head>
+<body>
+<header class="topbar">
+  <button class="menu-toggle" type="button" aria-label="打开目录">☰ 目录</button>
+  <a class="brand" href="index.html">
+    <img class="logo px" src="images/brand/pack.png" alt="SHUMC">
+    <span class="brand-text"><span class="brand-name">SHUMC鼠鼠茶屋</span><span class="brand-sub">新手百科 · Wiki</span></span>
+  </a>
+  <div class="search-wrap">
+    <img class="search-icon px" src="images/art/journal.png" alt="">
+    <input id="search" type="search" placeholder="搜索玩法、指令、物品…（按 / 聚焦）" autocomplete="off" aria-label="站内搜索">
+    <div id="search-results" class="search-results" role="listbox"></div>
+  </div>
+</header>
+<div class="layout">
+<nav id="sidebar" aria-label="目录"></nav>
+<main class="content">
+<div class="page-head"><img class="px" src="images/art/mice.png" alt=""><div><h1>社交 · 萌宠 · 许愿池</h1><p class="lead">和朋友一起玩：搭子合居、串门点赞、干杯、漂流瓶、骰子；萌宠；锦鲤许愿池与福气值；全服一起修的社区献祭和主城奇观</p></div></div>
+<h2>茶屋搭子 /partner</h2>
+<p><code class="cmd">/partner</code>（别名 <code>/搭子</code>、<code>/合居</code>）：和 2–4 位好友结成合居小队，共享家园。在一起（24 格内）就有加成：</p>
+<ul>
+  <li><strong>同屏</strong>：幸运 I，种田挖矿有概率额外掉落；</li>
+  <li><strong>一起钓鱼</strong>：25% 概率双方各得 8 币；</li>
+  <li><strong>危急守护</strong>：快没血时回 2.5 颗心（60 秒冷却）；</li>
+  <li><strong>默契升级</strong>：全员各得 等级 × 25 币；锻造坊工费 85 折。</li>
+</ul>
+<p>用法：<code>/partner invite 好友名</code> 邀请，对方点 [✔ 接受] 或 <code>/partner accept</code>（拒绝是 <code>/partner deny</code>）；<code>/partner sethome</code> 设共享家园、<code>/partner home</code> 回去；<code>/partner leave</code> 退出。搭子会自动共享你的庄园和店铺建造权限。</p>
+<figure class="menu-shot"><a href="images/menus/full/partner.png"><img src="images/menus/partner.png" alt="茶屋搭子 · 合居系统" loading="lazy"></a><figcaption>茶屋搭子 · 合居系统 · <span class="zoom">点图看每个按钮的说明</span></figcaption></figure>
+
+<h2>串门、留言与点赞</h2>
+<ul>
+  <li><code class="cmd">/visit</code>（别名 <code>/做客</code>、<code>/拜访</code>）：打开<strong>邻里家园榜</strong>，去好友家做客。在野外 <code class="cmd">/sethome</code> 后你的家就会出现在榜上；<code>/visit toggle</code> 开关迎客。</li>
+  <li><code class="cmd">/like</code> <code>玩家名</code>（别名 <code>/点赞</code>）：给好友的家点赞送花，可得 10 茶屋币。</li>
+  <li><code class="cmd">/guestbook</code>（别名 <code>/留言簿</code>）：看自己家门口的便利贴；<code>/guestbook 玩家名 留言</code> 给好友留言（每人最多保留 14 条）。</li>
+</ul>
+
+<h2>干杯、茶话会、漂流瓶与骰子</h2>
+<div class="table-wrap"><table>
+<tr><th>玩法</th><th>说明</th></tr>
+<tr><td><img class="px" src="images/art/cheers.png" alt="">干杯 <code class="cmd">/toast</code></td><td>和 10 格内的好友举杯（邀约 20 秒有效），双方都拿增益和茶屋币</td></tr>
+<tr><td><img class="px" src="images/items/tea_set.png" alt="">全服茶话会 <code class="cmd">/teaparty</code></td><td>定时开启的全服活动（散场后约 5 小时再开一场，每场 5 分钟），期间干杯拿双倍茶屋币</td></tr>
+<tr><td><img class="px" src="images/art/envelope.png" alt="">漂流瓶 <code class="cmd">/bottle</code></td><td>每天能捞 3 次陌生茶客写的纸条，喜欢就回赠一颗小心心；<code>/bottle send 内容</code> 寄出一封（10 币）</td></tr>
+<tr><td>🎲 茶屋骰子 <code class="cmd">/dice</code></td><td>茶桌掷骰拼手气；<code>/dice duel 玩家 赌注</code> 和好友赌 10–200 币比大小，对方 <code>/dice accept</code> 或 <code>/dice deny</code></td></tr>
+<tr><td><img class="px" src="images/art/fortune.png" alt="">今日运势 <code class="cmd">/fortune</code></td><td>每天一支茶屋运势签（垂钓 / 矿脉 / 茶香 / 财运大吉等），附带一项小加成；可以分享到公屏</td></tr>
+</table></div>
+
+<h2>萌宠乐园 /pet</h2>
+<p><code class="cmd">/pet</code>（别名 <code>/宠物</code>）：解锁后萌宠会一直跟着你，右键可以摸摸它，每只都有专属光环增益。</p>
+<div class="item-grid">
+<div class="item"><img src="images/items/pet_bee.png" alt="" loading="lazy"><div><div class="i-name">🐝 嗡嗡小蜜蜂</div><div class="i-sub">200 币 · 急迫 I</div></div></div>
+<div class="item"><img src="images/items/pet_parrot.png" alt="" loading="lazy"><div><div class="i-name">🦜 彩色小鹦鹉</div><div class="i-sub">350 币 · 速度 I</div></div></div>
+<div class="item"><img src="images/items/pet_rabbit.png" alt="" loading="lazy"><div><div class="i-name">🐰 芝芝垂耳兔</div><div class="i-sub">450 币 · 速度 I + 跳跃 I</div></div></div>
+<div class="item"><img src="images/items/pet_cat.png" alt="" loading="lazy"><div><div class="i-name">🐱 可可三花猫</div><div class="i-sub">500 币 · 常驻幸运 I</div></div></div>
+<div class="item"><img src="images/items/pet_allay.png" alt="" loading="lazy"><div><div class="i-name">✨ 发光小悦灵</div><div class="i-sub">600 币 · 急迫 I</div></div></div>
+<div class="item"><img src="images/items/pet_fox.png" alt="" loading="lazy"><div><div class="i-name">🦊 雪地小狐狸</div><div class="i-sub">900 币 · 常驻夜视</div></div></div>
+<div class="item"><img src="images/items/pet_panda.png" alt="" loading="lazy"><div><div class="i-name">🐼 团子小熊猫</div><div class="i-sub">1200 币 · 抗性提升 I</div></div></div>
+<div class="item legend"><img src="images/items/pet_frog.png" alt="" loading="lazy"><div><div class="i-name">🐸 茶屋雨蛙</div><div class="i-sub">全服修复「茶屋垂钓包」解锁 · 海豚的恩惠</div></div></div>
+<div class="item legend"><img src="images/items/pet_axolotl.png" alt="" loading="lazy"><div><div class="i-name">🦎 樱粉六角恐龙</div><div class="i-sub">全服集齐 6/6 收集包解锁 · 水下呼吸 + 幸运 I</div></div></div>
+</div>
+<figure class="menu-shot"><a href="images/menus/full/pet.png"><img src="images/menus/pet.png" alt="萌宠乐园（/pet）" loading="lazy"></a><figcaption>萌宠乐园（/pet） · <span class="zoom">点图看每个按钮的说明</span></figcaption></figure>
+
+<h2>锦鲤许愿池 /pool</h2>
+<p><code class="cmd">/pool</code>（别名 <code>/许愿池</code>、<code>/锦鲤池</code>）：全服一起往池里投茶屋币，投满就随机开一场 <strong>30 分钟全服狂欢</strong>。</p>
+<ul>
+  <li><strong>三档投币</strong>：100 币（自己得 15 分钟幸运 I）、500 币、2000 币（池边放樱花烟花 + 送一杯抹茶拿铁）。每投 10 币得 1 福气值。</li>
+  <li><strong>目标</strong>：按近 24 小时活跃人数自动调整（至少 3000 币），当天每满一次目标 +50%；单人每轮最多贡献 40%。</li>
+  <li><strong>频率</strong>：两场狂欢至少隔 4 小时；池满但还在冷却时会「蓄满待开」，时间到自动开启。</li>
+  <li>每天签到也会自动帮你向池里注资。</li>
+</ul>
+<div class="table-wrap"><table>
+<tr><th>狂欢（随机 1 种）</th><th>效果</th></tr>
+<tr><td>🎏 锦鲤暴走</td><td>钓鱼幸运 II，钓起鱼时 25% 额外掉福气值或小福袋</td></tr>
+<tr><td>🌾 丰收时刻</td><td>现场收获成熟作物 30% 双倍掉落 + 茶屋币红包</td></tr>
+<tr><td>🌸 星露夜茶会</td><td>全服樱花飘落，每 5 分钟在线领茶屋饮品或点心</td></tr>
+</table></div>
+<h3>福气值商店 /pool shop</h3>
+<p>福气值不能交易，靠投币、签到、献祭、试炼等攒。福气值 ≥100 时主城商店 9 折。</p>
+<div class="item-grid">
+<div class="item"><img src="images/items/pool_gift_box.png" alt="" loading="lazy"><div><div class="i-name">🎁 茶屋美食礼盒</div><div class="i-sub">50 福气值</div></div></div>
+<div class="item"><img src="images/items/scroll_sun.png" alt="" loading="lazy"><div><div class="i-name">📜 锦鲤祈福卷轴礼袋</div><div class="i-sub">80 福气值 · 随机 1 张祈福卷轴</div></div></div>
+<div class="item"><img src="images/items/geode_iridium.png" alt="" loading="lazy"><div><div class="i-name">🌟 星辉铱金晶洞</div><div class="i-sub">120 福气值</div></div></div>
+<div class="item"><img src="images/items/pool_sakura_meter.png" alt="" loading="lazy"><div><div class="i-name">🌸 樱花气象仪（永久）</div><div class="i-sub">300 福气值 · 个人樱花飘落特效，/pool aura 开关</div></div></div>
+<div class="item legend"><img src="images/items/mochi_coin.png" alt="" loading="lazy"><div><div class="i-name">👑 锦鲤大善人（永久称号）</div><div class="i-sub">600 福气值 · 全服播报 + 主城商店永久 9 折</div></div></div>
+</div>
+<div class="shots">
+<figure class="menu-shot"><a href="images/menus/full/pool.png"><img src="images/menus/pool.png" alt="樱花锦鲤许愿池（/pool）" loading="lazy"></a><figcaption>樱花锦鲤许愿池（/pool） · <span class="zoom">点图看每个按钮的说明</span></figcaption></figure>
+<figure class="menu-shot"><a href="images/menus/full/pool_shop.png"><img src="images/menus/pool_shop.png" alt="福气值荣誉商店" loading="lazy"></a><figcaption>福气值荣誉商店 · <span class="zoom">点图看每个按钮的说明</span></figcaption></figure>
+</div>
+
+<h2>社区献祭 /bundle</h2>
+<p><code class="cmd">/bundle</code>（别名 <code>/献祭</code>、<code>/收集册</code>）：全服一起交物资修复 6 个收集包，每修好一个，<strong>全服永久</strong>多一项特权。谁交都算进度，每次提交还送 2–20 福气值；包修好后交过物资的人每人领一份谢礼。</p>
+<div class="table-wrap"><table>
+<tr><th>收集包</th><th>全服特权</th></tr>
+<tr><td>🌸 春季生机包</td><td><code class="cmd">/sell</code> 出货农作物与工坊美食 +20%</td></tr>
+<tr><td>☀ 夏季欢歌包</td><td>工坊速度 +25%，槽位 3→4</td></tr>
+<tr><td>🍁 秋季丰收包</td><td>全服经验获取 +35%（6/6 全满升为 +50%）</td></tr>
+<tr><td>❄ 冬季暖炉包</td><td>解锁稀有家具兑换，签到额外 +30 币与暖冬姜蜜茶</td></tr>
+<tr><td>🎣 茶屋垂钓包</td><td>鱼类出货 +15%、幸运加持、解锁萌宠茶屋雨蛙</td></tr>
+<tr><td>⛏ 矿洞星辉包</td><td>工坊槽位再 +1（最多 5）、稀有家具半价</td></tr>
+</table></div>
+<p>6 个全修好后开启「复兴大满贯」：累计交满 5 件的人可领 500 茶屋币 + 祝尼魔毛绒玩偶。</p>
+<figure class="menu-shot"><a href="images/menus/full/bundle_hub.png"><img src="images/menus/bundle_hub.png" alt="社区献祭中心（/bundle）" loading="lazy"></a><figcaption>社区献祭中心（/bundle） · <span class="zoom">点图看每个按钮的说明</span></figcaption></figure>
+
+<h2>主城奇观 /wonder</h2>
+<p><code class="cmd">/wonder</code>（别名 <code>/奇观</code>、<code>/温泉</code>）：全服一起捐建材修主城地标，每次捐献送 1–25 福气值，竣工时在线玩家各得 100 币，捐得最多的前 5 名刻上功德碑。竣工光环只在主城保护区内生效。</p>
+<ul>
+  <li>♨ <strong>后山樱花露天温泉</strong>（樱花原木 256、深板岩圆石 256、营火 16、蜂蜜瓶 32）：主城内回血 + 饱和，附近酿造 +10% 速度。</li>
+  <li>🐠 <strong>主城锦鲤玻璃水族馆</strong>：主城幸运 I，全服钓鱼尺寸与鱼王率 +5%。</li>
+</ul>
+<figure class="menu-shot"><a href="images/menus/full/wonder_hub.png"><img src="images/menus/wonder_hub.png" alt="主城奇观共建（/wonder）" loading="lazy"></a><figcaption>主城奇观共建（/wonder） · <span class="zoom">点图看每个按钮的说明</span></figcaption></figure>
+</main>
+</div>
+<footer class="site-footer">
+  SHUMC鼠鼠茶屋 新手百科 · 内容依据服务器当前版本整理（CozyLife 1.6.8 / CozyFish 1.5.5 / CozySeasons 1.0.4 / CozySpawn 1.1.5）<br>
+  图片均来自 SHUMC 材质包与菜单预览渲染 · 数值以游戏内菜单为准
+</footer>
+<script src="assets/js/nav.js"></script>
+<script src="assets/js/site.js"></script>
+</body>
+</html>

@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>常用指令速查 · SHUMC鼠鼠茶屋 新手百科</title>
+<meta name="description" content="所有玩家能用的指令和中文 / 拼音别名。其实大部分都不用背：潜行 + F 打开手账菜单，点按钮就行">
+<link rel="icon" href="images/brand/pack.png">
+<link rel="stylesheet" href="assets/css/site.css">
+</head>
+<body>
+<header class="topbar">
+  <button class="menu-toggle" type="button" aria-label="打开目录">☰ 目录</button>
+  <a class="brand" href="index.html">
+    <img class="logo px" src="images/brand/pack.png" alt="SHUMC">
+    <span class="brand-text"><span class="brand-name">SHUMC鼠鼠茶屋</span><span class="brand-sub">新手百科 · Wiki</span></span>
+  </a>
+  <div class="search-wrap">
+    <img class="search-icon px" src="images/art/journal.png" alt="">
+    <input id="search" type="search" placeholder="搜索玩法、指令、物品…（按 / 聚焦）" autocomplete="off" aria-label="站内搜索">
+    <div id="search-results" class="search-results" role="listbox"></div>
+  </div>
+</header>
+<div class="layout">
+<nav id="sidebar" aria-label="目录"></nav>
+<main class="content">
+<div class="page-head"><img class="px" src="images/art/scrolls.png" alt=""><div><h1>常用指令速查</h1><p class="lead">所有玩家能用的指令和中文 / 拼音别名。其实大部分都不用背：潜行 + F 打开手账菜单，点按钮就行</p></div></div>
+<div class="callout info"><img class="px" src="images/items/mochi_handbook.png" alt=""><div>
+  <p>别名都能用，比如 <code>/出货</code>、<code>/chuhuo</code>、<code>/sell</code> 是同一个指令。聊天栏里的 <code>[按钮]</code> 点一下也会执行对应指令。</p>
+</div></div>
+
+<h2>每天常用</h2>
+<div class="table-wrap"><table>
+<tr><th>指令</th><th>别名</th><th>作用</th></tr>
+<tr><td><code class="cmd">/menu</code></td><td>/菜单 /caidan</td><td>打开茶屋手账总菜单（也可以 Shift+F 或右键手账）</td></tr>
+<tr><td><code class="cmd">/qiandao</code></td><td>/签到 /sign</td><td>每日签到</td></tr>
+<tr><td><code class="cmd">/quest</code></td><td>/委托 /任务 /weituo</td><td>每日 8 项委托</td></tr>
+<tr><td><code class="cmd">/fortune</code></td><td>/运势 /茶签 /yunshi</td><td>今日运势签</td></tr>
+<tr><td><code class="cmd">/sell</code></td><td>/出货 /chuhuo</td><td>一键出货</td></tr>
+<tr><td><code class="cmd">/money</code> <code>[玩家]</code></td><td>/余额 /茶屋币 /bal /yue</td><td>余额与富豪榜</td></tr>
+<tr><td><code class="cmd">/pay</code> <code>[玩家] [金额]</code></td><td>/转账 /zhuanzhang</td><td>给在线玩家转账</td></tr>
+<tr><td><code class="cmd">/guide</code></td><td>/新手 /xinshou /tutorial</td><td>新手绘本 + 见面礼</td></tr>
+</table></div>
+
+<h2>传送与家</h2>
+<div class="table-wrap"><table>
+<tr><th>指令</th><th>别名</th><th>作用</th></tr>
+<tr><td><code class="cmd">/spawn</code> <code>[fish]</code></td><td>/主城 /huicheng</td><td>回主城；加 <code>fish</code> 去樱溪东岸钓鱼</td></tr>
+<tr><td><code class="cmd">/sethome</code> <code>[名称]</code></td><td></td><td>设家</td></tr>
+<tr><td><code class="cmd">/home</code> <code>[名称]</code></td><td></td><td>回家</td></tr>
+<tr><td><code>/delhome 名称</code></td><td></td><td>删除家</td></tr>
+<tr><td><code class="cmd">/back</code></td><td></td><td>回上次传送 / 死亡地点</td></tr>
+<tr><td><code>/tpa 玩家</code></td><td></td><td>请求传送到好友身边</td></tr>
+<tr><td><code>/tpaccept</code> / <code>/tpdeny</code></td><td></td><td>同意 / 拒绝传送请求</td></tr>
+<tr><td><code class="cmd">/ziyuan</code></td><td>/资源 /zy /resource /caikuang</td><td>资源世界、下界、末地面板</td></tr>
+<tr><td><code class="cmd">/rtp</code></td><td>/suiji</td><td>随机传送到资源世界野外</td></tr>
+<tr><td><code>/msg 玩家 内容</code> / <code>/r 内容</code></td><td></td><td>私聊 / 回复私聊</td></tr>
+</table></div>
+
+<h2>地皮、领地与开店</h2>
+<div class="table-wrap"><table>
+<tr><th>指令</th><th>别名</th><th>作用</th></tr>
+<tr><td><code class="cmd">/dipi</code> <code>[rent|renew|home|tp|template|trust|untrust|unrent]</code></td><td>/地皮 /租地 /买地 /plot</td><td>环城 31×31 庄园</td></tr>
+<tr><td><code class="cmd">/playershop</code> <code>[rent|renew|tp|style|trust|untrust|unrent]</code></td><td>/玩家店铺</td><td>商业街 15×15 旺铺</td></tr>
+<tr><td><code class="cmd">/lingdi</code></td><td>/领地 /圈地 /claim /ld</td><td>领地管理：一键圈地、扩容、好友权限</td></tr>
+<tr><td><code>/trust 玩家</code> / <code>/untrust 玩家</code></td><td></td><td>授权 / 取消好友在领地里建造</td></tr>
+<tr><td><code>/trustlist</code> · <code>/extendclaim 格数</code> · <code>/abandonclaim</code></td><td></td><td>看信任名单 · 扩领地 · 放弃领地</td></tr>
+<tr><td><code class="cmd">/cshop</code> <code>[单价|remove|help]</code></td><td>/箱子商店 /玩家商店 /stall /kaidian</td><td>全服商店名录；对准箱子输单价开店</td></tr>
+<tr><td><code class="cmd">/order</code> <code>[post 数量 赏金|claim]</code></td><td>/悬赏板 /weituoban</td><td>委托板：NPC 收购与玩家悬赏</td></tr>
+</table></div>
+
+<h2>生产与收集</h2>
+<div class="table-wrap"><table>
+<tr><th>指令</th><th>别名</th><th>作用</th></tr>
+<tr><td><code class="cmd">/job</code></td><td>/专精 /职业 /zhuanjing</td><td>生活专精与天赋树</td></tr>
+<tr><td><code class="cmd">/farm</code></td><td>/农耕 /种田 /农场 /nongtian</td><td>农耕中心：图鉴、种子店、肥料洒水器</td></tr>
+<tr><td><code class="cmd">/ranch</code></td><td>/牧场 /养殖 /muchang</td><td>星露牧场</td></tr>
+<tr><td><code class="cmd">/fish</code> <code>[zone|top|museum|contest]</code></td><td>/鱼图鉴 /tujian</td><td>钓鱼图鉴、钓区、排行、博物馆、大赛</td></tr>
+<tr><td><code class="cmd">/bug</code></td><td>/捕虫 /昆虫 /buchong</td><td>捕虫图鉴与捕虫网商店</td></tr>
+<tr><td><code class="cmd">/brew</code></td><td>/工坊 /酿造 /gongfang</td><td>茶屋工坊</td></tr>
+<tr><td><code class="cmd">/kitchen</code></td><td>/食谱 /chufang</td><td>随身小吃食谱</td></tr>
+<tr><td><code class="cmd">/feast</code></td><td>/宴席 /大餐 /聚餐 /yanxi</td><td>3D 宴席灶台</td></tr>
+<tr><td><code class="cmd">/forge</code></td><td>/锻造 /duanzao /tiejiang</td><td>锻造坊：精炼、升星、铭刻、卷轴、饰品</td></tr>
+<tr><td><code class="cmd">/accessory</code></td><td>/饰品 /饰品匣 /shipin</td><td>戒指 + 护符饰品匣</td></tr>
+<tr><td><code class="cmd">/geode</code></td><td>/晶洞 /jingdong</td><td>晶洞鉴宝台</td></tr>
+<tr><td><code class="cmd">/adventure</code></td><td>/冒险 /公会 /maoxian /dungeon</td><td>冒险公会：悬赏、试炼、军械库</td></tr>
+<tr><td><code class="cmd">/season</code></td><td>/季节 /jijie</td><td>当前季节与换季倒计时</td></tr>
+<tr><td><code class="cmd">/festival</code></td><td>/庆典 /奢华馆 /光环</td><td>四季庆典与奢华馆</td></tr>
+</table></div>
+
+<h2>商店与收藏</h2>
+<div class="table-wrap"><table>
+<tr><th>指令</th><th>别名</th><th>作用</th></tr>
+<tr><td><code class="cmd">/shop</code></td><td>/商店 /杂货铺 /shangdian</td><td>茶屋杂货铺：神器、礼盒、家具</td></tr>
+<tr><td><code class="cmd">/npcshop</code> <code>[tackle|florist|blacksmith|bakery|furniture]</code></td><td>/商铺 /专柜</td><td>商业街导览与五大专柜</td></tr>
+<tr><td><code class="cmd">/pet</code></td><td>/宠物 /chongwu</td><td>萌宠乐园</td></tr>
+<tr><td><code class="cmd">/title</code></td><td>/称号 /chenghao</td><td>荣誉称号</td></tr>
+<tr><td><code class="cmd">/cozyitem</code></td><td>/道具图鉴 /daoju</td><td>本服定制道具图鉴</td></tr>
+</table></div>
+
+<h2>社交与全服活动</h2>
+<div class="table-wrap"><table>
+<tr><th>指令</th><th>别名</th><th>作用</th></tr>
+<tr><td><code class="cmd">/partner</code> <code>[invite 玩家|accept|deny|sethome|home|leave]</code></td><td>/搭子 /合居 /dazi</td><td>茶屋搭子合居</td></tr>
+<tr><td><code class="cmd">/visit</code> <code>[toggle]</code></td><td>/做客 /拜访 /zuoke</td><td>邻里家园榜 / 开关迎客</td></tr>
+<tr><td><code class="cmd">/like</code> <code>玩家</code></td><td>/点赞 /dianzan</td><td>给好友的家点赞送花</td></tr>
+<tr><td><code class="cmd">/guestbook</code> <code>[玩家 留言]</code></td><td>/留言簿 /liuyan</td><td>家园留言簿</td></tr>
+<tr><td><code class="cmd">/bottle</code> <code>[send 留言]</code></td><td>/漂流瓶 /piaoliuping</td><td>打捞 / 寄出漂流瓶</td></tr>
+<tr><td><code class="cmd">/toast</code></td><td>/干杯 /ganbei</td><td>和附近好友干杯</td></tr>
+<tr><td><code class="cmd">/teaparty</code></td><td>/茶话会 /chahuahui</td><td>全服茶话会倒计时</td></tr>
+<tr><td><code class="cmd">/dice</code> <code>[duel 玩家 赌注|accept|deny]</code></td><td>/骰子 /touzi</td><td>茶屋骰子</td></tr>
+<tr><td><code class="cmd">/pool</code> <code>[shop|aura]</code></td><td>/许愿池 /锦鲤池 /jinli</td><td>锦鲤许愿池 / 福气商店 / 开关樱花气象仪</td></tr>
+<tr><td><code class="cmd">/bundle</code></td><td>/献祭 /收集册 /community</td><td>社区献祭中心</td></tr>
+<tr><td><code class="cmd">/wonder</code></td><td>/奇观 /温泉 /qiguan</td><td>主城奇观共建</td></tr>
+<tr><td><code class="cmd">/wish</code> <code>[心愿]</code></td><td>/许愿 /xuyuan</td><td>流星雨期间对夜空许愿</td></tr>
+<tr><td><code class="cmd">/sit</code></td><td>/坐下 /zuo</td><td>原地坐下</td></tr>
+</table></div>
+</main>
+</div>
+<footer class="site-footer">
+  SHUMC鼠鼠茶屋 新手百科 · 内容依据服务器当前版本整理（CozyLife 1.6.8 / CozyFish 1.5.5 / CozySeasons 1.0.4 / CozySpawn 1.1.5）<br>
+  图片均来自 SHUMC 材质包与菜单预览渲染 · 数值以游戏内菜单为准
+</footer>
+<script src="assets/js/nav.js"></script>
+<script src="assets/js/site.js"></script>
+</body>
+</html>

@@ -1,0 +1,158 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>职业专精与天赋 · SHUMC鼠鼠茶屋 新手百科</title>
+<meta name="description" content="四门生活专精：做本行的事涨等级、点天赋、解锁主动技能和称号">
+<link rel="icon" href="images/brand/pack.png">
+<link rel="stylesheet" href="assets/css/site.css">
+</head>
+<body>
+<header class="topbar">
+  <button class="menu-toggle" type="button" aria-label="打开目录">☰ 目录</button>
+  <a class="brand" href="index.html">
+    <img class="logo px" src="images/brand/pack.png" alt="SHUMC">
+    <span class="brand-text"><span class="brand-name">SHUMC鼠鼠茶屋</span><span class="brand-sub">新手百科 · Wiki</span></span>
+  </a>
+  <div class="search-wrap">
+    <img class="search-icon px" src="images/art/journal.png" alt="">
+    <input id="search" type="search" placeholder="搜索玩法、指令、物品…（按 / 聚焦）" autocomplete="off" aria-label="站内搜索">
+    <div id="search-results" class="search-results" role="listbox"></div>
+  </div>
+</header>
+<div class="layout">
+<nav id="sidebar" aria-label="目录"></nav>
+<main class="content">
+<div class="page-head"><img class="px" src="images/art/strawhat.png" alt=""><div><h1>职业专精与天赋</h1><p class="lead">四门生活专精：做本行的事涨等级、点天赋、解锁主动技能和称号</p></div></div>
+<h2>四大专精</h2>
+<p><code class="cmd">/job</code>（别名 <code>/专精</code>、<code>/职业</code>）选择主修专精。<strong>左键</strong>主修（之后 7 天不能换），<strong>右键</strong>查看任意专精的天赋树。每个专精的等级各自存档，换专精不会清空进度，但只有<strong>当前主修</strong>的加成和天赋生效。</p>
+<div class="table-wrap"><table>
+<tr><th>专精</th><th>基础加成</th><th>专属特产</th><th>主动技能（Lv5）</th></tr>
+<tr><td>🌿 <strong>樱林农艺师</strong></td><td>农作物出货 +20%、牧场出货 +15%、牧场好感 +25%</td><td>收获时 35% 掉【晨露茶芽】</td><td>🌸 樱雨（手拿锄头）</td></tr>
+<tr><td>🎣 <strong>星露垂钓客</strong></td><td>星级鱼出货 +20%、昆虫出货 +15%、捕虫网冷却 -0.5 秒</td><td>钓鱼 30% 捞【鲜润鱼露】</td><td>🫧 撒窝（手拿钓竿）</td></tr>
+<tr><td>🍵 <strong>茶屋酿造师</strong></td><td>工坊高星 +15%、15% 双倍；3D 灶台提速 20%、大餐多摆 1 份</td><td>—（升华时可用三种特产）</td><td>🫖 开壶（手拿玻璃瓶 / 蜂蜜瓶）</td></tr>
+<tr><td>⛏ <strong>灵脉探矿匠</strong></td><td>矿物副产物与工具耐久更省</td><td>挖矿 25% 伴生【茶具星砂】</td><td>🔔 听脉（手拿镐）</td></tr>
+</table></div>
+<p>专精特产是锻造饰品、私房配方、主厨委托的材料，详见 <a href="crafts.html">工坊 · 料理 · 锻造</a>。</p>
+<figure class="menu-shot"><a href="images/menus/full/jobs.png"><img src="images/menus/jobs.png" alt="生活专精分工（/job）" loading="lazy"></a><figcaption>生活专精分工（/job） · <span class="zoom">点图看每个按钮的说明</span></figcaption></figure>
+
+<h2>等级与经验</h2>
+<div class="table-wrap"><table>
+<tr><th>项目</th><th>规则</th></tr>
+<tr><td>等级</td><td>Lv1–20，每个专精各自存档</td></tr>
+<tr><td>升级经验</td><td>从当前等级升 1 级需要 <code>120 + 60 × 当前等级</code>，满级累计 13,680</td></tr>
+<tr><td>每日经验</td><td>每天前 600 全额，之后减半（防挂机）；普通玩家约 3–4 周满级</td></tr>
+<tr><td>天赋点</td><td>每升 1 级 +1 点，共 19 点；一棵树约 22–24 点，点不满，要取舍</td></tr>
+<tr><td>洗点</td><td>每周免费 1 次，之后 800 茶屋币；大师天赋一起重选</td></tr>
+</table></div>
+<h3>经验从哪来（只算当前主修）</h3>
+<div class="table-wrap"><table>
+<tr><th>专精</th><th>来源</th><th>经验</th></tr>
+<tr><td rowspan="2">🌿 农艺师</td><td>收获作物</td><td>1 + 星级</td></tr>
+<tr><td>喂牧场饲料 / 抚摸 / 喂自家作物零食</td><td>6 / 4 / 2</td></tr>
+<tr><td rowspan="2">🎣 垂钓客</td><td>钓到鱼</td><td>2 + 星级</td></tr>
+<tr><td>捕到虫</td><td>2 + 星级</td></tr>
+<tr><td rowspan="2">🍵 酿造师</td><td>收取工坊成品</td><td>6 + 3 × 品质</td></tr>
+<tr><td>摆出大餐 / 干杯</td><td>25 / 5</td></tr>
+<tr><td rowspan="2">⛏ 探矿匠</td><td>挖天然矿（钻石、绿宝石为 6）</td><td>2</td></tr>
+<tr><td>敲晶洞 / 精炼 / 淬火升星</td><td>6 / 4 / 15</td></tr>
+</table></div>
+
+<h2>突破任务</h2>
+<p>到 Lv5 / 10 / 15 / 20 时经验会存满停住，完成突破任务后在天赋页点「完成突破」才能继续升级，全服会响一声专精钟。任务可以提前做。</p>
+<div class="table-wrap"><table>
+<tr><th>专精</th><th>Lv5</th><th>Lv10</th><th>Lv15</th><th>Lv20</th></tr>
+<tr><td>农艺师</td><td>交自家田里的星级小麦 / 胡萝卜 / 马铃薯 / 甜菜根 / 地狱疣各 32（星级可混交）</td><td>同一季节 3 种当季特色作物各收获一次金星以上</td><td>一只牧场动物满 5 心并用命名牌起名</td><td>累计收获 30 份 👑4 星作物</td></tr>
+<tr><td>垂钓客</td><td>3 种不同水域各钓一条金星以上的鱼</td><td>昆虫图鉴 10 种</td><td>雨夜钓到 👑4 星鱼</td><td>钓到传说鱼</td></tr>
+<tr><td>酿造师</td><td>工坊做出 6 种不同成品</td><td>和 3 位不同玩家干杯</td><td>做出一份 👑 大师品质</td><td>升华时三种专精特产都用过</td></tr>
+<tr><td>探矿匠</td><td>敲开 10 个晶洞</td><td>Y&lt;0 各挖到钻石矿、绿宝石矿、金矿</td><td>一件装备淬火到 3 星</td><td>开出 3 个铱金晶洞</td></tr>
+</table></div>
+
+<h2>主动技能</h2>
+<p>Lv5 解锁。手拿本职工具，<strong>潜行 + 按 F</strong> 释放，或在天赋页点按钮。（没拿本职工具时，潜行 + F 是打开主菜单。）</p>
+<div class="table-wrap"><table>
+<tr><th>技能</th><th>效果</th><th>冷却</th></tr>
+<tr><td>🌸 樱雨（锄头）</td><td>身边 6 格的作物立刻长一阶段（只对你能建造的地方生效），头顶飘樱花雨 16 秒</td><td>10 分钟</td></tr>
+<tr><td>🫧 撒窝（钓竿）</td><td>对准 12 格内的水面撒鱼饭，60 秒内那片水（6 格）咬钩快一半、品质 +5</td><td>8 分钟</td></tr>
+<tr><td>🫖 开壶（玻璃瓶 / 蜂蜜瓶）</td><td>工坊里剩余时间最长的那份成品立刻做好</td><td>15 分钟</td></tr>
+<tr><td>🔔 听脉（镐）</td><td>告诉你附近 16 格有几块好矿（钻石 / 绿宝石 / 金 / 远古残骸）、最近的大概多远（不透视、不给坐标）</td><td>10 分钟</td></tr>
+</table></div>
+
+<h2>天赋树</h2>
+<p>点自己的专精进入天赋树。每个专精 3 条线 × 4 层，第 2 / 3 / 4 层需要这棵树已经点了 3 / 7 / 12 点。括号里是该天赋的最高级数。</p>
+<figure class="menu-shot"><a href="images/menus/full/talent_farmer.png"><img src="images/menus/talent_farmer.png" alt="农艺师天赋树（示例存档：Lv10）" loading="lazy"></a><figcaption>农艺师天赋树（示例存档：Lv10） · <span class="zoom">点图看每个按钮的说明</span></figcaption></figure>
+<h3>🌿 农艺师</h3>
+<div class="table-wrap"><table>
+<tr><th>层</th><th>🌾 丰收线</th><th>🐮 牧场线</th><th>🍂 四季线</th></tr>
+<tr><td>1</td><td>沃土之手（3）收获 5/10/15% 多一份</td><td>温柔抚摸（3）好感 +10/20/30%</td><td>省种（2）播种 10/20% 不耗种子</td></tr>
+<tr><td>2</td><td>晨露采摘（2）茶芽 +5/10%</td><td>满篮产物（2）喂饲料 8/16% 产两份</td><td>听雨（1）雨天收获品质 +8</td></tr>
+<tr><td>3</td><td>金穗（1）黄金大丰收 +4%</td><td>好胃口（1）消化冷却 -30%</td><td>节气农法（2）当季 / 温室品质 +4/+8</td></tr>
+<tr><td>4</td><td>巨型作物（2）特色作物 1/2% 长成巨型</td><td>动物友情（2）抚摸满心动物 15/30% 送礼物</td><td>节气种子（1）每季领一包当季种子 ×8</td></tr>
+</table></div>
+<h3>🎣 垂钓客</h3>
+<div class="table-wrap"><table>
+<tr><th>层</th><th>🐟 鱼获线</th><th>🧰 宝藏线</th><th>🦋 捕虫线</th></tr>
+<tr><td>1</td><td>稳竿（3）咬钩等待 -5/10/15%</td><td>海底寻宝（3）漂流宝箱 +2/4/6%</td><td>轻网（2）捕虫冷却 -0.3/0.6 秒</td></tr>
+<tr><td>2</td><td>升星手感（2）4/8% 直接 +1 星</td><td>漂流信使（1）钓鱼 3% 捞到玩家漂流瓶</td><td>眼尖（2）捕虫命中 +4/8%</td></tr>
+<tr><td>3</td><td>传说嗅觉（1）传说鱼咬钩时浮漂金光</td><td>潮汐直觉（2）雨天 / 夜晚品质 +3/+6</td><td>标本师（2）昆虫出货 +5/10%</td></tr>
+<tr><td>4</td><td>鱼露达人（2）鱼露 +5/10%</td><td>锦鲤祈愿（1）每天前 3 条 👑 鱼各 +5 福气</td><td>萤火之夜（1）夜晚 15% 一网两只</td></tr>
+</table></div>
+<h3>🍵 酿造师</h3>
+<div class="table-wrap"><table>
+<tr><th>层</th><th>⭐ 品质线</th><th>⏱ 效率线</th><th>🍽 宴席线</th></tr>
+<tr><td>1</td><td>文火慢煮（3）高星 +3/6/9%</td><td>手脚麻利（3）制作时间 -5/10/15%</td><td>大厨摆盘（2）大餐 +1 份；2 级时灶台再快 10%</td></tr>
+<tr><td>2</td><td>提香大师（1）提香 30% 不耗催化剂</td><td>扇风高手（1）扇风冷却 12→6 秒、升星 15→25%</td><td>风味留香（2）喝自己做的饮品时长 +15/30%</td></tr>
+<tr><td>3</td><td>大师特调（2）👑 概率 +2/4%</td><td>省料（2）8/16% 退回一件原料</td><td>茶话主持（1）干杯双方增益时长 ×1.5</td></tr>
+<tr><td>4</td><td>意外之喜（1）2% 额外送「神秘特饮」</td><td>自动收取（1）做好自动进背包</td><td>外卖招牌（2）工坊成品出货 +5/10%</td></tr>
+</table></div>
+<h3>⛏ 探矿匠</h3>
+<div class="table-wrap"><table>
+<tr><th>层</th><th>⛏ 矿脉线</th><th>💎 晶洞线</th><th>⚒ 锻造线</th></tr>
+<tr><td>1</td><td>精准落镐（3）4/8/12% 多掉一份</td><td>晶洞嗅觉（3）晶洞 +2/4/6%</td><td>精炼（2）10/20% 免工费</td></tr>
+<tr><td>2</td><td>星砂伴生（2）星砂 +5/10%</td><td>巧手鉴宝（2）铱金晶洞 +3/6%</td><td>淬火手感（3）升星工费 -5/10/15%</td></tr>
+<tr><td>3</td><td>稳手（1）镐子耐久再省 20%</td><td>盲盒连开（1）潜行右键一次敲 5 个</td><td>修补匠（1）修补免 20 币、铁锭 50% 不耗</td></tr>
+<tr><td>4</td><td>深层老手（2）Y&lt;0 挖到矿得 15 秒急迫 I/II</td><td>宝石商人（2）晶洞茶屋币 +10/20%</td><td>铭刻师（1）铭刻工费减半</td></tr>
+</table></div>
+
+<h2>大师天赋与怪趣天赋</h2>
+<h3>👑 大师天赋（Lv20 突破后三选一）</h3>
+<div class="table-wrap"><table>
+<tr><th>专精</th><th>三个选项</th></tr>
+<tr><td>农艺师</td><td>丰收之神（每天前 64 次收获数量翻倍）· 牧场主（喂料冷却减半、产物至少银星）· 四季使者（樱雨冷却 5 分钟、范围 12 格）</td></tr>
+<tr><td>垂钓客</td><td>海王（每天第一条鱼必定 👑4 星）· 寻宝人（宝箱 +4%、宝箱茶屋币翻倍）· 自然学家（鱼 + 虫图鉴每完成 10%，出货 +1%，最多 +10%）</td></tr>
+<tr><td>酿造师</td><td>私房配方（自选两种效果调「名字·私房特调」，每天 8 杯，可送可摆摊，不能 /sell）· 茶屋主理（喝你做的饮品时，5 格内朋友得一半时长）· 炼金小窝（每天前 3 次收取必出双份）</td></tr>
+<tr><td>探矿匠</td><td>灵脉罗盘（听脉 32 格并给 8 方向）· 铁匠宗师（升星 30% 不耗合金）· 晶石之心（每天第一个晶洞必为铱金）</td></tr>
+</table></div>
+<h3>🎈 怪趣天赋（纯好玩，不影响收益）</h3>
+<p>Lv5 / 10 / 15 / 20 各解锁一个，可以单独开关。</p>
+<div class="table-wrap"><table>
+<tr><th>专精</th><th>Lv5</th><th>Lv10</th><th>Lv15</th><th>Lv20</th></tr>
+<tr><td>农艺师</td><td>花仙子：在能建造的草地上走，偶尔开小花</td><td>小鸡妈妈：小鸡跟着走</td><td>稻草人的朋友：右键戴南瓜的盔甲架聊农事</td><td>王牌菜农：拿锄头时头顶麦色光点</td></tr>
+<tr><td>垂钓客</td><td>猫咪常客：钓鱼时猫凑过来</td><td>老渔夫的故事：空军时飘一句俗语</td><td>水花庆祝：👑 鱼放小烟花</td><td>蝴蝶相伴：白天花丛边头顶两只蝴蝶</td></tr>
+<tr><td>酿造师</td><td>拉花：收取时头顶爱心</td><td>茶香体质：身边的人闻到茶香</td><td>试饮员：首次喝每种饮品写笔记</td><td>壶中日月：工坊做好吹哨提醒</td></tr>
+<tr><td>探矿匠</td><td>矿工灯：Y&lt;0 头顶暖光</td><td>矿坑金丝雀：附近有岩浆会叫</td><td>家传镐：镐子记挖了多少块，满一万刻「老伙计」</td><td>矿工吆喝：挖到钻石喊一声</td></tr>
+</table></div>
+<div class="shots">
+<figure class="menu-shot"><a href="images/menus/full/talent_master.png"><img src="images/menus/talent_master.png" alt="大师天赋 · 三选一" loading="lazy"></a><figcaption>大师天赋 · 三选一 · <span class="zoom">点图看每个按钮的说明</span></figcaption></figure>
+<figure class="menu-shot"><a href="images/menus/full/talent_quirks.png"><img src="images/menus/talent_quirks.png" alt="怪趣天赋" loading="lazy"></a><figcaption>怪趣天赋 · <span class="zoom">点图看每个按钮的说明</span></figcaption></figure>
+</div>
+
+<h2>专精称号</h2>
+<p>Lv10 / Lv20 自动获得，显示在聊天名字前，可以在天赋页隐藏：</p>
+<ul>
+  <li>农艺师：农艺好手 / 樱林大农</li>
+  <li>垂钓客：垂钓好手 / 星露钓仙</li>
+  <li>酿造师：酿造好手 / 茶屋主理人</li>
+  <li>探矿匠：探矿好手 / 灵脉宗师</li>
+</ul>
+</main>
+</div>
+<footer class="site-footer">
+  SHUMC鼠鼠茶屋 新手百科 · 内容依据服务器当前版本整理（CozyLife 1.6.8 / CozyFish 1.5.5 / CozySeasons 1.0.4 / CozySpawn 1.1.5）<br>
+  图片均来自 SHUMC 材质包与菜单预览渲染 · 数值以游戏内菜单为准
+</footer>
+<script src="assets/js/nav.js"></script>
+<script src="assets/js/site.js"></script>
+</body>
+</html>

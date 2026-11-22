@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>首页 · SHUMC鼠鼠茶屋 新手百科</title>
+<meta name="description" content="SHUMC鼠鼠茶屋新手百科：快速上手、全部玩法与常用指令">
+<link rel="icon" href="images/brand/pack.png">
+<link rel="stylesheet" href="assets/css/site.css">
+</head>
+<body>
+<header class="topbar">
+  <button class="menu-toggle" type="button" aria-label="打开目录">☰ 目录</button>
+  <a class="brand" href="index.html">
+    <img class="logo px" src="images/brand/pack.png" alt="SHUMC">
+    <span class="brand-text"><span class="brand-name">SHUMC鼠鼠茶屋</span><span class="brand-sub">新手百科 · Wiki</span></span>
+  </a>
+  <div class="search-wrap">
+    <img class="search-icon px" src="images/art/journal.png" alt="">
+    <input id="search" type="search" placeholder="搜索玩法、指令、物品…（按 / 聚焦）" autocomplete="off" aria-label="站内搜索">
+    <div id="search-results" class="search-results" role="listbox"></div>
+  </div>
+</header>
+<div class="layout">
+<nav id="sidebar" aria-label="目录"></nav>
+<main class="content">
+<div class="hero">
+  <img class="hero-logo" src="images/brand/pack.png" alt="SHUMC鼠鼠茶屋">
+  <div class="hero-text">
+    <h1>欢迎来到 SHUMC鼠鼠茶屋</h1>
+    <p class="tagline">一座樱花茶屋小镇里的养老生存服：种田、钓鱼、泡茶、交朋友，不逼肝，慢慢来。</p>
+    <p>这本百科写给刚进服的新茶客。先看下面的「前 10 分钟」，之后想了解哪个玩法，就从左边目录或右上角搜索直接跳过去。</p>
+    <a class="btn" href="#前-10-分钟">🌸 前 10 分钟怎么玩</a>
+    <a class="btn alt" href="commands.html">📜 常用指令速查</a>
+  </div>
+  <div class="petals"><img class="px" src="images/items/spice_sakura_petal.png" alt=""></div>
+</div>
+
+<div class="callout info"><img class="px" src="images/items/mochi_handbook.png" alt=""><div>
+  <p class="c-title">记住一个按键就够了：潜行 + F</p>
+  <p>按住 <kbd>Shift</kbd> 再按 <kbd>F</kbd>（副手键），或右键背包里的 <strong>☕ 鼠鼠茶屋手账</strong>，就能打开总菜单 <code class="cmd">/menu</code>。几乎所有玩法都能在菜单里点开，不用背指令。手账丢了也没关系，下次进服会自动补发一本。</p>
+  <p>聊天栏里出现的 <code>[按钮]</code> 也都能直接点。</p>
+</div></div>
+
+<h2>前 10 分钟</h2>
+<p>进服后你会出生在 <strong>樱溪茶屋镇</strong> 的中央广场，面朝正南的商业大街。照下面的顺序走一遍，十分钟内就能有钱、有家、有方向。</p>
+<ol class="steps">
+  <li><strong>领见面礼</strong> <span class="time">第 1 分钟</span><br>
+    输入 <code class="cmd">/guide</code> 打开 11 页的《玩家大绘本》，点左下角 🎁 <strong>新手见面礼</strong>：30 茶屋币 + 面包 ×8 + 樱花树苗 ×2（每人限领一次）。绘本里也能领一本可以随身翻的实体手册。</li>
+  <li><strong>每日签到</strong> <span class="time">第 2 分钟</span><br>
+    输入 <code class="cmd">/qiandao</code>（或点上线时聊天栏「🌸 今日小事」里的 [✅ 签到]）：每天 50 茶屋币 + 8 份烤牛排 + 16 根火把 + 经验；每累计 7 天额外 +100 币和 1 颗金苹果。签到还会顺手抽今日运势签。</li>
+  <li><strong>租一块地安家</strong> <span class="time">第 3 分钟</span><br>
+    输入 <code class="cmd">/dipi</code> 打开环城庄园列表，绿色的是空地。<strong>31×31 庄园 30 币 / 7 天</strong>，见面礼的 30 币刚好够；自带一栋木屋，只有你和你授权的好友能建造。到期不续租会被收回。<br>
+    不想租？走出东南西北任意城门就是永久不重置的<strong>樱花山谷自由建造区</strong>，用金铲子圈地即可，见 <a href="land.html">领地与家</a>。</li>
+  <li><strong>选一门生活专精</strong> <span class="time">第 5 分钟</span><br>
+    输入 <code class="cmd">/job</code> 在农艺师 / 垂钓客 / 酿造师 / 探矿匠里选一个主修（选定后 7 天内不能换）。做本行的事会涨专精等级、点天赋，见 <a href="jobs.html">职业专精与天赋</a>。</li>
+  <li><strong>先去钓几条鱼</strong> <span class="time">第 6 分钟</span><br>
+    主城的樱溪就能钓到樱花林限定鱼。输入 <code class="cmd">/spawn fish</code> 直接传送到樱溪东岸栈道。钓到的鱼会进 <code class="cmd">/fish</code> 图鉴，集齐 5 种就有第一份奖励。</li>
+  <li><strong>卖掉换钱</strong> <span class="time">第 8 分钟</span><br>
+    输入 <code class="cmd">/sell</code> 一键卖出背包里的鱼、作物、牧场品、昆虫和工坊成品（不会卖你的盔甲和副手诱饵）。今天哪样东西热卖、价格翻倍，菜单里「茶屋钱包」会写。</li>
+  <li><strong>看看今天的委托</strong> <span class="time">第 10 分钟</span><br>
+    输入 <code class="cmd">/quest</code>：每天 8 项小委托（钓 5 条鱼、出货 10 件、敲 1 个晶洞……），全部领完再开一个「全勤礼盒」。顺便 <code class="cmd">/fortune</code> 看看今天的运势签有什么加成。</li>
+</ol>
+
+<div class="callout tip"><img class="px" src="images/items/mochi_coin.png" alt=""><div>
+  <p class="c-title">新手最常问</p>
+  <p><strong>大型挖矿、砍树去哪？</strong> 用 <code class="cmd">/ziyuan</code> 或 <code class="cmd">/rtp</code> 去<strong>资源世界</strong>（含下界、末地），每周重置、死亡不掉落。主世界永久保留，请爱护风景。</p>
+  <p><strong>迷路了？</strong> <code class="cmd">/spawn</code> 回主城，<code class="cmd">/home</code> 回家，<code class="cmd">/back</code> 回到上次传送或死亡的地方。</p>
+</div></div>
+
+<h2>主菜单长什么样</h2>
+<p>下面是游戏里按 <kbd>Shift</kbd>+<kbd>F</kbd> 打开的「茶屋手账」主菜单（由服务器插件真实生成的菜单渲染图）。第一行是每天必点的签到、钱包、萌宠；接下来三行按「采集生产 / 加工商店 / 出行与家园」分区；底部的 🌸 <strong>社交与更多</strong> 里是搭子、许愿池、运势、玩家商店等。</p>
+<div class="shots">
+<figure class="menu-shot"><a href="images/menus/full/main.png"><img src="images/menus/main.png" alt="茶屋手账 · 主菜单（/menu）" loading="lazy"></a><figcaption>茶屋手账 · 主菜单（/menu） · <span class="zoom">点图看每个按钮的说明</span></figcaption></figure>
+<figure class="menu-shot"><a href="images/menus/full/more.png"><img src="images/menus/more.png" alt="社交与更多" loading="lazy"></a><figcaption>社交与更多 · <span class="zoom">点图看每个按钮的说明</span></figcaption></figure>
+</div>
+
+<h2>玩法地图</h2>
+<p>每个玩法都有自己的页面，点卡片进入。</p>
+<div class="card-grid">
+  <a class="card" href="town.html"><img class="px" src="images/art/torii.png" alt=""><div><div class="card-title">主城与新手引导</div><div class="card-desc">樱溪茶屋镇的四个方向、商业街五大专柜、资源世界</div></div></a>
+  <a class="card" href="economy.html"><img class="px" src="images/art/purse.png" alt=""><div><div class="card-title">经济 · 茶屋币</div><div class="card-desc">怎么赚、怎么花、出货额度、委托与悬赏</div></div></a>
+  <a class="card" href="jobs.html"><img class="px" src="images/art/strawhat.png" alt=""><div><div class="card-title">职业专精与天赋</div><div class="card-desc">四大专精、Lv1–20、天赋树、主动技能</div></div></a>
+  <a class="card" href="farming.html"><img class="px" src="images/art/harvest.png" alt=""><div><div class="card-title">农耕与牧场</div><div class="card-desc">17 种四季作物、温室、洒水器、动物好感与加工机</div></div></a>
+  <a class="card" href="fishing.html"><img class="px" src="images/art/creel.png" alt=""><div><div class="card-title">钓鱼、图鉴与捕虫</div><div class="card-desc">75 种鱼与奇物、十大钓区、诱饵、钓鱼大赛、24 种昆虫</div></div></a>
+  <a class="card" href="seasons.html"><img class="px" src="images/art/wreath.png" alt=""><div><div class="card-title">四季与庆典</div><div class="card-desc">每 3 天换季、季节增益、四季庆典、流星雨</div></div></a>
+  <a class="card" href="crafts.html"><img class="px" src="images/art/kettle.png" alt=""><div><div class="card-title">工坊 · 料理 · 锻造</div><div class="card-desc">茶饮果酱烘焙、3D 宴席、装备升星铭刻、饰品、晶洞</div></div></a>
+  <a class="card" href="adventure.html"><img class="px" src="images/art/wanted.png" alt=""><div><div class="card-title">冒险公会</div><div class="card-desc">每日讨伐、秘境试炼 Boss、神兵军械库</div></div></a>
+  <a class="card" href="social.html"><img class="px" src="images/art/mice.png" alt=""><div><div class="card-title">社交 · 萌宠 · 许愿池</div><div class="card-desc">搭子合居、串门点赞、干杯、萌宠、锦鲤池、全服共建</div></div></a>
+  <a class="card" href="land.html"><img class="px" src="images/art/cottage.png" alt=""><div><div class="card-title">领地与家</div><div class="card-desc">环城庄园、商街旺铺、一键圈地、箱子商店</div></div></a>
+  <a class="card" href="commands.html"><img class="px" src="images/art/scrolls.png" alt=""><div><div class="card-title">常用指令速查</div><div class="card-desc">所有玩家指令和中文/拼音别名</div></div></a>
+</div>
+
+<h2>每天上线一分钟</h2>
+<p>上线时聊天栏会出现一行「🌸 今日小事」按钮，挨个点一下就领齐了：</p>
+<div class="table-wrap"><table>
+<tr><th>做什么</th><th>指令</th><th>得到什么</th></tr>
+<tr><td><img class="px" src="images/items/mochi_coin.png" alt="">每日签到</td><td><code class="cmd">/qiandao</code></td><td>50 币 + 烤牛排 ×8 + 火把 ×16；每满 7 天 +100 币 + 金苹果；还会给全服许愿池注资</td></tr>
+<tr><td><img class="px" src="images/art/fortune.png" alt="">今日运势</td><td><code class="cmd">/fortune</code></td><td>每天一支签，附带一项轻度加成（例如工坊升星 +20%）</td></tr>
+<tr><td><img class="px" src="images/art/checklist.png" alt="">每日委托</td><td><code class="cmd">/quest</code></td><td>8 项小目标，每项 80–120 币 + 补给；全部领完再开全勤礼盒（150 币 + 5 福气值 + 当季香料）</td></tr>
+<tr><td><img class="px" src="images/art/koi.png" alt="">锦鲤许愿池</td><td><code class="cmd">/pool</code></td><td>投币攒全服狂欢，同时攒福气值换永久特效和称号</td></tr>
+<tr><td><img class="px" src="images/art/lantern.png" alt="">庆典打卡</td><td><code class="cmd">/festival</code></td><td>每天免费 40 币 + 5 分钟幸运 I（庆典进行中 80 币）</td></tr>
+</table></div>
+</main>
+</div>
+<footer class="site-footer">
+  SHUMC鼠鼠茶屋 新手百科 · 内容依据服务器当前版本整理（CozyLife 1.6.8 / CozyFish 1.5.5 / CozySeasons 1.0.4 / CozySpawn 1.1.5）<br>
+  图片均来自 SHUMC 材质包与菜单预览渲染 · 数值以游戏内菜单为准
+</footer>
+<script src="assets/js/nav.js"></script>
+<script src="assets/js/site.js"></script>
+</body>
+</html>

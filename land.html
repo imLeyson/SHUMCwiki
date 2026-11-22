@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>领地与家 · SHUMC鼠鼠茶屋 新手百科</title>
+<meta name="description" content="在哪安家：主城里租庄园和商铺，或者出城门在樱花山谷自由建造、圈地保护；回家、授权好友、开箱子商店">
+<link rel="icon" href="images/brand/pack.png">
+<link rel="stylesheet" href="assets/css/site.css">
+</head>
+<body>
+<header class="topbar">
+  <button class="menu-toggle" type="button" aria-label="打开目录">☰ 目录</button>
+  <a class="brand" href="index.html">
+    <img class="logo px" src="images/brand/pack.png" alt="SHUMC">
+    <span class="brand-text"><span class="brand-name">SHUMC鼠鼠茶屋</span><span class="brand-sub">新手百科 · Wiki</span></span>
+  </a>
+  <div class="search-wrap">
+    <img class="search-icon px" src="images/art/journal.png" alt="">
+    <input id="search" type="search" placeholder="搜索玩法、指令、物品…（按 / 聚焦）" autocomplete="off" aria-label="站内搜索">
+    <div id="search-results" class="search-results" role="listbox"></div>
+  </div>
+</header>
+<div class="layout">
+<nav id="sidebar" aria-label="目录"></nav>
+<main class="content">
+<div class="page-head"><img class="px" src="images/art/cottage.png" alt=""><div><h1>领地与家</h1><p class="lead">在哪安家：主城里租庄园和商铺，或者出城门在樱花山谷自由建造、圈地保护；回家、授权好友、开箱子商店</p></div></div>
+<h2>三种安家方式</h2>
+<div class="table-wrap"><table>
+<tr><th></th><th><img class="px" src="images/art/cottage.png" alt="">环城庄园</th><th><img class="px" src="images/art/market.png" alt="">商业街旺铺</th><th><img class="px" src="images/art/map.png" alt="">城外自由区</th></tr>
+<tr><td>大小</td><td>31×31，自带一栋木屋</td><td>15×15 双层临街店，带精装店面</td><td>你圈多大就多大</td></tr>
+<tr><td>费用</td><td>30 币 / 7 天</td><td>50 币 / 7 天</td><td>免费（用领地额度）</td></tr>
+<tr><td>数量</td><td>12 块（H01–H12），每人限 1 块</td><td>8 间（01–08），每人限 1 间</td><td>不限</td></tr>
+<tr><td>到期</td><td colspan="2">不续租就自动收回，变回待租；可以提前续租叠加天数</td><td>永久，不重置</td></tr>
+<tr><td>指令</td><td><code class="cmd">/dipi</code></td><td><code class="cmd">/playershop</code></td><td>金铲子 / <code class="cmd">/lingdi</code></td></tr>
+</table></div>
+<div class="callout tip"><img class="px" src="images/items/mochi_coin.png" alt=""><div><p>新手见面礼的 30 币刚好够租一块庄园 7 天。资源世界每周重置，<strong>千万别在资源世界里盖家</strong>。</p></div></div>
+
+<h2>环城庄园 /dipi</h2>
+<p><code class="cmd">/dipi</code>（别名 <code>/地皮</code>、<code>/租地</code>、<code>/买地</code>）打开庄园列表：绿色是空地，左键传送到门口看房，右键直接租下。12 块庄园分布在北苑 H01–H03、南苑 H04–H06、西苑 H07–H10、东苑 H11–H12。</p>
+<div class="table-wrap"><table>
+<tr><th>指令</th><th>作用</th></tr>
+<tr><td><code>/dipi rent H05</code></td><td>租下指定庄园</td></tr>
+<tr><td><code>/dipi renew</code></td><td>续租（叠加 7 天）</td></tr>
+<tr><td><code>/dipi home</code></td><td>传送回自己的庄园</td></tr>
+<tr><td><code>/dipi tp H05</code></td><td>去某块庄园门口看看</td></tr>
+<tr><td><code>/dipi template 风格</code></td><td>一键换整套装修：<code>cottage</code> 木屋 / <code>sakura_garden</code> 樱花茶庭 / <code>farmstead</code> 农庄（成套 120 币），<code>flat</code> 清空草坪（免费）</td></tr>
+<tr><td><code>/dipi trust 好友</code> / <code>untrust</code></td><td>授权 / 取消好友在庄园里建造（搭子自动共享）</td></tr>
+<tr><td><code>/dipi unrent</code></td><td>退租</td></tr>
+</table></div>
+<figure class="menu-shot"><a href="images/menus/full/home_plots.png"><img src="images/menus/home_plots.png" alt="庄园租赁 H01–H12（/dipi）" loading="lazy"></a><figcaption>庄园租赁 H01–H12（/dipi） · <span class="zoom">点图看每个按钮的说明</span></figcaption></figure>
+
+<h2>商业街旺铺 /playershop</h2>
+<p><code class="cmd">/playershop</code>（别名 <code>/玩家店铺</code>）：正南商业大街两侧 8 间 15×15 双层店铺，租下后随便改建，还能在店里开<a href="#箱子商店-cshop">箱子商店</a>。用法和庄园一样：<code>rent 01</code> / <code>renew</code> / <code>tp</code> / <code>unrent</code> / <code>trust 好友</code>，一键装修是 <code>/playershop style teashop|blacksmith|florist|empty</code>（成套 120 币，清空免费）。</p>
+<figure class="menu-shot"><a href="images/menus/full/shop_plots.png"><img src="images/menus/shop_plots.png" alt="铺位租赁 01–08（/playershop）" loading="lazy"></a><figcaption>铺位租赁 01–08（/playershop） · <span class="zoom">点图看每个按钮的说明</span></figcaption></figure>
+
+<h2>城外自由区与圈地</h2>
+<p>走出东南西北任意城门（离主城中心约 116 格以外），整片樱花山谷都能自由生存建造，开服后永不重置。为了不被别人动你的东西，记得<strong>圈地</strong>：</p>
+<ul>
+  <li><strong>金铲子</strong>：手持金铲子（或杂货铺的 <img class="px" src="images/items/claim_wand.png" alt="">茶屋金铲圈地杖）分别右键两个对角方块，就能圈出一块受保护的领地，别人不能破坏或开箱。</li>
+  <li><strong>放第一个箱子</strong>：在野外放下你的第一个箱子会自动圈出 9×9。</li>
+  <li><code class="cmd">/lingdi</code>（别名 <code>/领地</code>、<code>/圈地</code>）：领地便携管理面板。<strong>⚡ 一键圈地</strong>以脚下为中心圈 11×11 / 15×15 / 21×21 / 25×25（消耗领地额度）；<strong>快捷扩容</strong>朝你面向的方向推出 3 / 5 / 10 / 20 格；还能看「我的领地」列表、高亮边界、管理好友权限。</li>
+</ul>
+<div class="table-wrap"><table>
+<tr><th>领地指令</th><th>作用</th></tr>
+<tr><td><code>/trust 玩家名</code></td><td>允许好友在你的领地里建造和开箱（站在领地里只管这一块，站在野外管你全部领地）</td></tr>
+<tr><td><code>/untrust 玩家名</code></td><td>取消好友权限；<code>/untrust all</code> 清空所有人</td></tr>
+<tr><td><code>/trustlist</code></td><td>看脚下领地信任了谁</td></tr>
+<tr><td><code>/extendclaim 格数</code></td><td>把脚下领地朝面向方向扩大</td></tr>
+<tr><td><code>/abandonclaim</code></td><td>放弃脚下的领地</td></tr>
+</table></div>
+<figure class="menu-shot"><a href="images/menus/full/claim_quick.png"><img src="images/menus/claim_quick.png" alt="一键圈地（/lingdi）" loading="lazy"></a><figcaption>一键圈地（/lingdi） · <span class="zoom">点图看每个按钮的说明</span></figcaption></figure>
+
+<h2>家与传送</h2>
+<div class="table-wrap"><table>
+<tr><th>指令</th><th>作用</th></tr>
+<tr><td><code class="cmd">/sethome</code> <code>[名称]</code></td><td>把当前位置设为家（可以设多个）</td></tr>
+<tr><td><code class="cmd">/home</code> <code>[名称]</code></td><td>传送回家</td></tr>
+<tr><td><code>/delhome 名称</code></td><td>删除一个家</td></tr>
+<tr><td><code class="cmd">/spawn</code></td><td>回主城中央广场；<code>/spawn fish</code> 去樱溪东岸钓鱼</td></tr>
+<tr><td><code class="cmd">/back</code></td><td>回到上次传送或死亡的位置</td></tr>
+<tr><td><code>/tpa 玩家名</code></td><td>请求传送到好友身边；对方点 [✔ 接受]（<code>/tpaccept</code>）或 [✖ 拒绝]（<code>/tpdeny</code>）</td></tr>
+</table></div>
+<p>杂货铺的<strong>茶屋传呼铃</strong>右键也能一键回主城。在野外设了家，你的家就会出现在 <code class="cmd">/visit</code> 邻里家园榜上，朋友可以来做客。</p>
+
+<h2>箱子商店 /cshop</h2>
+<p>在自己的店铺或庄园里摆箱子卖东西，别人来买，茶屋币自动进你的账：</p>
+<ol>
+  <li>先租旺铺 <code class="cmd">/playershop</code> 或庄园 <code class="cmd">/dipi</code>；</li>
+  <li>放一个箱子或木桶，把要卖的东西放进去；</li>
+  <li>准星对准箱子输入 <code>/cshop 单价</code>（或挂一块写着 <code>[商店]</code> 和单价的告示牌）。</li>
+</ol>
+<p>只输入 <code class="cmd">/cshop</code>（别名 <code>/箱子商店</code>、<code>/玩家商店</code>）是打开<strong>全服箱子商店名录</strong>：可以按分类筛选、按价格排序，点任意商品直接传送到店门口。<code>/cshop remove</code> 撤店，<code>/cshop help</code> 看说明。旺铺可以用 <code>/playershop trust 好友</code> 请帮手。</p>
+<figure class="menu-shot"><a href="images/menus/full/market_dir.png"><img src="images/menus/market_dir.png" alt="全服箱子商店名录（/cshop）" loading="lazy"></a><figcaption>全服箱子商店名录（/cshop） · <span class="zoom">点图看每个按钮的说明</span></figcaption></figure>
+</main>
+</div>
+<footer class="site-footer">
+  SHUMC鼠鼠茶屋 新手百科 · 内容依据服务器当前版本整理（CozyLife 1.6.8 / CozyFish 1.5.5 / CozySeasons 1.0.4 / CozySpawn 1.1.5）<br>
+  图片均来自 SHUMC 材质包与菜单预览渲染 · 数值以游戏内菜单为准
+</footer>
+<script src="assets/js/nav.js"></script>
+<script src="assets/js/site.js"></script>
+</body>
+</html>

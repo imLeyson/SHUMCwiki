@@ -1,0 +1,144 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>农耕与牧场 · SHUMC鼠鼠茶屋 新手百科</title>
+<meta name="description" content="星露农耕：17 种四季作物、星级品质、玻璃温室、肥料与洒水器；星露牧场：动物好感、饲料与 3D 加工机">
+<link rel="icon" href="images/brand/pack.png">
+<link rel="stylesheet" href="assets/css/site.css">
+</head>
+<body>
+<header class="topbar">
+  <button class="menu-toggle" type="button" aria-label="打开目录">☰ 目录</button>
+  <a class="brand" href="index.html">
+    <img class="logo px" src="images/brand/pack.png" alt="SHUMC">
+    <span class="brand-text"><span class="brand-name">SHUMC鼠鼠茶屋</span><span class="brand-sub">新手百科 · Wiki</span></span>
+  </a>
+  <div class="search-wrap">
+    <img class="search-icon px" src="images/art/journal.png" alt="">
+    <input id="search" type="search" placeholder="搜索玩法、指令、物品…（按 / 聚焦）" autocomplete="off" aria-label="站内搜索">
+    <div id="search-results" class="search-results" role="listbox"></div>
+  </div>
+</header>
+<div class="layout">
+<nav id="sidebar" aria-label="目录"></nav>
+<main class="content">
+<div class="page-head"><img class="px" src="images/art/harvest.png" alt=""><div><h1>农耕与牧场</h1><p class="lead">星露农耕：17 种四季作物、星级品质、玻璃温室、肥料与洒水器；星露牧场：动物好感、饲料与 3D 加工机</p></div></div>
+<h2>农耕中心 /farm</h2>
+<p><code class="cmd">/farm</code>（别名 <code>/种田</code>、<code>/农场</code>、<code>/农耕</code>）有三个分页：<strong>农耕图鉴</strong>、<strong>四季种子店</strong>、<strong>肥料与洒水器</strong>。</p>
+<p>种法和原版一样：锄地、对着耕地右键播种、成熟后右键收割。区别是收获的作物会带<strong>星级品质</strong>，可以 <code class="cmd">/sell</code> 出货，也能当工坊和宴席的食材。</p>
+<figure class="menu-shot"><a href="images/menus/full/farm_dex.png"><img src="images/menus/farm_dex.png" alt="农耕中心 · 图鉴页（/farm）" loading="lazy"></a><figcaption>农耕中心 · 图鉴页（/farm） · <span class="zoom">点图看每个按钮的说明</span></figcaption></figure>
+
+<h3>星级品质</h3>
+<div class="table-wrap"><table>
+<tr><th>品质</th><th>出货倍率</th></tr>
+<tr><td>★ 普通</td><td>×1.0</td></tr>
+<tr><td>★★ 银星</td><td>×1.25</td></tr>
+<tr><td>★★★ 金星</td><td>×1.55</td></tr>
+<tr><td>👑 珍品（4 星）</td><td>×2.0（出率很低，满配也只有几个百分点）</td></tr>
+</table></div>
+<p>想冲高星：<strong>金星品质肥 + 农艺师专精 + 玻璃温室 + 铱金洒水器</strong>可以叠加；四季线天赋「听雨」「节气农法」也加品质。偶尔会触发「黄金大丰收」多掉一份；农艺师天赋「巨型作物」能种出出货 ×3 的巨型特色作物。</p>
+
+<h2>17 种作物</h2>
+<h3>四季通用（原版作物）</h3>
+<p>小麦、胡萝卜、马铃薯、甜菜根、地狱疣在任何季节都能种，收获成熟的原版作物就会点亮图鉴。基础出货价 3–4 币 / 个。</p>
+<h3>12 种四季特色作物</h3>
+<p>种子在<strong>四季种子店</strong>买。当季可以露天种；<strong>不是当季的要种在玻璃温室里</strong>。多茬作物收割后会留苗再长。</p>
+<div class="table-wrap"><table>
+<tr><th>作物</th><th>季节</th><th>种子价</th><th>出货单价（★ ~ 👑）</th><th>类型</th></tr>
+<tr><td><img class="px" src="images/items/crop_strawberry.png" alt="">樱桃草莓</td><td><span class="tag spring">🌸 春</span></td><td>22 币</td><td>10 ~ 20 币</td><td>多茬</td></tr>
+<tr><td><img class="px" src="images/items/crop_matcha_tea.png" alt="">宇治抹茶嫩芽</td><td><span class="tag spring">🌸 春</span></td><td>26 币</td><td>14 ~ 28 币</td><td>多茬</td></tr>
+<tr><td><img class="px" src="images/items/crop_parsnip.png" alt="">奶油防风草</td><td><span class="tag spring">🌸 春</span></td><td>14 币</td><td>12 ~ 24 币</td><td>单茬</td></tr>
+<tr><td><img class="px" src="images/items/crop_blueberry.png" alt="">星露蓝莓</td><td><span class="tag summer">☀ 夏</span></td><td>22 币</td><td>8 ~ 16 币</td><td>多茬</td></tr>
+<tr><td><img class="px" src="images/items/crop_sun_melon.png" alt="">阳光蜜瓜</td><td><span class="tag summer">☀ 夏</span></td><td>26 币</td><td>22 ~ 44 币</td><td>单茬</td></tr>
+<tr><td><img class="px" src="images/items/crop_chili.png" alt="">炽焰朝天椒</td><td><span class="tag summer">☀ 夏</span></td><td>22 币</td><td>11 ~ 22 币</td><td>多茬</td></tr>
+<tr><td><img class="px" src="images/items/crop_chestnut_pumpkin.png" alt="">板栗金南瓜</td><td><span class="tag autumn">🍁 秋</span></td><td>28 币</td><td>24 ~ 48 币</td><td>单茬</td></tr>
+<tr><td><img class="px" src="images/items/crop_sweet_cranberry.png" alt="">红宝石蔓越莓</td><td><span class="tag autumn">🍁 秋</span></td><td>22 币</td><td>8 ~ 16 币</td><td>多茬</td></tr>
+<tr><td><img class="px" src="images/items/crop_honey_grape.png" alt="">紫晶蜜葡萄</td><td><span class="tag autumn">🍁 秋</span></td><td>26 币</td><td>13 ~ 26 币</td><td>多茬</td></tr>
+<tr><td><img class="px" src="images/items/crop_frost_berry.png" alt="">冰晶冬莓</td><td><span class="tag winter">❄ 冬</span></td><td>24 币</td><td>12 ~ 24 币</td><td>多茬</td></tr>
+<tr><td><img class="px" src="images/items/crop_snow_lotus.png" alt="">天山雪莲</td><td><span class="tag winter">❄ 冬</span></td><td>34 币</td><td>30 ~ 60 币</td><td>单茬</td></tr>
+<tr><td><img class="px" src="images/items/crop_winter_truffle.png" alt="">黑金冬松露</td><td><span class="tag winter">❄ 冬</span></td><td>40 币</td><td>35 ~ 70 币</td><td>单茬</td></tr>
+</table></div>
+<p style="font-size:14px;color:var(--ink-3)">出货单价按插件代码的星级倍率（×1.0 ~ ×2.0）计算，未含专精、季节、热卖等加成；游戏内菜单上「珍品 ×3.2」的写法是旧说明，实际出货以代码为准。</p>
+<p>采摘作物时还会随机掉落<strong>当季香料</strong>（樱花瓣 / 薄荷叶 / 桂花蜜 / 雪肉桂），是工坊隐藏秘方的材料。</p>
+<div class="inline-icons"><img class="px" src="images/items/spice_sakura_petal.png" alt=""> <img class="px" src="images/items/spice_mint_leaf.png" alt=""> <img class="px" src="images/items/spice_osmanthus_honey.png" alt=""> <img class="px" src="images/items/spice_snow_cinnamon.png" alt=""></div>
+
+<h3>图鉴里程碑</h3>
+<p>每种作物收获一次就点亮。</p>
+<div class="table-wrap"><table>
+<tr><th>点亮</th><th>奖励</th></tr>
+<tr><td>4 种</td><td>200 币 + 速长肥 ×6</td></tr>
+<tr><td>8 种</td><td>450 币 + 铜洒水器 + 品质肥 ×6</td></tr>
+<tr><td>12 种</td><td>900 币 + 银洒水器 + 金苹果 ×2</td></tr>
+<tr><td>17 种</td><td>2000 币 + 铱金洒水器 + 附魔金苹果 ×2</td></tr>
+</table></div>
+
+<h2>玻璃温室</h2>
+<div class="callout tip"><img class="px" src="images/items/sprinkler_iridium.png" alt=""><div>
+  <p class="c-title">搭个玻璃屋顶，四季作物随便种</p>
+  <p>只要耕地<strong>正上方 12 格以内有玻璃屋顶</strong>，那块地就算温室，非当季作物也能长。温室里收获的作物在四季线天赋「节气农法」下品质还会更高。</p>
+</div></div>
+<p>另外：在自己或好友的田里跳不会再踩坏耕地；春季作物每次生长有 18% 概率多长一阶，秋季收割额外掉一份，见 <a href="seasons.html">四季</a>。</p>
+
+<h2>肥料与洒水器</h2>
+<h3>功能肥料（拿着对耕地或作物右键，持续 5 茬）</h3>
+<div class="item-grid">
+<div class="item"><img src="images/items/fert_speed.png" alt="" loading="lazy"><div><div class="i-name">⚡ 速长沃土肥</div><div class="i-sub">55 币 / 4 份 · 每次生长 30% 多跳一阶</div></div></div>
+<div class="item"><img src="images/items/fert_yield.png" alt="" loading="lazy"><div><div class="i-name">🌾 丰产农家肥</div><div class="i-sub">65 币 / 4 份 · 收获 +1 份，大丰收更容易</div></div></div>
+<div class="item"><img src="images/items/fert_quality.png" alt="" loading="lazy"><div><div class="i-name">✨ 金星品质肥</div><div class="i-sub">80 币 / 4 份 · 银星 / 金星 / 珍品更多</div></div></div>
+</div>
+<h3>自动洒水器（摆在田中间）</h3>
+<div class="item-grid">
+<div class="item"><img src="images/items/sprinkler_copper.png" alt="" loading="lazy"><div><div class="i-name">🥉 铜制洒水器</div><div class="i-sub">320 币 · 3×3 · 每 30 秒 4% 催熟</div></div></div>
+<div class="item"><img src="images/items/sprinkler_silver.png" alt="" loading="lazy"><div><div class="i-name">🥈 银质洒水器</div><div class="i-sub">780 币 · 5×5 · 每 25 秒 7% 催熟</div></div></div>
+<div class="item"><img src="images/items/sprinkler_iridium.png" alt="" loading="lazy"><div><div class="i-name">💎 铱金洒水器</div><div class="i-sub">1680 币 · 7×7 · 每 20 秒 10% 催熟 + 品质提升</div></div></div>
+</div>
+<p>每人最多摆 24 个洒水器。杂货铺的<strong>星露丰收镰</strong>能 3×3 收割并自动补种，<strong>甘露浇水壶</strong>能湿润 3×3 耕地并概率催熟。</p>
+<div class="shots">
+<figure class="menu-shot"><a href="images/menus/full/farm_seeds.png"><img src="images/menus/farm_seeds.png" alt="四季种子店" loading="lazy"></a><figcaption>四季种子店 · <span class="zoom">点图看每个按钮的说明</span></figcaption></figure>
+<figure class="menu-shot"><a href="images/menus/full/farm_supplies.png"><img src="images/menus/farm_supplies.png" alt="肥料与洒水器" loading="lazy"></a><figcaption>肥料与洒水器 · <span class="zoom">点图看每个按钮的说明</span></figcaption></figure>
+</div>
+
+<h2>星露牧场 /ranch</h2>
+<p><code class="cmd">/ranch</code>（别名 <code>/牧场</code>、<code>/养殖</code>）。玩法是：<strong>养动物 → 产原料 → 放进加工机 → 出货或做大餐</strong>。</p>
+<ul>
+  <li><strong>空手右键动物</strong>：每天摸一次，+25 好感。</li>
+  <li><strong>拿饲料右键动物</strong>：涨好感并立刻产出 1 份星级原料（每只动物冷却 90 秒）。</li>
+  <li><strong>喂自家田里的星级作物</strong>当零食：+5 好感，每只每天 3 次。拿原版胡萝卜 / 马铃薯 / 小麦（比如打僵尸掉的）喂<strong>不涨好感</strong>，只会让动物进入繁殖状态。</li>
+</ul>
+<div class="table-wrap"><table>
+<tr><th>动物</th><th>产出</th></tr>
+<tr><td>牛 / 哞菇 / 山羊</td><td><img class="px" src="images/items/ranch_milk.png" alt="">星露鲜奶</td></tr>
+<tr><td>鸡</td><td><img class="px" src="images/items/ranch_egg.png" alt="">黄金土鸡蛋</td></tr>
+<tr><td>猪</td><td><img class="px" src="images/items/ranch_truffle.png" alt="">牧场黑松露</td></tr>
+<tr><td>羊 / 羊驼</td><td><img class="px" src="images/items/ranch_wool.png" alt="">柔云细羊毛</td></tr>
+<tr><td>蜜蜂</td><td><img class="px" src="images/items/ranch_honey.png" alt="">牧场百花蜜</td></tr>
+</table></div>
+<h3>饲料</h3>
+<div class="item-grid">
+<div class="item"><img src="images/items/ranch_feed_hay.png" alt="" loading="lazy"><div><div class="i-name">🌾 优质牧草饲料</div><div class="i-sub">72 币 / 4 份 · +15 好感</div></div></div>
+<div class="item"><img src="images/items/ranch_feed_sakura.png" alt="" loading="lazy"><div><div class="i-name">🌸 樱花营养精料</div><div class="i-sub">160 币 / 4 份 · +30 好感，银星金星更多</div></div></div>
+<div class="item"><img src="images/items/ranch_feed_iridium.png" alt="" loading="lazy"><div><div class="i-name">✨ 铱金星露神料</div><div class="i-sub">320 币 / 4 份 · +55 好感，金星和珍品大幅提高</div></div></div>
+</div>
+<h3>3D 加工机</h3>
+<p>摆在家里，手拿原料右键投料，做好后右键收取。牧场执照等级越高越快。</p>
+<div class="table-wrap"><table>
+<tr><th>加工机</th><th>价格</th><th>加工</th><th>耗时</th><th>成品收购价</th></tr>
+<tr><td><img class="px" src="images/items/mayo_machine.png" alt="">蛋黄酱制作机</td><td>1200 币</td><td>鸡蛋 → <img class="px" src="images/items/ranch_mayo.png" alt="">金丝蛋黄酱</td><td>90 秒</td><td>38 币起</td></tr>
+<tr><td><img class="px" src="images/items/cheese_press.png" alt="">奶酪压榨机</td><td>1500 币</td><td>鲜奶 → <img class="px" src="images/items/ranch_cheese.png" alt="">星露陈年奶酪</td><td>110 秒</td><td>42 币起</td></tr>
+<tr><td><img class="px" src="images/items/loom_machine.png" alt="">茶屋织布机</td><td>1800 币</td><td>羊毛 → <img class="px" src="images/items/ranch_cloth.png" alt="">星露丝绒布</td><td>120 秒</td><td>40 币起</td></tr>
+<tr><td><img class="px" src="images/items/truffle_oil_maker.png" alt="">松露精油机</td><td>2800 币</td><td>黑松露 → <img class="px" src="images/items/ranch_truffle_oil.png" alt="">黑金松露精油</td><td>150 秒</td><td>98 币起</td></tr>
+</table></div>
+<p><strong>牧场执照</strong>（Lv0–3）升级后摸 / 喂动物涨好感更快、产品更容易出高星、加工机更快；Lv1「🌱 见习牧场主」1200 币（好感 +20%、加工快 10%）。奶酪、蛋黄酱、精油都是 <a href="crafts.html#宴席灶台-feast">3D 宴席</a> 的关键食材。</p>
+<figure class="menu-shot"><a href="images/menus/full/ranch.png"><img src="images/menus/ranch.png" alt="星露牧场中心（/ranch）" loading="lazy"></a><figcaption>星露牧场中心（/ranch） · <span class="zoom">点图看每个按钮的说明</span></figcaption></figure>
+</main>
+</div>
+<footer class="site-footer">
+  SHUMC鼠鼠茶屋 新手百科 · 内容依据服务器当前版本整理（CozyLife 1.6.8 / CozyFish 1.5.5 / CozySeasons 1.0.4 / CozySpawn 1.1.5）<br>
+  图片均来自 SHUMC 材质包与菜单预览渲染 · 数值以游戏内菜单为准
+</footer>
+<script src="assets/js/nav.js"></script>
+<script src="assets/js/site.js"></script>
+</body>
+</html>

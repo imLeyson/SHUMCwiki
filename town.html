@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>主城与新手引导 · SHUMC鼠鼠茶屋 新手百科</title>
+<meta name="description" content="樱溪茶屋镇：出生点、四个方向有什么、商业街五大专柜、新手绘本与资源世界">
+<link rel="icon" href="images/brand/pack.png">
+<link rel="stylesheet" href="assets/css/site.css">
+</head>
+<body>
+<header class="topbar">
+  <button class="menu-toggle" type="button" aria-label="打开目录">☰ 目录</button>
+  <a class="brand" href="index.html">
+    <img class="logo px" src="images/brand/pack.png" alt="SHUMC">
+    <span class="brand-text"><span class="brand-name">SHUMC鼠鼠茶屋</span><span class="brand-sub">新手百科 · Wiki</span></span>
+  </a>
+  <div class="search-wrap">
+    <img class="search-icon px" src="images/art/journal.png" alt="">
+    <input id="search" type="search" placeholder="搜索玩法、指令、物品…（按 / 聚焦）" autocomplete="off" aria-label="站内搜索">
+    <div id="search-results" class="search-results" role="listbox"></div>
+  </div>
+</header>
+<div class="layout">
+<nav id="sidebar" aria-label="目录"></nav>
+<main class="content">
+<div class="page-head"><img class="px" src="images/art/torii.png" alt=""><div><h1>主城与新手引导</h1><p class="lead">樱溪茶屋镇：出生点、四个方向有什么、商业街五大专柜、新手绘本与资源世界</p></div></div>
+<h2>樱溪茶屋镇</h2>
+<p>主城「樱溪茶屋镇」坐落在永久不重置的樱花山谷主世界中央。主世界以主城为中心有 <strong>1000×1000</strong> 的世界边界（半径 500 格）。输入 <code class="cmd">/spawn</code>（别名 <code>/主城</code>、<code>/huicheng</code>）随时回到中央广场，站位朝向正南的商业大街。</p>
+<div class="callout warn"><img class="px" src="images/items/claim_wand.png" alt=""><div>
+  <p class="c-title">城里不能随便拆建</p>
+  <p>主城和环城规划区（中心周围约 ±116 格）的广场、大道、桥梁和地标受保护。你只能在自己租下（或搭子、好友授权）的<strong>庄园</strong>和<strong>商铺</strong>里建造。走出东南西北任意城门，外面的樱花山谷完全放开自由建造。</p>
+</div></div>
+
+<h3>四个方向有什么</h3>
+<div class="table-wrap"><table>
+<tr><th>方位</th><th>主要地标</th><th>相关指令</th></tr>
+<tr><td><img class="px" src="images/art/signpost.png" alt="">中央广场</td><td>开阔石砖广场、报时钟塔、迎宾喷泉；北侧是委托板与箱子商店名录区</td><td><code class="cmd">/order</code> <code class="cmd">/cshop</code></td></tr>
+<tr><td><img class="px" src="images/art/market.png" alt="">正南 · 商业大街</td><td>13 格宽石砖大道。前段是团子杂货铺、柚子家具馆、桃桃花房、麻薯烘焙等旗舰店；后段两侧是 01–08 号 15×15 双层玩家旺铺</td><td><code class="cmd">/shop</code> <code class="cmd">/npcshop</code> <code class="cmd">/playershop</code></td></tr>
+<tr><td><img class="px" src="images/art/train.png" alt="">正北 · 高架车站</td><td>出货柜台、资源远征厅（热气球与星空远征门）、萌宠园；穿过去是北苑庄园和神樱神社</td><td><code class="cmd">/sell</code> <code class="cmd">/ziyuan</code> <code class="cmd">/pet</code></td></tr>
+<tr><td><img class="px" src="images/art/kettle.png" alt="">西区 · 工匠与茶屋</td><td>鼠鼠茶屋工坊、主城奇观、星露锻造坊、樱花露天温泉与许愿池、冒险公会</td><td><code class="cmd">/brew</code> <code class="cmd">/wonder</code> <code class="cmd">/forge</code> <code class="cmd">/pool</code> <code class="cmd">/adventure</code></td></tr>
+<tr><td><img class="px" src="images/art/koi.png" alt="">东区 · 樱溪东岸</td><td>过中央石桥就是鱼王博物馆、社区献祭星碑与职业公会、东岸亲水木栈道、晶洞 / 渔具 / 占卜小铺</td><td><code class="cmd">/fish museum</code> <code class="cmd">/bundle</code> <code class="cmd">/job</code> <code class="cmd">/geode</code></td></tr>
+<tr><td><img class="px" src="images/art/cottage.png" alt="">环城大道</td><td>7 格宽林荫大道连着 12 块 31×31 庄园：北苑 H01–H03、南苑 H04–H06、西苑 H07–H10、东苑 H11–H12；四门外是通往自由区的田园土路</td><td><code class="cmd">/dipi</code></td></tr>
+</table></div>
+<p>想钓鱼时输入 <code class="cmd">/spawn fish</code>，会直接传送到樱溪东岸栈道、面朝溪水。</p>
+
+<h2>新手绘本 /guide</h2>
+<p><code class="cmd">/guide</code>（别名 <code>/新手</code>、<code>/xinshou</code>、<code>/tutorial</code>）打开 11 页图文绘本。封面有 10 个章节目录，每页右侧都有按钮能直接打开对应玩法。</p>
+<ul>
+  <li>🎁 <strong>新手见面礼</strong>：30 茶屋币 + 面包 ×8 + 樱花树苗 ×2，每人限领一次。30 币刚好够租一块环城庄园。</li>
+  <li>📖 <strong>领实体手册</strong>：《鼠鼠茶屋 · 玩家完全手册》，能放背包随身翻，可以重复领。</li>
+  <li>封面上的「第一天怎么玩」：① 领礼 → ② <code class="cmd">/dipi</code> 租庄园 → ③ <code class="cmd">/ziyuan</code> 去资源世界采集。</li>
+</ul>
+<div class="shots">
+<figure class="menu-shot"><a href="images/menus/full/guide_0.png"><img src="images/menus/guide_0.png" alt="新手绘本 · 封面与目录" loading="lazy"></a><figcaption>新手绘本 · 封面与目录 · <span class="zoom">点图看每个按钮的说明</span></figcaption></figure>
+<figure class="menu-shot"><a href="images/menus/full/guide_1.png"><img src="images/menus/guide_1.png" alt="新手绘本 · 01 主城方位导览" loading="lazy"></a><figcaption>新手绘本 · 01 主城方位导览 · <span class="zoom">点图看每个按钮的说明</span></figcaption></figure>
+</div>
+
+<h2>商业街专柜</h2>
+<p><code class="cmd">/npcshop</code>（别名 <code>/商铺</code>、<code>/专柜</code>）打开商业街导览：<strong>左键</strong>直接打开某家店的商店，<strong>右键</strong>传送到那家店门口。也可以直接 <code>/npcshop tackle|florist|blacksmith|bakery|furniture</code> 打开某一家。</p>
+<div class="table-wrap"><table>
+<tr><th>店铺</th><th>店主</th><th>卖什么</th></tr>
+<tr><td><img class="px" src="images/art/creel.png" alt="">老渔夫渔具行 <code>tackle</code></td><td>姜太公</td><td>四种诱饵（樱花花瓣、发光浆果、甜浆果、生鳕鱼）、钓鱼竿、樱花木船、航海指南针</td></tr>
+<tr><td><img class="px" src="images/art/seeds.png" alt="">四季花店农庄 <code>florist</code></td><td>桃桃</td><td>樱花树苗、翠竹、小麦种子、胡萝卜、骨粉、蜂箱、花盆</td></tr>
+<tr><td><img class="px" src="images/art/anvil.png" alt="">矿石与锻造补给 <code>blacksmith</code></td><td>小锤</td><td>煤炭、铁锭、金锭、紫水晶碎片、成品星露精铁锭 / 红莲淬火石、铁砧、锻造台</td></tr>
+<tr><td><img class="px" src="images/art/giftbox.png" alt="">茶屋甜品烘焙坊 <code>bakery</code></td><td>麻薯</td><td>面包、草莓奶油蛋糕、南瓜派、曲奇、蜂蜜瓶、招牌松饼与奶昔</td></tr>
+<tr><td><img class="px" src="images/art/housekey.png" alt="">柚子木作馆 <code>furniture</code></td><td>柚子</td><td>能右键互动的 3D 茶屋家具（茶具、盆栽、台灯、风铃、坐垫等）</td></tr>
+<tr><td><img class="px" src="images/art/stalls.png" alt="">团子杂货铺</td><td>—</td><td><code class="cmd">/shop</code>：茶屋神器、补给礼盒、装饰家具，见 <a href="economy.html#茶屋杂货铺-shop">经济页</a></td></tr>
+</table></div>
+<figure class="menu-shot"><a href="images/menus/full/store_directory.png"><img src="images/menus/store_directory.png" alt="商业街导览（/npcshop）" loading="lazy"></a><figcaption>商业街导览（/npcshop） · <span class="zoom">点图看每个按钮的说明</span></figcaption></figure>
+
+<h2>资源世界</h2>
+<p>主世界永久保留、不重置，所以<strong>大规模挖矿、砍树、刷怪请去资源世界</strong>。<code class="cmd">/ziyuan</code>（别名 <code>/资源</code>、<code>/zy</code>）打开远征列车面板：</p>
+<ul>
+  <li>🌲 <strong>资源世界驿站</strong>：和主世界一样的地形，3000×3000 范围，随便砍随便挖。</li>
+  <li>🧭 <strong>随机野外</strong> <code class="cmd">/rtp</code>：空降到资源世界随机的安全野外，每次传送后冷却 15 秒。</li>
+  <li>🔥 <strong>下界前哨站</strong> / 🐉 <strong>末地前哨站</strong>：挖下界合金、打末影龙、找鞘翅。</li>
+</ul>
+<div class="callout warn"><img class="px" src="images/art/train.png" alt=""><div>
+  <p class="c-title">每 7 天整个重建</p>
+  <p>资源世界、下界、末地每周重置一次，里面的东西会消失；三界都是<strong>死亡不掉落</strong>。千万别在里面盖家，面板上能看到距下次重置还有多久。</p>
+</div></div>
+<figure class="menu-shot"><a href="images/menus/full/resource.png"><img src="images/menus/resource.png" alt="资源世界远征列车（/ziyuan）" loading="lazy"></a><figcaption>资源世界远征列车（/ziyuan） · <span class="zoom">点图看每个按钮的说明</span></figcaption></figure>
+
+<h2>鱼王博物馆与主城奇观</h2>
+<p><code class="cmd">/fish museum</code> 传送到东北的<strong>茶屋鱼王博物馆</strong>，32 座实体展柜展示全服各鱼种的最大纪录，3 期展厅每 45 秒自动轮换，也可以 <code>/fish museum next</code> / <code>prev</code> / <code>1</code>–<code>3</code> 手动切换。</p>
+<p>主城西侧的<strong>樱花露天温泉</strong>和<strong>锦鲤玻璃水族馆</strong>需要全服一起捐建材修好，竣工后主城保护区内会多出永久光环，见 <a href="social.html#主城奇观-wonder">社交页 · 主城奇观</a>。</p>
+</main>
+</div>
+<footer class="site-footer">
+  SHUMC鼠鼠茶屋 新手百科 · 内容依据服务器当前版本整理（CozyLife 1.6.8 / CozyFish 1.5.5 / CozySeasons 1.0.4 / CozySpawn 1.1.5）<br>
+  图片均来自 SHUMC 材质包与菜单预览渲染 · 数值以游戏内菜单为准
+</footer>
+<script src="assets/js/nav.js"></script>
+<script src="assets/js/site.js"></script>
+</body>
+</html>
