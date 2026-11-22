@@ -299,3 +299,14 @@ footer.site-footer a { color: var(--gold-light); }
   main td code { white-space: normal; overflow-wrap: anywhere; }
   td img.px { width: 24px; height: 24px; }
 }
+
+/* QQ 群 */
+.qq-join { cursor: pointer; }
+.btn.qq-join { background: #12b7f5; border-color: #0b7fae; color: #fff; }
+.site-footer a.qq-join { color: inherit; text-decoration: underline; }
+.qq-toast {
+  position: fixed; left: 50%; bottom: 24px; transform: translate(-50%, 20px);
+  background: #5a3a2e; color: #fff8ec; padding: 10px 16px; border: 3px solid #3b2419;
+  font-size: 14px; z-index: 9999; opacity: 0; transition: all .25s; max-width: 90vw; text-align: center;
+}
+.qq-toast.show { opacity: 1; transform: translate(-50%, 0); }

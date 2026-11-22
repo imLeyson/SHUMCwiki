@@ -183,3 +183,37 @@
     });
   }
 })();
+
+/* QQ 群一键加群：手机上直接唤起 QQ 打开群资料卡；同时复制群号，电脑或未装 QQ 时可手动搜索 */
+(function () {
+  function toast(msg) {
+    var t = document.createElement('div');
+    t.className = 'qq-toast';
+    t.textContent = msg;
+    document.body.appendChild(t);
+    setTimeout(function () { t.classList.add('show'); }, 10);
+    setTimeout(function () { t.classList.remove('show'); setTimeout(function () { t.remove(); }, 300); }, 2600);
+  }
+  function copy(text) {
+    if (navigator.clipboard && window.isSecureContext) return navigator.clipboard.writeText(text).catch(function () { return fallback(text); });
+    return fallback(text);
+  }
+  function fallback(text) {
+    var ta = document.createElement('textarea');
+    ta.value = text; ta.style.position = 'fixed'; ta.style.opacity = '0';
+    document.body.appendChild(ta); ta.select();
+    try { document.execCommand('copy'); } catch (e) {}
+    ta.remove();
+    return Promise.resolve();
+  }
+  document.addEventListener('click', function (e) {
+    var a = e.target.closest && e.target.closest('.qq-join');
+    if (!a) return;
+    var num = a.getAttribute('data-qq');
+    var mobile = /Android|iPhone|iPad|iPod/i.test(navigator.userAgent);
+    copy(num).catch(function () {}).then(function () {
+      toast(mobile ? '正在打开 QQ…群号 ' + num + ' 已复制' : '群号 ' + num + ' 已复制，在 QQ 里搜索加群');
+    });
+    if (!mobile) e.preventDefault();
+  });
+})();
