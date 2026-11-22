@@ -3,7 +3,7 @@
 window.SHUMC_NAV = [
   { href: "index.html",     title: "首页 · 快速上手", icon: "images/art/teahouse.png", desc: "进服前 10 分钟该做什么" },
   { href: "route.html",     title: "新手成长路线",    icon: "images/art/signpost.png", desc: "第一天、第一周做什么，每日每周清单，前期怎么赚钱" },
-  { href: "town.html",      title: "主城与新手引导",  icon: "images/art/torii.png",    desc: "樱溪茶屋镇、新手绘本、商业街与资源世界" },
+  { href: "town.html",      title: "主城与新手引导",  icon: "images/art/torii.png",    desc: "茶屋镇、新手绘本、商业街与资源世界" },
   { href: "economy.html",   title: "经济 · 茶屋币",   icon: "images/art/purse.png",    desc: "怎么赚、怎么花、出货额度与每日委托" },
   { href: "jobs.html",      title: "职业专精与天赋",  icon: "images/art/strawhat.png", desc: "农艺师 / 垂钓客 / 酿造师 / 探矿匠" },
   { href: "farming.html",   title: "农耕与牧场",      icon: "images/art/harvest.png",  desc: "17 种四季作物、温室、肥料、洒水器、牧场" },
