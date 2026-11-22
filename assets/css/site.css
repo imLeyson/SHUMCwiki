@@ -290,3 +290,12 @@ footer.site-footer a { color: var(--gold-light); }
   .card { flex-direction: column; text-align: center; padding: 10px; }
   .item-grid { grid-template-columns: 1fr 1fr; }
 }
+
+/* 窄屏：段落里的长指令允许换行，避免页面横向滚动 */
+@media (max-width: 600px) {
+  main p code, main li code, main .callout code { white-space: normal; overflow-wrap: anywhere; }
+}
+@media (max-width: 600px) {
+  main td code { white-space: normal; overflow-wrap: anywhere; }
+  td img.px { width: 24px; height: 24px; }
+}

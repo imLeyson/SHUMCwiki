@@ -8,6 +8,7 @@ SHUMC鼠鼠茶屋 Minecraft 服务器的中文新手百科。纯静态网站（H
 
 ```
 index.html          首页 · 前 10 分钟快速上手
+route.html          新手成长路线：第一天 / 第一周 / 之后、每日每周清单、前期赚钱
 town.html           主城与新手引导
 economy.html        经济 · 茶屋币
 jobs.html           职业专精与天赋
@@ -15,14 +16,18 @@ farming.html        农耕与牧场
 fishing.html        钓鱼、图鉴与捕虫
 seasons.html        四季与庆典
 crafts.html         工坊 · 料理 · 锻造
+recipes.html        配方与道具图鉴（工坊 17 配方、小吃、大餐、特产香料、合金、神器、家具速查）
 adventure.html      冒险公会
 social.html         社交 · 萌宠 · 许愿池
 land.html           领地与家
 commands.html       常用指令速查（只收玩家指令）
+faq.html            常见问题、术语表、星级与品质对照
+404.html            找不到页面时 GitHub Pages 显示的页面（用 <base href="/SHUMCwiki/">，所以链接都能用）
+sitemap.xml         站点地图（新增页面时顺手加一行）
 assets/css/site.css 全站样式（樱花茶屋像素风，色板取自材质包 menu_art.PIGMENTS）
 assets/js/nav.js    页面清单：侧边栏顺序 + 站内搜索的页面范围
 assets/js/site.js   侧边栏、页内目录、上一页/下一页、搜索、菜单图灯箱
-images/brand/       pack.png（站点 logo 与 favicon）
+images/brand/       pack.png（站点 logo 与 favicon）、og-card.png（分享链接时的预览图 1200×630）
 images/art/         材质包 resource-pack/menu-art/ 里的菜单插画（侧边栏和卡片图标）
 images/items/       材质包 assets/shumc/textures/item/ 里的物品、鱼、作物、昆虫贴图（32×32）
 images/menus/       游戏菜单渲染图（只保留箱子部分，网页内嵌用）
@@ -81,6 +86,9 @@ python3 -m http.server 8000
 ```
 
 侧边栏、上一页/下一页和搜索都会自动包含新页面。
+
+4. `<head>` 里 `<!-- meta:start -->` 到 `<!-- meta:end -->` 之间是分享预览（Open Graph）和 canonical 标签，复制页面后把里面的标题、简介和网址改成新页面的；再在 `sitemap.xml` 加一行。
+5. 改了页面清单或大改标题后，把 `assets/js/site.js` 里搜索缓存的 `shumc-search-v3` 版本号 +1，老访客的搜索才会立刻用上新内容。
 
 ## 图片从哪来
 

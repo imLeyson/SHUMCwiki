@@ -4,6 +4,8 @@
   var NAV = window.SHUMC_NAV || [];
   var here = (location.pathname.split("/").pop() || "index.html").split("?")[0] || "index.html";
   if (!/\.html$/.test(here)) here = "index.html";
+  var forcedPage = document.documentElement.getAttribute("data-page");
+  if (forcedPage) here = forcedPage;
 
   function el(tag, attrs, html) {
     var e = document.createElement(tag);
@@ -78,7 +80,7 @@
       e.preventDefault();
       var cap = a.parentNode.querySelector("figcaption");
       lb.innerHTML = '<div class="lb-cap">' + (cap ? esc(cap.textContent) : "") + "（点任意处关闭）</div>";
-      var img = el("img", { src: a.getAttribute("href"), alt: "" });
+      var img = el("img", { src: a.getAttribute("href"), alt: cap ? cap.textContent.replace(/\s*·\s*点图看每个按钮的说明\s*$/, "") + "（完整菜单图）" : "完整菜单图" });
       lb.appendChild(img);
       lb.classList.add("open");
     });
@@ -91,7 +93,7 @@
 
   function buildIndex() {
     if (loading) return loading;
-    var cacheKey = "shumc-search-v2";
+    var cacheKey = "shumc-search-v3";
     try {
       var cached = sessionStorage.getItem(cacheKey);
       if (cached) { index = JSON.parse(cached); return (loading = Promise.resolve(index)); }
