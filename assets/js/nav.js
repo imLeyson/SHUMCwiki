@@ -8,6 +8,7 @@ window.SHUMC_NAV = [
   { href: "jobs.html",      title: "职业专精与天赋",  icon: "images/art/strawhat.png", desc: "农艺师 / 垂钓客 / 酿造师 / 探矿匠" },
   { href: "farming.html",   title: "农耕与牧场",      icon: "images/art/harvest.png",  desc: "17 种四季作物、温室、肥料、洒水器、牧场" },
   { href: "fishing.html",   title: "钓鱼、图鉴与捕虫", icon: "images/art/creel.png",    desc: "75 种鱼与奇物、十大钓区、诱饵、大赛、24 种昆虫" },
+  { href: "tools.html",     title: "专精工具",        icon: "images/items/net_galaxy.png", desc: "专精鱼竿、捕虫网、锄头、牧场与工坊器具、矿灯，熟练度与 6 件传奇" },
   { href: "seasons.html",   title: "四季与庆典",      icon: "images/art/wreath.png",   desc: "季节增益、四季庆典、流星雨、休闲手感" },
   { href: "crafts.html",    title: "工坊 · 料理 · 锻造", icon: "images/art/kettle.png", desc: "茶饮酿造、宴席灶台、锻造升星、饰品、晶洞" },
   { href: "recipes.html",   title: "配方与道具图鉴",  icon: "images/art/journal.png",  desc: "工坊 17 道配方、小吃、大餐、特产香料、合金、神器、家具" },

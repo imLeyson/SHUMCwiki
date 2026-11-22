@@ -14,6 +14,7 @@ economy.html        经济 · 茶屋币
 jobs.html           职业专精与天赋
 farming.html        农耕与牧场
 fishing.html        钓鱼、图鉴与捕虫
+tools.html          专精工具：鱼竿、捕虫网、锄头、牧场与工坊器具、矿灯、熟练度、传奇工具
 seasons.html        四季与庆典
 crafts.html         工坊 · 料理 · 锻造
 recipes.html        配方与道具图鉴（工坊 17 配方、小吃、大餐、特产香料、合金、神器、家具速查）
