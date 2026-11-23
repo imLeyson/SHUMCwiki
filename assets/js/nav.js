@@ -14,6 +14,7 @@ window.SHUMC_NAV = [
   { href: "recipes.html",   title: "配方与道具图鉴",  icon: "images/art/journal.png",  desc: "工坊 17 道配方、小吃、大餐、特产香料、合金、神器、家具" },
   { href: "adventure.html", title: "冒险公会",        icon: "images/art/wanted.png",   desc: "讨伐悬赏、秘境试炼 Boss、军械库" },
   { href: "social.html",    title: "社交 · 萌宠 · 许愿池", icon: "images/art/mice.png",  desc: "搭子、串门、干杯、萌宠、锦鲤池、献祭、奇观" },
+  { href: "voice.html",     title: "游戏内语音",      icon: "images/art/cheers.png", desc: "附近语音与小队频道：语音 mod 安装、按键与设置" },
   { href: "land.html",      title: "领地与家",        icon: "images/art/cottage.png",  desc: "环城庄园、商街旺铺、圈地、箱子商店、回家" },
   { href: "commands.html",  title: "常用指令速查",    icon: "images/art/scrolls.png",  desc: "玩家可用的全部指令一页看完" },
   { href: "faq.html",       title: "常见问题与术语",  icon: "images/art/corkboard.png", desc: "新手常见问题、术语表、星级与品质对照" }

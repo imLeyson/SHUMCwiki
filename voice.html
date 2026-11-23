@@ -1,0 +1,137 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>游戏内语音 · SHUMC鼠鼠茶屋 新手百科</title>
+<meta name="description" content="在游戏里直接开口说话：48 格附近语音 + 小队频道。Simple Voice Chat 的安装（PCL2 / HMCL）、常用按键、说话方式设置、小队与静音方法">
+<link rel="icon" href="images/brand/pack.png">
+<link rel="stylesheet" href="assets/css/site.css">
+<!-- meta:start -->
+<meta name="theme-color" content="#603e31">
+<link rel="apple-touch-icon" href="images/brand/pack.png">
+<link rel="canonical" href="https://imleyson.github.io/SHUMCwiki/voice.html">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="SHUMC鼠鼠茶屋 新手百科">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:title" content="游戏内语音 · SHUMC鼠鼠茶屋 新手百科">
+<meta property="og:description" content="在游戏里直接开口说话：48 格附近语音 + 小队频道。Simple Voice Chat 的安装（PCL2 / HMCL）、常用按键、说话方式设置、小队与静音方法">
+<meta property="og:url" content="https://imleyson.github.io/SHUMCwiki/voice.html">
+<meta property="og:image" content="https://imleyson.github.io/SHUMCwiki/images/brand/og-card.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<!-- meta:end -->
+</head>
+<body>
+<header class="topbar">
+  <button class="menu-toggle" type="button" aria-label="打开目录">☰ 目录</button>
+  <a class="brand" href="index.html">
+    <img class="logo px" src="images/brand/pack.png" alt="SHUMC">
+    <span class="brand-text"><span class="brand-name">SHUMC鼠鼠茶屋</span><span class="brand-sub">新手百科 · Wiki</span></span>
+  </a>
+  <div class="search-wrap">
+    <img class="search-icon px" src="images/art/journal.png" alt="">
+    <input id="search" type="search" placeholder="搜索玩法、指令、物品…（按 / 聚焦）" autocomplete="off" aria-label="站内搜索">
+    <div id="search-results" class="search-results" role="listbox"></div>
+  </div>
+</header>
+<div class="layout">
+<nav id="sidebar" aria-label="目录"></nav>
+<main class="content">
+<div class="page-head"><img class="px" src="images/art/cheers.png" alt=""><div><h1>游戏内语音</h1><p class="lead">装上语音 mod 就能在游戏里直接开口说话：站得近的人能听见你，小队里隔多远都能聊。语音完全可选，不装也能正常进服玩</p></div></div>
+
+<h2>这是什么？</h2>
+<p>装上语音 mod 后，你可以在游戏里直接开口说话：</p>
+<ul>
+  <li><strong>附近语音</strong>：站得近的人能听见你，越远声音越小，<strong>48 格</strong>外就听不到了。声音有方向，左边的人说话从左耳出来。</li>
+  <li><strong>小队频道</strong>：和朋友建个小队，不管隔多远都能听到彼此，适合一起下星渊、一起逛街。</li>
+</ul>
+<div class="callout tip"><img class="px" src="images/art/giftbox.png" alt=""><div><p class="c-title">语音完全是可选的</p><p>不装 mod 一样能正常进服、正常玩，只是听不到也说不了。别人说话不会打扰你，你也不会因为没装被踢。</p></div></div>
+
+<h2>要装什么？</h2>
+<p>只要装一个客户端 mod：<strong>Simple Voice Chat（简单的语音聊天）</strong>。</p>
+<div class="table-wrap"><table>
+<tr><th>你用的加载器</th><th>下载哪个</th></tr>
+<tr><td>Fabric</td><td><code>voicechat-fabric-…+26.3</code></td></tr>
+<tr><td>NeoForge</td><td><code>voicechat-neoforge-…+26.3</code></td></tr>
+</table></div>
+<ul>
+  <li><strong>游戏版本一定要选 26.3</strong>（和服务器一致），mod 文件名末尾也必须是 <code>+26.3</code>。</li>
+  <li>版本号前半段（如 <code>2.6.27</code>）不用和服务器完全一样，<strong>选最新的就行</strong>。</li>
+  <li>官方下载页：Modrinth 搜「Simple Voice Chat」（https://modrinth.com/plugin/simple-voice-chat ），或 CurseForge 同名项目。<strong>别从来路不明的网盘下</strong>。</li>
+  <li>从没装过 mod？选 <strong>Fabric</strong> 最省事。</li>
+</ul>
+
+<h2>用启动器安装（PCL2 / HMCL）</h2>
+<h3>PCL2</h3>
+<ol>
+  <li>打开 PCL2 →「下载」→「Minecraft」→ 选 <strong>26.3</strong>。</li>
+  <li>在安装页勾上 <strong>Fabric</strong>（会自动带上 Fabric API，保留即可）→ 开始安装。</li>
+  <li>装好后在左侧选中这个版本 →「版本设置」→「Mod 管理」（或顶部「下载」→「Mod」）。</li>
+  <li>搜「<strong>Simple Voice Chat</strong>」或「<strong>简单的语音聊天</strong>」→ 选 <strong>26.3 / Fabric</strong> 的版本 → 下载到这个版本。</li>
+  <li>启动游戏，主菜单右下角 Mod 数变多、进服后按 <strong>V</strong> 能打开语音界面，就装好了。</li>
+</ol>
+<h3>HMCL</h3>
+<ol>
+  <li>打开 HMCL →「下载」→「游戏」→ 选 <strong>26.3</strong>。</li>
+  <li>勾选 <strong>Fabric</strong>（Fabric API 一起勾上）→ 安装。</li>
+  <li>回到主页选中这个版本 →「版本设置」→「模组管理」→「下载」。</li>
+  <li>搜「<strong>Simple Voice Chat</strong>」→ 选适配 <strong>26.3 / Fabric</strong> 的文件 → 安装。</li>
+  <li>启动游戏，进服按 <strong>V</strong> 能打开语音界面即成功。</li>
+</ol>
+<p>想用 NeoForge 的同学，把上面的 Fabric 换成 NeoForge，下载 mod 时选 NeoForge 版即可。已经有自己的整合包？把 <code>voicechat-fabric-…+26.3.jar</code>（或 neoforge 版）丢进对应版本的 <code>mods</code> 文件夹就行。</p>
+<p><strong>第一次打开时</strong>：电脑可能会弹「是否允许 Java 使用麦克风」——点允许。Mac 用户如果没弹，去「系统设置 → 隐私与安全性 → 麦克风」给启动器 / Java 打勾。</p>
+
+<h2>常用按键</h2>
+<div class="table-wrap"><table>
+<tr><th>按键</th><th>作用</th></tr>
+<tr><td><strong>V</strong></td><td>打开语音主界面（设置、调音量、进小队都从这里进）</td></tr>
+<tr><td><strong>G</strong></td><td>直接打开小队界面</td></tr>
+<tr><td><strong>Caps Lock（大写锁定）</strong></td><td>按住说话（默认模式下）</td></tr>
+<tr><td><strong>M</strong></td><td>一键静音 / 取消静音自己的麦克风</td></tr>
+<tr><td><strong>N</strong></td><td>一键关掉整个语音（自己不说也不听）</td></tr>
+</table></div>
+<p>按键都可以在「选项 → 控制 → 按键绑定」里找到「Voice Chat」一栏改成你习惯的键。</p>
+
+<h2>怎么说话</h2>
+<p>按 <strong>V</strong> → 点右上角的「设置」（齿轮）：</p>
+<ol>
+  <li><strong>选麦克风</strong>：在「麦克风」里选你在用的那个（耳机麦 / 外接麦）。</li>
+  <li><strong>选说话方式</strong>：
+    <ul>
+      <li><strong>按住说话（PTT）</strong>：默认模式。按住 Caps Lock 才会发声，松开就闭麦。<strong>推荐新手用</strong>，不会把敲键盘、家里电视的声音传出去。</li>
+      <li><strong>自由麦（语音激活）</strong>：不用按键，一说话就自动开麦。用这个模式时把「激活阈值」滑条往右拖一点，直到不说话时那根绿色音量条不亮为止，避免环境噪音一直被传出去。</li>
+    </ul>
+  </li>
+  <li><strong>测试</strong>：设置里有「测试麦克风」，能听到自己的回声就说明麦克风通了。</li>
+</ol>
+<p>说话时屏幕左下会出现一个小麦克风图标；别人说话时他头顶会出现小喇叭。</p>
+
+<h2>小队频道与静音别人</h2>
+<h3>建小队 / 加入小队</h3>
+<ol>
+  <li>按 <strong>G</strong>（或 V → 小队按钮）。</li>
+  <li><strong>建小队</strong>：输入一个名字，想只让朋友进可以设个密码 → 创建。</li>
+  <li><strong>加入小队</strong>：在同一个界面的列表里点别人的小队 → 有密码就输入密码。</li>
+  <li>进了小队后，队友之间<strong>隔多远都能听到</strong>。小队类型一般选默认（普通）就好。</li>
+  <li>离开：再按 G，点「离开小队」。</li>
+</ol>
+<h3>静音 / 调小某个人</h3>
+<ul>
+  <li>按 <strong>V</strong> → 点「音量调节」（喇叭图标）→ 列表里找到那个人 → 把他的音量滑条拖到 0，或点他名字旁的静音按钮。</li>
+  <li>只对你自己生效，对方不会知道。</li>
+  <li>觉得所有人都太吵：V → 设置里把「语音音量」整体调小；或者直接按 <strong>N</strong> 关掉语音。</li>
+</ul>
+<p>遇到有人在语音里骚扰，截图后私聊管理员处理。</p>
+</main>
+</div>
+<footer class="site-footer">
+  SHUMC鼠鼠茶屋 新手百科 · 内容依据服务器当前版本整理（CozyLife 1.6.16 / CozyAbyss 0.7.3 / CozyFish 1.5.7 / CozySeasons 1.0.4 / CozySpawn 1.1.6）<br>
+  玩家 QQ 群：<strong>666974391</strong> · <a class="qq-join" href="mqqapi://card/show_pslcard?src_type=internal&amp;version=1&amp;uin=666974391&amp;card_type=group&amp;source=qrcode" data-qq="666974391">一键加群</a><br>
+  图片均来自 SHUMC 材质包与菜单预览渲染 · 数值以游戏内菜单为准
+</footer>
+<script src="assets/js/nav.js"></script>
+<script src="assets/js/site.js"></script>
+</body>
+</html>
