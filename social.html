@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>社交 · 萌宠 · 许愿池 · SHUMC鼠鼠茶屋 新手百科</title>
-<meta name="description" content="和朋友一起玩：搭子合居、串门点赞、干杯、漂流瓶、骰子；萌宠；锦鲤许愿池与福气值；全服一起修的社区献祭和主城奇观">
+<meta name="description" content="和朋友一起玩：搭子合居与默契值、串门点赞与家园名片、干杯、漂流瓶、骰子；个人特效；萌宠；锦鲤许愿池与福气值；全服一起修的社区献祭和主城奇观">
 <link rel="icon" href="images/brand/pack.png">
 <link rel="stylesheet" href="assets/css/site.css">
 <!-- meta:start -->
@@ -47,6 +47,7 @@
   <li><strong>一起钓鱼</strong>：25% 概率双方各得 8 币；</li>
   <li><strong>危急守护</strong>：快没血时回 2.5 颗心（60 秒冷却）；</li>
   <li><strong>默契升级</strong>：全员各得 等级 × 25 币；锻造坊工费 85 折。</li>
+  <li><strong>在家一起过日子</strong>：和搭子一起坐在家具上歇息、品茶（桌面茶具 / 铁壶炭炉 / 守夜小茶炉）或用工坊站点时，24 格内有搭子就 <strong>默契值 +2</strong>（60 秒冷却）。见 <a href="furniture.html#家具联动玩法">家具联动玩法</a>。</li>
 </ul>
 <p>用法：<code>/partner invite 好友名</code> 邀请，对方点 [✔ 接受] 或 <code>/partner accept</code>（拒绝是 <code>/partner deny</code>）；<code>/partner sethome</code> 设共享家园、<code>/partner home</code> 回去；<code>/partner leave</code> 退出。搭子会自动共享你的庄园和店铺建造权限。</p>
 <figure class="menu-shot"><a href="images/menus/full/partner.png"><img src="images/menus/partner.png" alt="茶屋搭子 · 合居系统" loading="lazy"></a><figcaption>茶屋搭子 · 合居系统 · <span class="zoom">点图看每个按钮的说明</span></figcaption></figure>
@@ -56,6 +57,8 @@
   <li><code class="cmd">/visit</code>（别名 <code>/做客</code>、<code>/拜访</code>）：打开<strong>邻里家园榜</strong>，去好友家做客。在野外 <code class="cmd">/sethome</code> 后你的家就会出现在榜上；<code>/visit toggle</code> 开关迎客。</li>
   <li><code class="cmd">/like</code> <code>玩家名</code>（别名 <code>/点赞</code>）：给好友的家点赞送花：<strong>双方各得 10 茶屋币 + 5 福气值</strong>。每天最多送 3 朵，同一位好友每天 1 次；对方要先在野外 <code>/sethome</code> 才能被点赞。</li>
   <li><code class="cmd">/guestbook</code>（别名 <code>/留言簿</code>）：看自己家门口的便利贴；<code>/guestbook 玩家名 留言</code> 给好友留言（每人最多保留 14 条），每天前 3 次留言各得 8 茶屋币。</li>
+  <li><strong>名片上的家具</strong>：邻里家园榜每张名片多了「家园内饰」一行，统计屋主和搭子在家附近 32 格内摆的茶屋家具、烹饪灶台、牧场加工机、洒水器和生态瓶件数，再挑几个亮点标签（茶席、工坊、收银专柜、星渊纪念……）。</li>
+  <li><strong>到了门口也能互动</strong>：屋主门口的 🎏 鼠纹暖帘右键直接点赞送花，📮 鼠鼠迎客邮筒 / 📚 读书写字桌右键看留言簿并弹出 [👍 点赞送花] [✍ 写便利贴]；屋主只租了庄园、还没 <code>/sethome</code> 也能送。详见 <a href="furniture.html#社交互动家具">社交互动家具</a>。</li>
 </ul>
 
 <h2>干杯、茶话会、漂流瓶与骰子</h2>
@@ -87,12 +90,21 @@
 <p><code class="cmd">/shezhi</code>（或 <code class="cmd">/settings</code>）一个菜单管好这些开关：</p>
 <div class="table-wrap"><table>
 <tr><th>开关</th><th>作用</th></tr>
-<tr><td>🌸 樱花飘落特效</td><td>开关许愿池换来的樱花特效；还没换到时，点它会带你去许愿池</td></tr>
+<tr><td>✨ 个人特效</td><td>打开个人特效页，统一管理樱花飘落、庆典光环和星渊拖尾（见下）</td></tr>
 <tr><td>🏷 显示称号</td><td>隐藏或恢复你佩戴的称号；右键直接打开我的称号</td></tr>
 <tr><td>🏡 家园迎客</td><td>关掉就是闭门谢客，别人暂时不能来串门</td></tr>
 <tr><td>🚀 接受传送请求</td><td>不想被人拉来拉去时关掉</td></tr>
 <tr><td>💬 接收私信</td><td>想安静种田时关掉</td></tr>
 </table></div>
+<h3>✨ 个人特效页</h3>
+<p>在 <code class="cmd">/shezhi</code> 点「✨ 个人特效」。三类特效可以同时开，光环和拖尾各一次只能用一个；已拥有的点一下戴上，再点一下摘下，买过的不会丢。还没有的会写着在哪买，点一下直接带你过去。</p>
+<div class="table-wrap"><table>
+<tr><th>特效</th><th>从哪来</th><th>在这页怎么用</th></tr>
+<tr><td>🌸 樱花飘落</td><td>许愿池福气商店「樱花气象仪」（300 福气值）</td><td>点一下开 / 关</td></tr>
+<tr><td>🌸🍁❄🌌 四种庆典光环</td><td>四季庆典馆 6800 / 8800 / 10800 / 16800 币</td><td>点已拥有的换上，「🚫 摘下光环」摘掉</td></tr>
+<tr><td>✨ 星尘 · 🌸 樱花瓣 · 🏮 千灯萤火拖尾</td><td>星渊星辉兑换所（星尘拖尾按天，会显示剩余天数）</td><td>点已拥有的换上，「🌙 关掉拖尾」关掉</td></tr>
+</table></div>
+<p>萌宠光环带增益、跟着宠物走，不在这一页。拖尾也能用 <code class="cmd">/xy trail</code> <code>stardust|sakura|lantern|off</code> 切换。</p>
 
 <h2>萌宠乐园 /pet</h2>
 <p><code class="cmd">/pet</code>（别名 <code>/宠物</code>）：解锁后萌宠会一直跟着你，右键可以摸摸它，每只都有专属光环增益。</p>
@@ -128,6 +140,7 @@
 <div class="item-grid">
 <div class="item"><img src="images/items/pool_gift_box.png" alt="" loading="lazy"><div><div class="i-name">🎁 茶屋美食礼盒</div><div class="i-sub">50 福气值</div></div></div>
 <div class="item"><img src="images/items/scroll_sun.png" alt="" loading="lazy"><div><div class="i-name">📜 锦鲤祈福卷轴礼袋</div><div class="i-sub">80 福气值 · 随机 1 张祈福卷轴</div></div></div>
+<div class="item"><img src="images/art/giftbox.png" alt="" loading="lazy"><div><div class="i-name">🪑 柚子精选家具礼盒</div><div class="i-sub">80 福气值 · 随机开出 1 件在卖的 3D 茶屋家具（含工作台）</div></div></div>
 <div class="item"><img src="images/items/geode_iridium.png" alt="" loading="lazy"><div><div class="i-name">🌟 星辉铱金晶洞</div><div class="i-sub">120 福气值</div></div></div>
 <div class="item"><img src="images/items/pool_sakura_meter.png" alt="" loading="lazy"><div><div class="i-name">🌸 樱花气象仪（永久）</div><div class="i-sub">300 福气值 · 个人樱花飘落特效，/pool aura 开关</div></div></div>
 <div class="item legend"><img src="images/items/mochi_coin.png" alt="" loading="lazy"><div><div class="i-name">👑 锦鲤大善人（永久称号）</div><div class="i-sub">600 福气值 · 全服播报 + 主城商店永久 9 折</div></div></div>
@@ -163,9 +176,9 @@
 </main>
 </div>
 <footer class="site-footer">
-  SHUMC鼠鼠茶屋 新手百科 · 内容依据服务器当前版本整理（CozyLife 1.6.8 / CozyFish 1.5.5 / CozySeasons 1.0.4 / CozySpawn 1.1.5）<br>
+  SHUMC鼠鼠茶屋 新手百科 · 内容依据服务器当前版本整理（CozyLife 1.8.0 / CozyAbyss 0.9.6 / CozyFish 1.5.7 / CozySeasons 1.0.4 / CozySpawn 1.1.6）<br>
   玩家 QQ 群：<strong>666974391</strong> · <a class="qq-join" href="mqqapi://card/show_pslcard?src_type=internal&amp;version=1&amp;uin=666974391&amp;card_type=group&amp;source=qrcode" data-qq="666974391">一键加群</a><br>
-  图片均来自 SHUMC 材质包与菜单预览渲染 · 数值以游戏内菜单为准
+  图片均来自 SHUMC 材质包、菜单预览渲染与模型渲染 · 数值以游戏内菜单为准
 </footer>
 <script src="assets/js/nav.js"></script>
 <script src="assets/js/site.js"></script>

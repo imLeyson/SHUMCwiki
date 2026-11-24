@@ -21,6 +21,8 @@ recipes.html        配方与道具图鉴（工坊 17 配方、小吃、大餐�
 adventure.html      冒险公会
 social.html         社交 · 萌宠 · 许愿池
 land.html           领地与家
+furniture.html      茶屋家具 · 柚子家具馆：分类与价格、摆放规则、家具联动玩法、免费拿家具
+models.html         模型展示：家具与星渊怪物 / 首领的 3D 模型渲染图画廊
 commands.html       常用指令速查（只收玩家指令）
 faq.html            常见问题、术语表、星级与品质对照
 404.html            找不到页面时 GitHub Pages 显示的页面（用 <base href="/SHUMCwiki/">，所以链接都能用）
@@ -31,6 +33,7 @@ assets/js/site.js   侧边栏、页内目录、上一页/下一页、搜索、�
 images/brand/       pack.png（站点 logo 与 favicon）、og-card.png（分享链接时的预览图 1200×630）
 images/art/         材质包 resource-pack/menu-art/ 里的菜单插画（侧边栏和卡片图标）
 images/items/       材质包 assets/shumc/textures/item/ 里的物品、鱼、作物、昆虫贴图（32×32）
+images/models/      3D 模型渲染图（furniture/ 家具、monsters/ 星渊怪物，取自材质包 furniture_preview 与 monsters/preview 的 3/4 视角，webp 透明底）
 images/menus/       游戏菜单渲染图（只保留箱子部分，网页内嵌用）
 images/menus/full/  同一菜单的完整渲染图（带每个按钮的悬停说明，点图时在灯箱里打开）
 .nojekyll           让 GitHub Pages 原样发布文件

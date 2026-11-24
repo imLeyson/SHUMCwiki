@@ -310,3 +310,21 @@ footer.site-footer a { color: var(--gold-light); }
   font-size: 14px; z-index: 9999; opacity: 0; transition: all .25s; max-width: 90vw; text-align: center;
 }
 .qq-toast.show { opacity: 1; transform: translate(-50%, 0); }
+
+/* ---------- 模型展示（家具 / 星渊怪物 3D 渲染图） ---------- */
+.model-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(160px, 1fr)); gap: 10px; margin: 14px 0 22px; }
+.model-grid.big { grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); }
+figure.model { margin: 0; min-width: 0; padding: 10px; background: var(--paper); border: 3px solid var(--paper-3); display: flex; flex-direction: column; }
+figure.model img { display: block; width: 100%; max-width: 100%; height: 132px; object-fit: contain; background: var(--paper-2); }
+.model-grid.big figure.model img { height: 200px; }
+figure.model figcaption { margin-top: 8px; font-size: 12px; line-height: 1.45; color: var(--ink-3); overflow-wrap: anywhere; }
+figure.model figcaption b { display: block; font-size: 14px; color: var(--ink); }
+figure.model figcaption em { display: block; font-style: normal; font-weight: 700; color: var(--sky); }
+figure.model.boss { border-color: var(--gold); box-shadow: inset 0 0 0 2px var(--gold-light); }
+.item img[src$=".webp"] { object-fit: contain; image-rendering: auto; }
+@media (max-width: 520px) {
+  .model-grid { grid-template-columns: 1fr 1fr; gap: 8px; }
+  .model-grid.big { grid-template-columns: 1fr; }
+  figure.model { padding: 8px; }
+  figure.model img { height: 110px; }
+}
