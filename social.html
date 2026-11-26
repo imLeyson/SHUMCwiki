@@ -54,9 +54,9 @@
 
 <h2>串门、留言与点赞</h2>
 <ul>
-  <li><code class="cmd">/visit</code>（别名 <code>/做客</code>、<code>/拜访</code>）：打开<strong>邻里家园榜</strong>，去好友家做客。在野外 <code class="cmd">/sethome</code> 后你的家就会出现在榜上；<code>/visit toggle</code> 开关迎客。</li>
+  <li><code class="cmd">/visit</code>（别名 <code>/做客</code>、<code>/拜访</code>）：打开<strong>邻里家园榜</strong>，去好友家做客。在野外 <code class="cmd">/sethome</code> 后你的家就会出现在榜上；<code>/visit toggle</code> 开关迎客（菜单里的迎客开关在 <code class="cmd">/shezhi</code> 个人设置）。</li>
   <li><code class="cmd">/like</code> <code>玩家名</code>（别名 <code>/点赞</code>）：给好友的家点赞送花：<strong>双方各得 10 茶屋币 + 5 福气值</strong>。每天最多送 3 朵，同一位好友每天 1 次；对方要先在野外 <code>/sethome</code> 才能被点赞。</li>
-  <li><code class="cmd">/guestbook</code>（别名 <code>/留言簿</code>）：看自己家门口的便利贴；<code>/guestbook 玩家名 留言</code> 给好友留言（每人最多保留 14 条），每天前 3 次留言各得 8 茶屋币。</li>
+  <li><code class="cmd">/guestbook</code>（别名 <code>/留言簿</code>）：看自己家门口的便利贴；菜单里从邻里家园榜进；<code>/guestbook 玩家名 留言</code> 给好友留言（每人最多保留 14 条），每天前 3 次留言各得 8 茶屋币。</li>
   <li><strong>名片上的家具</strong>：邻里家园榜每张名片多了「家园内饰」一行，统计屋主和搭子在家附近 32 格内摆的茶屋家具、烹饪灶台、牧场加工机、洒水器和生态瓶件数，再挑几个亮点标签（茶席、工坊、收银专柜、星渊纪念……）。</li>
   <li><strong>到了门口也能互动</strong>：屋主门口的 🎏 鼠纹暖帘右键直接点赞送花，📮 鼠鼠迎客邮筒 / 📚 读书写字桌右键看留言簿并弹出 [👍 点赞送花] [✍ 写便利贴]；屋主只租了庄园、还没 <code>/sethome</code> 也能送。详见 <a href="furniture.html#社交互动家具">社交互动家具</a>。</li>
 </ul>
@@ -83,15 +83,15 @@
 <figure class="menu-shot"><a href="images/menus/full/fortune.png"><img src="images/menus/fortune.png" alt="今日运势签（/fortune）" loading="lazy"></a><figcaption>今日运势签（/fortune） · <span class="zoom">点图看每个按钮的说明</span></figcaption></figure>
 
 <h2>我的档案与全服排行榜</h2>
-<p>手账第一排的「📊 我的档案」（或 <code class="cmd">/profile</code>）把你在茶屋的成绩放在一页：财富、专精、钓鱼（图鉴进度和最大的鱼）、星渊、环保分、邻里人气、签到天数，每一项旁边都写着你的全服名次。点头像可以打开「我的称号」。</p>
-<p><code class="cmd">/paihang</code>（或 <code class="cmd">/rank</code>）是全服排行榜，一共七个榜：财富、专精、鱼王、星渊、环保、人气、签到。鼠标停在榜单上能看到前 10 名。榜单每 5 分钟更新一次，刚钓到的大鱼稍等一会儿就会上榜。</p>
+<p>手账第一排的「📊 我的档案」（或 <code class="cmd">/profile</code>）把你在茶屋的成绩放在一页：财富、专精、钓鱼（图鉴进度和最大的鱼）、星渊、环保分、邻里人气、签到天数，每一项旁边都写着你的全服名次（数据卡只看数据，不跳转）。点头像打开「我的称号」，页里还有 🏆 排行榜和 ⚙ 个人设置。</p>
+<p><code class="cmd">/paihang</code>（或 <code class="cmd">/rank</code>）是全服排行榜，一共七个榜：<strong>财富榜</strong>（按当前茶屋币余额，钱包里的「🏆 财富榜」也能打开）、专精、鱼王、星渊、环保、人气、签到。鼠标停在榜单上能看到前 10 名。榜单每 5 分钟更新一次，刚钓到的大鱼稍等一会儿就会上榜。</p>
 
 <h2>个人设置 /shezhi</h2>
 <p><code class="cmd">/shezhi</code>（或 <code class="cmd">/settings</code>）一个菜单管好这些开关：</p>
 <div class="table-wrap"><table>
 <tr><th>开关</th><th>作用</th></tr>
 <tr><td>✨ 个人特效</td><td>打开个人特效页，统一管理樱花飘落、庆典光环和星渊拖尾（见下）</td></tr>
-<tr><td>🏷 显示称号</td><td>隐藏或恢复你佩戴的称号；右键直接打开我的称号</td></tr>
+<tr><td>🏷 显示称号</td><td>隐藏或恢复你佩戴的称号（全服只有这里能隐藏；关了再打开会恢复原来的称号）</td></tr>
 <tr><td>🏡 家园迎客</td><td>关掉就是闭门谢客，别人暂时不能来串门</td></tr>
 <tr><td>🚀 接受传送请求</td><td>不想被人拉来拉去时关掉</td></tr>
 <tr><td>💬 接收私信</td><td>想安静种田时关掉</td></tr>
