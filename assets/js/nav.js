@@ -20,7 +20,7 @@ window.SHUMC_NAV = [
   { href: "towns.html",     title: "私人领地与小镇",  icon: "images/art/townhall.png", desc: "带朋友一起住：建镇、身份权限、子领地、规则与飞行、繁荣度、公开地点" },
   { href: "guilds.html",    title: "公会",            icon: "images/art/guildcrest.png", desc: "建会与加入、公会经验与等级奖励、周任务、周榜、公会商店、银行仓库" },
   { href: "helpers.html",   title: "领地帮工",        icon: "images/items/ui_helper.png", desc: "农夫 / 茶娘 / 养殖员 / 渔夫：契约、日薪、熟练度、心情、收益估算" },
-  { href: "items.html",     title: "衣橱与新道具",    icon: "images/art/ringbox.png", desc: "衣橱、茶托盾、茶筅短刃、星渊补给、生活工具、宠物项圈、社交道具" },
+  { href: "items.html",     title: "衣橱与新道具",    icon: "images/art/ringbox.png", desc: "衣橱与 🪽 翅膀、茶托盾、茶筅短刃、星渊补给、生活工具、宠物项圈、社交道具" },
   { href: "furniture.html", title: "茶屋家具 · 家具馆", icon: "images/art/housekey.png", desc: "柚子家具馆分类与价格、3D 家具摆放规则、家具联动玩法、怎么免费拿家具" },
   { href: "models.html",    title: "模型展示",        icon: "images/art/crate.png",    desc: "68 件茶屋家具与 13 种星渊怪物 / 首领的 3D 模型渲染图" },
   { href: "commands.html",  title: "常用指令速查",    icon: "images/art/scrolls.png",  desc: "玩家可用的全部指令一页看完" },
