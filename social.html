@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>社交 · 萌宠 · 许愿池 · SHUMC鼠鼠茶屋 新手百科</title>
-<meta name="description" content="和朋友一起玩：搭子合居与默契值、串门点赞与家园名片、干杯、漂流瓶、骰子；个人特效；萌宠；锦鲤许愿池与福气值；全服一起修的社区献祭和主城奇观">
+<meta name="description" content="和朋友一起玩：搭子合居与默契值、串门点赞与家园名片、干杯、漂流瓶、骰子；衣橱、Tab 列表；萌宠；锦鲤许愿池与福气值；全服一起修的社区献祭和主城奇观">
 <link rel="icon" href="images/brand/pack.png">
 <link rel="stylesheet" href="assets/css/site.css">
 <!-- meta:start -->
@@ -90,21 +90,22 @@
 <p><code class="cmd">/shezhi</code>（或 <code class="cmd">/settings</code>）一个菜单管好这些开关：</p>
 <div class="table-wrap"><table>
 <tr><th>开关</th><th>作用</th></tr>
-<tr><td>✨ 个人特效</td><td>打开个人特效页，统一管理樱花飘落、庆典光环和星渊拖尾（见下）</td></tr>
+<tr><td>👘 衣橱</td><td>打开衣橱，统一管理光环、樱花飘落、星渊拖尾、武器皮肤和花环（见下）</td></tr>
 <tr><td>🏷 显示称号</td><td>隐藏或恢复你佩戴的称号（全服只有这里能隐藏；关了再打开会恢复原来的称号）</td></tr>
 <tr><td>🏡 家园迎客</td><td>关掉就是闭门谢客，别人暂时不能来串门</td></tr>
 <tr><td>🚀 接受传送请求</td><td>不想被人拉来拉去时关掉</td></tr>
 <tr><td>💬 接收私信</td><td>想安静种田时关掉</td></tr>
 </table></div>
-<h3>✨ 个人特效页</h3>
-<p>在 <code class="cmd">/shezhi</code> 点「✨ 个人特效」。三类特效可以同时开，光环和拖尾各一次只能用一个；已拥有的点一下戴上，再点一下摘下，买过的不会丢。还没有的会写着在哪买，点一下直接带你过去。</p>
-<div class="table-wrap"><table>
-<tr><th>特效</th><th>从哪来</th><th>在这页怎么用</th></tr>
-<tr><td>🌸 樱花飘落</td><td>许愿池福气商店「樱花气象仪」（300 福气值）</td><td>点一下开 / 关</td></tr>
-<tr><td>🌸🍁❄🌌 四种庆典光环</td><td>四季庆典馆 6800 / 8800 / 10800 / 16800 币</td><td>点已拥有的换上，「🚫 摘下光环」摘掉</td></tr>
-<tr><td>✨ 星尘 · 🌸 樱花瓣 · 🏮 千灯萤火拖尾</td><td>星渊星辉兑换所（星尘拖尾按天，会显示剩余天数）</td><td>点已拥有的换上，「🌙 关掉拖尾」关掉</td></tr>
-</table></div>
-<p>萌宠光环带增益、跟着宠物走，不在这一页。拖尾也能用 <code class="cmd">/xy trail</code> <code>stardust|sakura|lantern|off</code> 切换。</p>
+<h3>👘 衣橱（原「个人特效」页）</h3>
+<p>以前的「✨ 个人特效」页已经并进 <strong>👘 衣橱</strong>：在 <code class="cmd">/shezhi</code> 点 👘 衣橱，或直接 <code class="cmd">/yichu</code>。光环、樱花飘落、星渊拖尾、武器皮肤、🌸 花环都在这里穿戴，买过的不会丢；还没有的写着在哪买，点一下直接带你过去。各分页和来源见 <a href="items.html#衣橱">衣橱与新道具</a>。</p>
+<p>萌宠光环带增益、跟着宠物走，不在衣橱里。拖尾也能用 <code class="cmd">/xy trail</code> <code>stardust|sakura|lantern|off</code> 切换。</p>
+
+<h3>Tab 玩家列表与聊天头像</h3>
+<ul>
+  <li>按 <kbd>Tab</kbd> 看在线玩家：页眉是茶屋欢迎语和在线人数，页脚写着玩家 QQ 群；每一行是「[ 称号 ] 专精小标签 名字」，右侧显示延迟（例如 39ms）。</li>
+  <li>聊天消息前会显示发言者的<strong>头像</strong>，称号用白色方括号「[ 称号 ]」。</li>
+  <li>加入了 <a href="guilds.html">🛡 公会</a>或 <a href="towns.html">🏘 小镇</a>的人，称号前面还能显示【公会会标】或〔小镇名〕，用 <code>/guild prefix</code> 或 <code>/town prefix</code> 选择。</li>
+</ul>
 
 <h2>萌宠乐园 /pet</h2>
 <p><code class="cmd">/pet</code>（别名 <code>/宠物</code>）：解锁后萌宠会一直跟着你，右键可以摸摸它，每只都有专属光环增益。</p>
@@ -119,6 +120,7 @@
 <div class="item legend"><img src="images/items/pet_frog.png" alt="" loading="lazy"><div><div class="i-name">🐸 茶屋雨蛙</div><div class="i-sub">全服修复「茶屋垂钓包」解锁 · 海豚的恩惠</div></div></div>
 <div class="item legend"><img src="images/items/pet_axolotl.png" alt="" loading="lazy"><div><div class="i-name">🦎 樱粉六角恐龙</div><div class="i-sub">全服集齐 6/6 收集包解锁 · 水下呼吸 + 幸运 I</div></div></div>
 </div>
+<p>萌宠乐园里的 🎀 <strong>项圈与零食</strong>：每只萌宠一款项圈（400 币，永久），戴上后头顶有小饰物、跟随时有一个小被动；喂零食能教它转圈、打滚、跳起来。详见 <a href="items.html#宠物项圈">衣橱与新道具</a>。</p>
 <figure class="menu-shot"><a href="images/menus/full/pet.png"><img src="images/menus/pet.png" alt="萌宠乐园（/pet）" loading="lazy"></a><figcaption>萌宠乐园（/pet） · <span class="zoom">点图看每个按钮的说明</span></figcaption></figure>
 
 <h2>锦鲤许愿池 /pool</h2>
@@ -143,6 +145,7 @@
 <div class="item"><img src="images/art/giftbox.png" alt="" loading="lazy"><div><div class="i-name">🪑 柚子精选家具礼盒</div><div class="i-sub">80 福气值 · 随机开出 1 件在卖的 3D 茶屋家具（含工作台）</div></div></div>
 <div class="item"><img src="images/items/geode_iridium.png" alt="" loading="lazy"><div><div class="i-name">🌟 星辉铱金晶洞</div><div class="i-sub">120 福气值</div></div></div>
 <div class="item"><img src="images/items/pool_sakura_meter.png" alt="" loading="lazy"><div><div class="i-name">🌸 樱花气象仪（永久）</div><div class="i-sub">300 福气值 · 个人樱花飘落特效，/pool aura 开关</div></div></div>
+<div class="item"><img src="images/items/chime_charm.png" alt="" loading="lazy"><div><div class="i-name">🎐 风铃护身符</div><div class="i-sub">40 福气值 · 每周限 1 · 星渊本轮第一次死亡不掉星尘</div></div></div>
 <div class="item legend"><img src="images/items/mochi_coin.png" alt="" loading="lazy"><div><div class="i-name">👑 锦鲤大善人（永久称号）</div><div class="i-sub">600 福气值 · 全服播报 + 主城商店永久 9 折</div></div></div>
 </div>
 <div class="shots">
@@ -176,7 +179,7 @@
 </main>
 </div>
 <footer class="site-footer">
-  SHUMC鼠鼠茶屋 新手百科 · 内容依据服务器当前版本整理（CozyLife 1.8.0 / CozyAbyss 0.9.6 / CozyFish 1.5.7 / CozySeasons 1.0.4 / CozySpawn 1.1.6）<br>
+  SHUMC鼠鼠茶屋 新手百科 · 内容依据服务器当前版本整理（CozyLife 1.9.3 / CozyAbyss 0.9.12 / CozyFish 1.5.10 / CozySeasons 1.0.4 / CozySpawn 1.1.9）<br>
   玩家 QQ 群：<strong>666974391</strong> · <a class="qq-join" href="mqqapi://card/show_pslcard?src_type=internal&amp;version=1&amp;uin=666974391&amp;card_type=group&amp;source=qrcode" data-qq="666974391">一键加群</a><br>
   图片均来自 SHUMC 材质包、菜单预览渲染与模型渲染 · 数值以游戏内菜单为准
 </footer>

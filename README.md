@@ -20,7 +20,11 @@ crafts.html         工坊 · 料理 · 锻造
 recipes.html        配方与道具图鉴（工坊 17 配方、小吃、大餐、特产香料、合金、神器、家具速查）
 adventure.html      冒险公会
 social.html         社交 · 萌宠 · 许愿池
-land.html           领地与家
+land.html           领地与家：环城庄园、商街旺铺、圈地与合并、中心点、领地名字与传送点、箱子商店、回家
+towns.html          私人领地与小镇：建立 / 加入、身份权限、子领地、规则与飞行、繁荣度、改名、传送点、公开地点 /places
+guilds.html         公会：建会、经验与等级奖励、周任务、周榜、公会商店、职位权限、银行仓库、传送点、驻扎、公会聊天
+helpers.html        领地帮工：四种工作、契约与日薪、熟练度、心情、平衡规则、收益估算
+items.html          衣橱与新道具：衣橱、星渊新装备与补给、生活工具、宠物项圈与零食、社交道具
 furniture.html      茶屋家具 · 柚子家具馆：分类与价格、摆放规则、家具联动玩法、免费拿家具
 models.html         模型展示：家具与星渊怪物 / 首领的 3D 模型渲染图画廊
 commands.html       常用指令速查（只收玩家指令）
@@ -92,12 +96,13 @@ python3 -m http.server 8000
 侧边栏、上一页/下一页和搜索都会自动包含新页面。
 
 4. `<head>` 里 `<!-- meta:start -->` 到 `<!-- meta:end -->` 之间是分享预览（Open Graph）和 canonical 标签，复制页面后把里面的标题、简介和网址改成新页面的；再在 `sitemap.xml` 加一行。
-5. 改了页面清单或大改标题后，把 `assets/js/site.js` 里搜索缓存的 `shumc-search-v3` 版本号 +1，老访客的搜索才会立刻用上新内容。
+5. 改了页面清单或大改标题后，把 `assets/js/site.js` 里搜索缓存的 `shumc-search-vN` 版本号 +1（现在是 v7），老访客的搜索才会立刻用上新内容。
 
 ## 图片从哪来
 
 - **物品 / 鱼 / 作物 / 昆虫贴图**：复制自 SHUMC 仓库 `resource-pack/assets/shumc/textures/item/`，文件名和 `shumc:` 模型 id 一致（例如 `fish_koi.png`）。要加新图标，从那里复制到 `images/items/` 即可。
 - **菜单插画**：复制自 `resource-pack/menu-art/`。
+- **菜单底图预览**：`images/menus/tg_*.png` 复制自 SHUMC 仓库 `resource-pack/towns_guilds_preview/`（小镇 / 公会 / 公开地点 / 主菜单新布局的底图 4 倍预览，图里的名字只是示例，没有悬停说明）。
 - **菜单渲染图**：用 SHUMC 仓库的 `plugin-src/tools/menu-preview`（本地 Paper 26.3 测试服 + 4 个插件 + MenuHarness 导出 `/tmp/menus.json`，再用 `render_menus.py` 画成 PNG）生成。渲染时的测试玩家是虚拟存档，所以图里的余额、等级、进度只是示例。插件菜单改版后，重新跑一遍工具，把对应 PNG 覆盖到 `images/menus/full/`；`images/menus/` 里的是裁掉右侧说明栏和下方空背包后的版本（宽 672 像素）。
 
 只提交页面里真正用到的图片，没用到的可以删掉。
