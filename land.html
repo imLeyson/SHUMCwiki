@@ -75,7 +75,7 @@
   <li><strong>金铲子</strong>：手持金铲子（或杂货铺的 <img class="px" src="images/items/claim_wand.png" alt="">茶屋金铲圈地杖）分别右键两个对角方块，就能圈出一块受保护的领地，别人不能破坏或开箱。</li>
   <li><strong>放第一个箱子</strong>：在野外放下你的第一个箱子会自动圈出 9×9。</li>
   <li><strong>领地额度</strong>：圈地按面积扣「额度」（1 格 = 1×1 地面）。菜单显示新玩家初始 400 格，在线每小时再 +150 格；用金铲子手动圈的一块至少要 100 格。<code>/abandonclaim</code> 放弃领地时额度全额退回。手里拿根<strong>木棍</strong>右键可以查看附近领地的边界。</li>
-  <li><code class="cmd">/lingdi</code>（别名 <code>/领地</code>、<code>/圈地</code>）：领地便携管理面板。<strong>⚡ 一键圈地</strong>以脚下为中心圈 11×11 / 15×15 / 21×21 / 25×25（消耗领地额度）；<strong>快捷扩容</strong>朝你面向的方向推出 3 / 5 / 10 / 20 格；还能看「我的领地」列表、高亮边界、管理好友权限。</li>
+  <li><code class="cmd">/lingdi</code>（别名 <code>/领地</code>、<code>/圈地</code>）：领地便携管理面板。<strong>⚡ 一键圈地</strong>以脚下为中心圈 11×11 / 15×15 / 21×21 / 25×25（消耗领地额度）；<strong>快捷扩容</strong>朝你面向的方向推出 3 / 5 / 10 / 20 格；还能看「我的领地」列表、高亮边界与中心点、管理好友权限，第 2 行是 🧩 圈新地并合并 · 📍 名字 / 传送点 · 👩‍🌾 帮工。</li>
 </ul>
 <div class="table-wrap"><table>
 <tr><th>领地指令</th><th>作用</th></tr>
@@ -86,6 +86,43 @@
 <tr><td><code>/abandonclaim</code></td><td>放弃脚下的领地</td></tr>
 </table></div>
 <figure class="menu-shot"><a href="images/menus/full/claim_quick.png"><img src="images/menus/claim_quick.png" alt="一键圈地（/lingdi）" loading="lazy"></a><figcaption>一键圈地（/lingdi） · <span class="zoom">点图看每个按钮的说明</span></figcaption></figure>
+
+<h2 id="圈新地并合并">🧩 圈新地并合并 /lingdi merge</h2>
+<p>想把领地扩成任意大小的长方形、或者把挨着的几块领地并成一块：<code class="cmd">/lingdi</code> 领地管理第 2 行的 <strong>🧩 圈新地并合并</strong>（或 <code>/lingdi merge</code>）。</p>
+<ol>
+  <li>站到想圈的长方形一角，点 <strong>📌 角点 1</strong>（或 <code>/lingdi pos1</code>）；走到对角，点 <strong>📌 角点 2</strong>（<code>/lingdi pos2</code>）。</li>
+  <li>菜单顶上会写出方案：最后的范围、中心、做法（圈新地 / 合并几块）、要扣多少额度。点 <strong>👀 预览范围</strong>画出来看看。</li>
+  <li>点 <strong>✅</strong>，确认页再点 <strong>✔ 确认</strong> 才真正执行。</li>
+</ol>
+<ul>
+  <li>选区<strong>没碰到</strong>你的领地：直接圈一块新地（每边至少 5 格、面积至少 100 格），扣整块面积的额度。</li>
+  <li>选区<strong>碰到或包住</strong>你的一块或多块领地：并成一块——保留面积最大的那块（编号不变），扩成包住「选区 + 这些领地」的长方形，其余几块的信任名单抄过去再删掉。<strong>只扣净增面积</strong>的额度。</li>
+  <li>你的私人领地 / 小镇也可以并进来，它一定是保留的那块（成员、子领地都不变），面积够了就能升级成小镇。两块私人领地 / 小镇不能互相合并。</li>
+  <li>做不了的情况（菜单里会红字说明）：碰到别人的领地或管理员领地、碰到主城保护区、额度不够、要并掉的领地里有子领地（先删掉子领地再合并）。</li>
+  <li>原来的「📏 看边界 / 扩容」照旧：右键朝面向方向扩容（同 <code>/extendclaim</code>）。</li>
+</ul>
+
+<h3>📏 看边界与中心点</h3>
+<p>领地菜单 📏 左键（圈地、扩容、合并后也会自动显示）：画出边界光点、<strong>中心竖光柱</strong>和过中心的<strong>东西、南北两条淡粉色十字线</strong>，持续约 10 秒，只有你自己看得到。聊天里还会写「中心 x, z · 尺寸 W×L · 中心到东 / 西 / 南 / 北边各几格」，摆对称建筑很方便。「我的领地」列表每块也写着中心坐标。</p>
+
+<h2 id="领地名字与传送点">📍 领地名字、传送点与对外开放</h2>
+<p>普通领地也能起名、设传送点、开放给全服来逛，<strong>全部免费</strong>。在自己的领地里打开 <code class="cmd">/lingdi</code>，点第 2 行正中的 <strong>📍 名字 / 传送点</strong>（不在领地里时，可以在「🗺 我的领地」列表里 <kbd>Shift</kbd>+左键选一块）。</p>
+<div class="table-wrap"><table>
+<tr><th>功能</th><th>指令</th><th>说明</th></tr>
+<tr><td>✏ 起名</td><td><code>/lingdi name 名字</code></td><td>2–12 个字，全服普通领地不重名；显示在领地总览、我的领地列表、公开地点，走进领地时动作栏提示「📍「名字」· 主人 的领地」。右键按钮清掉名字</td></tr>
+<tr><td>📍 设传送点</td><td><code>/lingdi setwarp</code> · <code>/lingdi delwarp</code></td><td>站在自己领地里、能站稳的地方</td></tr>
+<tr><td>🚩 传送过去</td><td><code>/lingdi warp [名字]</code></td><td>主人和被你信任的人（建造 / 容器 / 访客 / 管理任一种）都能传送；「我的领地」列表左键也会优先去传送点</td></tr>
+<tr><td>🚪 对外开放</td><td><code>/lingdi public</code></td><td>要先有名字和传送点，默认关。开了以后谁都能 <code>/lingdi visit 名字</code> 或在 <a href="towns.html#公开地点-places">🗺 公开地点</a>里点过来——<strong>只是传送过来逛</strong>，建造 / 开箱仍按信任</td></tr>
+</table></div>
+<p>每次传送前都会检查落点安全；传送点已不在领地里或不安全时会被清掉并关掉对外开放，并通知你。</p>
+<figure class="menu-shot"><a href="images/menus/tg_warps_claim_place.png"><img src="images/menus/tg_warps_claim_place.png" alt="领地名字与传送点" loading="lazy"></a><figcaption>📍 名字 / 传送点菜单底图</figcaption></figure>
+
+<h2>和朋友一起住、雇帮工</h2>
+<ul>
+  <li>领地面积到 1024 格（32×32）就能升级成 <strong>🏡 私人领地</strong>（免费，最多 8 位成员），4096 格（64×64）能建 <strong>🏘 小镇</strong>（500 币，成员不限）：分身份、划子领地、定规则、开飞行。见 <a href="towns.html">私人领地与小镇</a>。</li>
+  <li><code class="cmd">/lingdi</code> 第 2 行的 👩‍🌾 <strong>帮工</strong>：雇帮工帮你收田、采茶、照顾动物、钓鱼。见 <a href="helpers.html">领地帮工</a>。</li>
+  <li>主菜单（<kbd>Shift</kbd>+<kbd>F</kbd>）第 4 行「🏘 领地与社群」：🛡 领地 · 🏘 小镇 · 🛡 公会三个入口在一起。</li>
+</ul>
 
 <h2>家与传送</h2>
 <div class="table-wrap"><table>

@@ -1,0 +1,274 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>公会 · SHUMC鼠鼠茶屋 新手百科</title>
+<meta name="description" content="和朋友组公会：建会与加入、公会经验与 10 级奖励、每周任务、周榜、公会商店、职位权限、银行仓库、传送点、驻扎小镇">
+<link rel="icon" href="images/brand/pack.png">
+<link rel="stylesheet" href="assets/css/site.css">
+<!-- meta:start -->
+<meta name="theme-color" content="#603e31">
+<link rel="apple-touch-icon" href="images/brand/pack.png">
+<link rel="canonical" href="https://imleyson.github.io/SHUMCwiki/guilds.html">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="SHUMC鼠鼠茶屋 新手百科">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:title" content="公会 · SHUMC鼠鼠茶屋 新手百科">
+<meta property="og:description" content="和朋友组公会：建会与加入、公会经验与 10 级奖励、每周任务、周榜、公会商店、职位权限、银行仓库、传送点、驻扎小镇">
+<meta property="og:url" content="https://imleyson.github.io/SHUMCwiki/guilds.html">
+<meta property="og:image" content="https://imleyson.github.io/SHUMCwiki/images/brand/og-card.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<!-- meta:end -->
+</head>
+<body>
+<header class="topbar">
+  <button class="menu-toggle" type="button" aria-label="打开目录">☰ 目录</button>
+  <a class="brand" href="index.html">
+    <img class="logo px" src="images/brand/pack.png" alt="SHUMC">
+    <span class="brand-text"><span class="brand-name">SHUMC鼠鼠茶屋</span><span class="brand-sub">新手百科 · Wiki</span></span>
+  </a>
+  <div class="search-wrap">
+    <img class="search-icon px" src="images/art/journal.png" alt="">
+    <input id="search" type="search" placeholder="搜索玩法、指令、物品…（按 / 聚焦）" autocomplete="off" aria-label="站内搜索">
+    <div id="search-results" class="search-results" role="listbox"></div>
+  </div>
+</header>
+<div class="layout">
+<nav id="sidebar" aria-label="目录"></nav>
+<main class="content">
+<div class="page-head"><img class="px" src="images/art/guildcrest.png" alt=""><div><h1>公会</h1><p class="lead">和朋友组公会：建会与加入、公会经验与 10 级奖励、每周任务、周榜、公会商店、职位权限、银行仓库、传送点、驻扎小镇</p></div></div>
+<div class="callout info"><img class="px" src="images/art/guildcrest.png" alt=""><div><p class="c-title">一句话</p><p>和朋友组一个 <strong>🛡 公会</strong>：平常钓鱼、种田、下星渊、做委托就给公会涨经验，公会升级给每位成员发奖励、解锁更多人数和仓库；每周一起做 3 个公会任务、冲公会周榜；用个人贡献度在公会商店换种子、晶洞、洒水器和专属外观。职位、权限、会标颜色、简介都能自己定。没有税、没有维护费、没有战争。</p></div></div>
+<div class="callout warn"><img class="px" src="images/items/ui_guild_crest.png" alt=""><div><p class="c-title">别和冒险公会搞混</p><p>打怪悬赏、秘境试炼、军械库的是 <a href="adventure.html">⚔ 冒险公会</a>（<code class="cmd">/adventure</code>、<code>/冒险</code>）。这一页说的是玩家自己组的 🛡 公会：<code class="cmd">/guild</code>（别名 <code>/gonghui</code>、<code>/公会</code>、<code>/gh</code>）。</p></div></div>
+
+<h2>怎么开始</h2>
+<h3>自己建一个公会</h3>
+<ol>
+  <li>准备 <strong>1000 茶屋币</strong>。</li>
+  <li>输入 <code>/guild create 名字 会标</code>，例如 <code>/guild create 樱花茶会 樱花</code>。</li>
+  <li><strong>名字 2–8 个字</strong>（汉字 / 字母 / 数字 / 下划线），<strong>会标 2–4 个字</strong>（汉字 / 字母 / 数字）。名字和会标都不能和别的公会重复（不分大小写）。</li>
+  <li>建好后 <code class="cmd">/guild</code> 打开公会主页（也可以在主菜单 <kbd>Shift</kbd>+<kbd>F</kbd> 第 4 行「🏘 领地与社群」点 🛡 公会）。</li>
+  <li>去 🎨 公会资料里选<strong>招募方式</strong>，再 <code>/guild invite 玩家名</code> 拉朋友进来。</li>
+</ol>
+<h3>加入别人的公会</h3>
+<ul>
+  <li><code>/guild list</code> 打开 🗺 <strong>公会目录</strong>，看每个公会的会长、人数、等级、招募方式。</li>
+  <li><strong>开放加入</strong>的公会点一下直接进；<strong>需要申请</strong>的点「申请」（或 <code>/guild apply 公会名</code>），等有权限的人审批；<strong>仅邀请</strong>的只能等邀请（聊天栏 [✔ 接受] [✖ 拒绝]，5 分钟有效，也可以 <code>/guild accept</code> / <code>deny</code>）。</li>
+  <li>有的公会设了<strong>申请门槛</strong>：你的最高专精等级要 ≥ N（被邀请的人不受限）。</li>
+  <li><strong>一人一会</strong>。退出或被移出后 <strong>24 小时</strong>内不能再加入或建立公会。</li>
+  <li>第一次加入任何公会时会收到<strong>新成员见面礼</strong>：100 币 + 樱花抹茶拿铁 ×2 + 樱桃草莓种子 ×4（每个玩家一辈子只发一次）。</li>
+</ul>
+<figure class="menu-shot"><a href="images/menus/tg_guild_main.png"><img src="images/menus/tg_guild_main.png" alt="公会主页（/guild）" loading="lazy"></a><figcaption>公会主页（/guild）菜单底图 · 名字只是示例</figcaption></figure>
+
+<h2>公会经验与等级</h2>
+<p>不用专门刷，成员<strong>平常玩</strong>就给公会涨经验，同时给自己涨同样多的<strong>个人贡献度</strong>（公会商店的货币）：</p>
+<div class="table-wrap"><table>
+<tr><th>你做了什么</th><th>公会经验 / 个人贡献</th></tr>
+<tr><td>钓到一条鱼</td><td>+2</td></tr>
+<tr><td>收获一次作物</td><td>+1</td></tr>
+<tr><td>星渊清掉一个战斗 / 挑战房</td><td>+3</td></tr>
+<tr><td>星渊打倒首领</td><td>+15</td></tr>
+<tr><td>领一个每日委托奖励</td><td>+10</td></tr>
+<tr><td>完成每周公会任务</td><td>见下（不占每日上限）</td></tr>
+</table></div>
+<p><strong>每人每天最多给公会 300 经验</strong>（周任务不算在内），第二天重置。</p>
+<div class="table-wrap"><table>
+<tr><th>等级</th><th>累计经验</th><th>人数上限</th><th>仓库格数</th><th>新解锁</th><th>升级奖励（每位成员一份）</th></tr>
+<tr><td>Lv1</td><td>0</td><td>10</td><td>9</td><td>🚩 公会传送点、白色会标</td><td>—</td></tr>
+<tr><td>Lv2</td><td>600</td><td>13</td><td>9</td><td>嫩绿会标</td><td>200 币 + 樱桃草莓种子 ×8</td></tr>
+<tr><td>Lv3</td><td>1,800</td><td>16</td><td>18</td><td>—</td><td>300 币 + 丰产农家肥 ×4 + 称号「🚩 开拓者」</td></tr>
+<tr><td>Lv4</td><td>3,600</td><td>20</td><td>18</td><td>湖蓝会标、🎏 公会旗帜（每人每周领 1 面）</td><td>400 币 + 紫晶晶洞 ×2 + 🎏 鼠纹暖帘</td></tr>
+<tr><td>Lv5</td><td>6,000</td><td>23</td><td>27</td><td>钓鱼 / 农耕专精经验 <strong>+5%</strong></td><td>500 币 + 银质洒水器 + 灵雨丰收卷轴 ×2</td></tr>
+<tr><td>Lv6</td><td>9,500</td><td>26</td><td>27</td><td>樱粉、藤紫会标</td><td>600 币 + 樱花营养精料 ×4 + 称号「🏛 公会元老」</td></tr>
+<tr><td>Lv7</td><td>14,000</td><td>30</td><td>36</td><td>—</td><td>700 币 + 星辉铱金晶洞 + 黄金鱼王刺身 ×2</td></tr>
+<tr><td>Lv8</td><td>20,000</td><td>33</td><td>36</td><td>鎏金会标、钓鱼 / 农耕专精经验 <strong>+10%</strong></td><td>800 币 + 铱金洒水器 + 樱花秘银锭 ×4</td></tr>
+<tr><td>Lv9</td><td>28,000</td><td>36</td><td>45</td><td>—</td><td>900 币 + 星辉铱金晶洞 ×2 + 樱花许愿河灯 ×3</td></tr>
+<tr><td>Lv10</td><td>38,000</td><td>40</td><td>45</td><td>朱红会标</td><td>1500 币 + 永久光环「🌸 樱花旋舞」+ 称号「👑 传奇公会」</td></tr>
+</table></div>
+<p>人数上限含会长。升级奖励在线、离线的成员都有，放进 🎁 待领奖励。专精经验加成只加钓鱼和农耕两门。</p>
+
+<h2>每周公会任务</h2>
+<ul>
+  <li>每周一 0 点（北京时间）给每个公会从任务池里抽 <strong>3 个</strong>共享目标。</li>
+  <li>有「📜 接取周任务」权限的人先在任务页<strong>接取</strong>，然后有「🧺 提交周任务」权限的成员在任务页里<strong>点自己背包里的东西</strong>交上去（一次交一整组，多出来的自动退回）。</li>
+  <li>完成一个：公会经验 +250~500，交过东西的人每人贡献 +40~80，<strong>每位成员一份奖励</strong>：120 币 + 樱花晶洞。</li>
+</ul>
+<div class="table-wrap"><table>
+<tr><th>任务池</th><th>公会经验</th><th>交过东西的人贡献</th></tr>
+<tr><td>交 64 份作物（任意）</td><td>400</td><td>60</td></tr>
+<tr><td>交 24 份樱桃草莓</td><td>350</td><td>50</td></tr>
+<tr><td>交 32 条鱼</td><td>400</td><td>60</td></tr>
+<tr><td>交 6 枚星辉徽章</td><td>500</td><td>80</td></tr>
+<tr><td>交 4 块锻造合金</td><td>450</td><td>70</td></tr>
+<tr><td>交 192 个橡木原木</td><td>300</td><td>40</td></tr>
+<tr><td>交 512 个圆石</td><td>250</td><td>40</td></tr>
+<tr><td>交 48 个铁锭</td><td>350</td><td>50</td></tr>
+<tr><td>交 64 个白色羊毛</td><td>250</td><td>40</td></tr>
+</table></div>
+<figure class="menu-shot"><a href="images/menus/tg_guild_weekly.png"><img src="images/menus/tg_guild_weekly.png" alt="每周公会任务" loading="lazy"></a><figcaption>📜 每周公会任务菜单底图</figcaption></figure>
+
+<h2>🏆 公会周榜 /guild top</h2>
+<p>每周一结算上周的公会经验，前 3 名公会的<strong>每位成员</strong>一份奖励箱：</p>
+<div class="table-wrap"><table>
+<tr><th>名次</th><th>每位成员奖励</th></tr>
+<tr><td>🥇 第 1 名</td><td>800 币 + 星辉铱金晶洞 + 称号「🏆 周榜冠军」</td></tr>
+<tr><td>🥈 第 2 名</td><td>500 币 + 紫晶晶洞 ×2</td></tr>
+<tr><td>🥉 第 3 名</td><td>300 币 + 紫晶晶洞</td></tr>
+</table></div>
+
+<h2>🎁 待领奖励 /guild rewards</h2>
+<p>升级奖励、周任务奖励、周榜奖励、见面礼、公会旗帜，全都进这个箱子（和小镇繁荣度奖励是同一个），<strong>离线也不会丢</strong>，上线点一下领。背包满了会掉在脚下。每份奖励单独记账，不会领两次。</p>
+
+<h2>公会商店 /guild shop</h2>
+<p>用<strong>个人贡献度</strong>买（贡献度记在你在这个公会里的成员档案上，<strong>退会后清零</strong>，换了公会要重新攒），「等级」是公会要到几级才能买：</p>
+<div class="table-wrap"><table>
+<tr><th>商品</th><th>贡献</th><th>条件 / 限购</th></tr>
+<tr><td>樱桃草莓种子 ×8</td><td>60</td><td>—</td></tr>
+<tr><td>宇治抹茶种子 ×8</td><td>80</td><td>—</td></tr>
+<tr><td>天山雪莲种子 ×4</td><td>120</td><td>Lv2</td></tr>
+<tr><td>速长沃土肥 ×4</td><td>120</td><td>—</td></tr>
+<tr><td>丰产农家肥 ×4</td><td>140</td><td>—</td></tr>
+<tr><td>金星品质肥 ×4</td><td>180</td><td>Lv3</td></tr>
+<tr><td>优质牧草饲料 ×8</td><td>80</td><td>—</td></tr>
+<tr><td>樱花营养精料 ×4</td><td>200</td><td>Lv3</td></tr>
+<tr><td>樱花晶洞 ×3</td><td>120</td><td>—</td></tr>
+<tr><td>紫晶晶洞 ×2</td><td>260</td><td>Lv4，每周 3 次</td></tr>
+<tr><td>星辉铱金晶洞</td><td>500</td><td>Lv6，每周 1 次</td></tr>
+<tr><td>灵雨丰收卷轴</td><td>200</td><td>Lv3</td></tr>
+<tr><td>晴空祈愿卷轴</td><td>220</td><td>Lv4</td></tr>
+<tr><td>星露精铁锭 ×4</td><td>160</td><td>Lv2</td></tr>
+<tr><td>星辉紫晶核</td><td>400</td><td>Lv5，每周 2 次</td></tr>
+<tr><td>樱花抹茶拿铁 ×3</td><td>90</td><td>—</td></tr>
+<tr><td>盐渍樱花瓣 ×4（春季香料）</td><td>100</td><td>—</td></tr>
+<tr><td>附魔之瓶 ×16</td><td>100</td><td>—</td></tr>
+<tr><td>铜制洒水器</td><td>250</td><td>Lv3</td></tr>
+<tr><td>银质洒水器</td><td>600</td><td>Lv6，每周 1 次</td></tr>
+<tr><td>🎏 公会旗帜（鼠纹暖帘家具）</td><td>150</td><td>Lv4</td></tr>
+<tr><td>樱花许愿河灯 ×2</td><td>150</td><td>Lv5</td></tr>
+<tr><td>🏷 称号「💎 公会砥柱」</td><td>3,000</td><td>Lv5，一辈子 1 次</td></tr>
+<tr><td>👘 衣橱「花环」</td><td>4,500</td><td>Lv7，一辈子 1 次</td></tr>
+<tr><td>✨ 永久光环「金秋落叶」</td><td>8,000</td><td>Lv8，一辈子 1 次</td></tr>
+</table></div>
+<p>公会专属称号（🚩 开拓者、🏛 公会元老、👑 传奇公会、🏆 周榜冠军、💎 公会砥柱）不在称号图鉴里，拿到后在 <code class="cmd">/title</code>「我的称号」里戴。</p>
+<figure class="menu-shot"><a href="images/menus/tg_guild_shop.png"><img src="images/menus/tg_guild_shop.png" alt="公会商店" loading="lazy"></a><figcaption>🛒 公会商店菜单底图</figcaption></figure>
+
+<h2>职位与权限</h2>
+<ul>
+  <li>默认 4 个职位：<strong>会长 / 副会长 / 干事 / 成员</strong>。会长可以<strong>新建</strong>职位（含会长最多 8 个）、<strong>改名</strong>（1–6 字）、<strong>调顺序</strong>（<kbd>Shift</kbd>+左键往上、<kbd>Shift</kbd>+右键往下）、<strong>删除</strong>（那个职位的人改成最低职位）。</li>
+  <li>🎖 职位与权限 → 点一个职位 → 权限逐项开关：✉ 邀请成员 · 🚪 移出成员 · 📬 审批申请 · ⬆ 任免下级职位 · 💰 取用银行（+ 每日取钱上限）· 📦 取用仓库 · 📜 接取周任务 · 🧺 提交周任务 · 📍 设置传送点 · 🎨 编辑简介 / 公告 · 🏘 驻扎小镇 · 🧩 银行付子领地 · 🔇 公会聊天禁言。</li>
+  <li><strong>会长永远拥有全部权限</strong>，不能改不能删，只能转让。</li>
+  <li>任免、移出、禁言只能对<strong>比自己职位低</strong>的人；只能任命比自己低的职位。</li>
+</ul>
+<div class="table-wrap"><table>
+<tr><th>默认职位</th><th>默认权限</th></tr>
+<tr><td>会长</td><td>全部，不受限</td></tr>
+<tr><td>副会长</td><td>全部；每天最多从银行取 2,000 币</td></tr>
+<tr><td>干事</td><td>邀请、审批、取钱（每天 500 币）、取仓库、接取 / 提交周任务、禁言</td></tr>
+<tr><td>成员</td><td>提交周任务</td></tr>
+</table></div>
+<p>所有人都能往银行存钱、往仓库放东西。</p>
+<div class="shots">
+<figure class="menu-shot"><a href="images/menus/tg_guild_ranks.png"><img src="images/menus/tg_guild_ranks.png" alt="职位与权限" loading="lazy"></a><figcaption>🎖 职位与权限菜单底图</figcaption></figure>
+<figure class="menu-shot"><a href="images/menus/tg_guild_rank_edit.png"><img src="images/menus/tg_guild_rank_edit.png" alt="权限矩阵" loading="lazy"></a><figcaption>某个职位的权限页菜单底图</figcaption></figure>
+</div>
+
+<h2>公会资料与会标</h2>
+<p>🎨 公会资料（有「编辑简介 / 公告」权限的人能改）：</p>
+<div class="table-wrap"><table>
+<tr><th>项目</th><th>说明</th></tr>
+<tr><td>简介</td><td>60 字，目录里显示（<code>/guild set desc 文字</code>）</td></tr>
+<tr><td>公告</td><td>80 字，改了通知在线成员，成员上线时也会提醒（<code>/guild set notice 文字</code>）</td></tr>
+<tr><td>入会欢迎语</td><td>40 字（<code>/guild set welcome 文字</code>）</td></tr>
+<tr><td>招募方式</td><td>开放加入 / 需要申请 / 仅邀请</td></tr>
+<tr><td>申请门槛</td><td>最高专精等级 ≥ N（最高能设到 50，<code>/guild set minlevel 等级</code>）</td></tr>
+<tr><td>会标颜色</td><td>白（Lv1）· 嫩绿（Lv2）· 湖蓝（Lv4）· 樱粉、藤紫（Lv6）· 鎏金（Lv8）· 朱红（Lv10）</td></tr>
+<tr><td>会徽图标</td><td>目录和周榜里显示，16 种可选（8 色旗帜、樱花树苗、钓竿、金锄、紫水晶、钟、灯笼、蛋糕、蜜脾）</td></tr>
+<tr><td>改名 / 改会标</td><td>只有会长，<strong>从公会银行扣 300 币</strong>（<code>/guild set name|tag 新名字</code>）</td></tr>
+</table></div>
+<p>所有玩家写的文字都会自动去掉颜色代码、格式符号，并按字数截断。</p>
+
+<h2 id="名字前缀">名字前缀</h2>
+<p><code>/guild prefix</code>（和 <code>/town prefix</code> 是同一个设置）决定在 <strong>Tab 列表、聊天、头顶名字</strong>里，称号前面显示什么：</p>
+<div class="table-wrap"><table>
+<tr><th>选项</th><th>效果（示例）</th></tr>
+<tr><td>自动（默认）</td><td>有公会显示【会标】，没有公会显示〔小镇名〕</td></tr>
+<tr><td>只显示公会会标</td><td>【樱花】[ 称号 ] 名字</td></tr>
+<tr><td>只显示小镇名</td><td>〔樱桃镇〕[ 称号 ] 名字</td></tr>
+<tr><td>都显示（会标在前 / 小镇在前）</td><td>【樱花】〔樱桃镇〕[ 称号 ] 名字，或反过来</td></tr>
+<tr><td>都不显示</td><td>只有称号</td></tr>
+</table></div>
+<p>小镇名取你当居民以上的那个私人领地 / 小镇。</p>
+
+<h2>公会银行与仓库</h2>
+<ul>
+  <li><strong>银行</strong>（<code>/guild bank</code>）：人人能存（<code>/guild bank deposit 金额</code>），有「💰 取用银行」权限的职位按每日限额取（<code>/guild bank withdraw 金额</code>，会长不限），最多存 1 亿。<code>/guild bank log</code> 看最近 50 条流水。</li>
+  <li><strong>仓库</strong>（<code>/guild warehouse</code>）：公会共享箱子，格数随等级 9 → 45。点自己背包里的东西 = 整组放进去；点仓库里的格子 = 拿走（要「📦 取用仓库」权限）。保留最近 50 条存取日志，别人开着的仓库页会跟着刷新。</li>
+  <li>公会解散时，银行余额和仓库物品全部进<strong>会长</strong>的 🎁 待领奖励。</li>
+</ul>
+<div class="shots">
+<figure class="menu-shot"><a href="images/menus/tg_guild_bank.png"><img src="images/menus/tg_guild_bank.png" alt="公会银行" loading="lazy"></a><figcaption>💰 公会银行菜单底图</figcaption></figure>
+<figure class="menu-shot"><a href="images/menus/tg_guild_warehouse.png"><img src="images/menus/tg_guild_warehouse.png" alt="公会仓库" loading="lazy"></a><figcaption>📦 公会仓库菜单底图</figcaption></figure>
+</div>
+
+<h2 id="公会传送点">🚩 公会传送点与对外开放</h2>
+<ul>
+  <li>建会就能设：有「📍 设置传送点」权限的人站在能站稳的地方 <code>/guild sethome</code>（星渊里不能设）。成员 <code>/guild home</code> <strong>免费</strong>传送，没有冷却。</li>
+  <li><strong>对外开放</strong>（默认关）：在公会主页 🚩 传送点上 <kbd>Shift</kbd>+左键，或 <code>/guild public</code>。开了以后公会出现在 <a href="towns.html#公开地点-places">🗺 公开地点</a>的「公会」页签，谁都能 <code>/guild visit 公会名</code>，或在公会目录里右键那个公会过去。外人只是传送过去，银行、仓库、权限都不受影响。</li>
+  <li>每次传送前检查落点：有岩浆、悬空、被方块堵住等不安全情况时不传，清掉传送点并关掉对外开放，在公会频道里提醒重新设置。</li>
+</ul>
+
+<h2>公会 × 小镇：驻扎</h2>
+<ul>
+  <li>有「🏘 驻扎小镇」权限的人 <code>/guild garrison 镇名</code>：小镇镇长就是会长 → 直接生效；否则镇长收到申请，5 分钟内同意。一个公会只能驻扎一个小镇，一个小镇只接一个公会。</li>
+  <li>驻扎后所有成员（含以后加入的）<strong>自动成为该镇居民</strong>（已经是别处居民的、或小镇满员的跳过）。退会、撤出（<code>/guild garrison leave</code>）、镇长结束、公会解散时，只收回因驻扎得到、且镇长没改过身份的居民。</li>
+  <li>有「🧩 银行付子领地」权限、又是该镇居民的人，可以在 🏘 驻扎页<strong>用公会银行</strong>买镇上出售中的子领地给自己（钱付给镇长）。这块地同样记下买价，镇长收回时按价退给持有它的成员。</li>
+</ul>
+
+<h2>公会聊天</h2>
+<p><code>/g 消息</code>（别名 <code>/gc</code>、<code>/公会聊天</code>）只发给本会在线成员，格式是「[公会·会标] 职位 名字: 消息」。只输入 <code>/g</code> = 切换聊天频道，之后直接打字就发到公会，再输一次 <code>/g</code> 切回来。被禁言的人发不了。</p>
+
+<h2>和帮工联动</h2>
+<p>雇了 <a href="helpers.html">👩‍🌾 领地帮工</a>的人如果在公会里，帮工工作页会多两个按钮：🛡 <strong>工资从公会银行付</strong>（要有取钱权限，占你当天的取钱额度）、🛡 <strong>交货到公会仓库</strong>。帮工干的活不给公会经验。</p>
+
+<h2>指令一览</h2>
+<div class="table-wrap"><table>
+<tr><th>指令</th><th>作用</th></tr>
+<tr><td><code class="cmd">/guild</code>（<code>/gonghui</code> <code>/公会</code> <code>/gh</code>）</td><td>公会主菜单</td></tr>
+<tr><td><code>/guild create 名字 会标</code></td><td>建会（1000 币）</td></tr>
+<tr><td><code>/guild list</code> · <code>/guild info [公会]</code> · <code>/guild apply 公会</code></td><td>公会目录 · 看资料 · 申请 / 加入</td></tr>
+<tr><td><code>/guild invite 玩家</code> · <code>/guild accept|deny [公会]</code> · <code>/guild apps</code></td><td>邀请 · 处理邀请 · 入会申请</td></tr>
+<tr><td><code>/guild leave</code> · <code>/guild dissolve</code></td><td>退出 · 解散（会长；都有确认页）</td></tr>
+<tr><td><code>/guild bank [deposit|withdraw 金额|log]</code> · <code>/guild warehouse</code></td><td>银行 · 仓库</td></tr>
+<tr><td><code>/guild weekly</code> · <code>/guild shop</code> · <code>/guild rewards</code> · <code>/guild top</code></td><td>周任务 · 商店 · 待领奖励 · 周榜</td></tr>
+<tr><td><code>/guild home</code> · <code>/guild sethome</code></td><td>公会传送点</td></tr>
+<tr><td><code>/guild public</code> · <code>/guild visit [公会]</code></td><td>传送点对外开放开 / 关 · 去别的公会（不写名字 = 打开公开地点的公会页）</td></tr>
+<tr><td><code>/guild prefix</code></td><td>名字前缀</td></tr>
+<tr><td><code>/guild set desc|notice|welcome 文字</code></td><td>改资料</td></tr>
+<tr><td><code>/guild set name|tag 新名字</code></td><td>会长改名 / 会标（银行付 300）</td></tr>
+<tr><td><code>/guild set addrank 名字</code> · <code>rank 序号 名字</code> · <code>limit 序号 金额</code> · <code>minlevel 等级</code></td><td>新建职位 · 改职位名 · 每日取钱限额 · 申请门槛</td></tr>
+<tr><td><code>/guild garrison 镇名|leave</code></td><td>驻扎 / 撤出小镇</td></tr>
+<tr><td><code class="cmd">/g [消息]</code>（<code>/gc</code>）</td><td>公会聊天 / 切换频道</td></tr>
+</table></div>
+
+<h2>常见问题</h2>
+<h3>我一个人能玩公会吗？</h3>
+<p>能。经验靠日常玩法自己涨，等级奖励每人一份。但每人每天最多给 300 经验，人多升得快得多，周任务也好做。</p>
+<h3>退会后贡献度还在吗？</h3>
+<p>不在。贡献度跟着你在这个公会里的成员档案走，退会就清零，想换东西先在公会商店花掉。退会 24 小时内也不能加入新公会。见面礼一辈子只发一次，换公会不会再发。</p>
+<h3>每天 300 经验上限怎么算？</h3>
+<p>钓鱼、收获、星渊、每日委托给的经验加起来一天最多 300，超过的不算；周任务给的经验不占这个上限。</p>
+<h3>帮工钓的鱼算公会经验吗？</h3>
+<p>不算，只有你亲手做的才算。</p>
+</main>
+</div>
+<footer class="site-footer">
+  SHUMC鼠鼠茶屋 新手百科 · 内容依据服务器当前版本整理（CozyLife 1.8.0 / CozyAbyss 0.9.6 / CozyFish 1.5.7 / CozySeasons 1.0.4 / CozySpawn 1.1.6）<br>
+  玩家 QQ 群：<strong>666974391</strong> · <a class="qq-join" href="mqqapi://card/show_pslcard?src_type=internal&amp;version=1&amp;uin=666974391&amp;card_type=group&amp;source=qrcode" data-qq="666974391">一键加群</a><br>
+  图片均来自 SHUMC 材质包、菜单预览渲染与模型渲染 · 数值以游戏内菜单为准
+</footer>
+<script src="assets/js/nav.js"></script>
+<script src="assets/js/site.js"></script>
+</body>
+</html>

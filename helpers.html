@@ -1,0 +1,214 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>领地帮工 · SHUMC鼠鼠茶屋 新手百科</title>
+<meta name="description" content="雇帮工照看田地、茶园、动物和水塘：四种工作、契约与日薪、熟练度、心情、平衡规则与收益估算">
+<link rel="icon" href="images/brand/pack.png">
+<link rel="stylesheet" href="assets/css/site.css">
+<!-- meta:start -->
+<meta name="theme-color" content="#603e31">
+<link rel="apple-touch-icon" href="images/brand/pack.png">
+<link rel="canonical" href="https://imleyson.github.io/SHUMCwiki/helpers.html">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="SHUMC鼠鼠茶屋 新手百科">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:title" content="领地帮工 · SHUMC鼠鼠茶屋 新手百科">
+<meta property="og:description" content="雇帮工照看田地、茶园、动物和水塘：四种工作、契约与日薪、熟练度、心情、平衡规则与收益估算">
+<meta property="og:url" content="https://imleyson.github.io/SHUMCwiki/helpers.html">
+<meta property="og:image" content="https://imleyson.github.io/SHUMCwiki/images/brand/og-card.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<!-- meta:end -->
+</head>
+<body>
+<header class="topbar">
+  <button class="menu-toggle" type="button" aria-label="打开目录">☰ 目录</button>
+  <a class="brand" href="index.html">
+    <img class="logo px" src="images/brand/pack.png" alt="SHUMC">
+    <span class="brand-text"><span class="brand-name">SHUMC鼠鼠茶屋</span><span class="brand-sub">新手百科 · Wiki</span></span>
+  </a>
+  <div class="search-wrap">
+    <img class="search-icon px" src="images/art/journal.png" alt="">
+    <input id="search" type="search" placeholder="搜索玩法、指令、物品…（按 / 聚焦）" autocomplete="off" aria-label="站内搜索">
+    <div id="search-results" class="search-results" role="listbox"></div>
+  </div>
+</header>
+<div class="layout">
+<nav id="sidebar" aria-label="目录"></nav>
+<main class="content">
+<div class="page-head"><img class="px" src="images/items/ui_helper.png" alt=""><div><h1>领地帮工</h1><p class="lead">雇帮工照看田地、茶园、动物和水塘：四种工作、契约与日薪、熟练度、心情、平衡规则与收益估算</p></div></div>
+<div class="callout info"><img class="px" src="images/items/ui_helper.png" alt=""><div><p class="c-title">一句话</p><p>花茶屋币雇一位帮工姑娘住进你的领地，帮你照看田、茶、动物和水塘，收成放进你指定的箱子。她干得比你亲手干<strong>少、品质低</strong>，而且<strong>你得在线、不能挂机太久</strong>她才全速干活——亲手玩依然最划算、最特别，她是帮你省力的。</p></div></div>
+
+<h2>四种工作</h2>
+<div class="table-wrap"><table>
+<tr><th>工作</th><th>契约价</th><th>日薪（熟练度 Lv1 → Lv5）</th><th>干什么</th><th>每天上限（Lv1 → Lv5）</th><th>你要准备</th></tr>
+<tr><td>🌾 农夫</td><td>2,000 币</td><td>150 / 190 / 230 / 270 / 300</td><td>收范围里<strong>成熟</strong>的作物（原版 5 种 + 种在田里的特色作物），原地补种</td><td>64 / 80 / 96 / 112 / 128 格</td><td>种好的田 + 箱子</td></tr>
+<tr><td>🍵 茶娘</td><td>1,500 币</td><td>120 / 145 / 170 / 195 / 220</td><td>采成熟的<strong>宇治抹茶嫩芽</strong>（只采这一种）；箱子里有原料时，用工坊「🍵 茶饮冲泡」配方冲茶</td><td>采 48 / 60 / 72 / 84 / 96 芽；冲 4 / 6 / 8 / 10 / 12 杯</td><td>抹茶田 + 箱子（放冲茶原料）</td></tr>
+<tr><td>🐔 养殖员</td><td>1,500 币</td><td>40 / 50 / 60 / 70 / 80</td><td>捡地上的蛋 / 羽毛 / 羊毛 → 剪成年羊的毛 → 用箱子里的<strong>空桶</strong>挤奶（牛 / 山羊，每头每天一次）→ 用箱子里的饲料喂一对同种成年动物繁殖</td><td>32 / 40 / 48 / 56 / 64 件</td><td>圈好的动物 + 箱子（空桶、饲料）</td></tr>
+<tr><td>🎣 渔夫</td><td>1,200 币</td><td>60 / 75 / 90 / 105 / 120</td><td>范围里有<strong>至少 3 格水源</strong>时，每轮下竿 1 次（Lv4 起 2 次），45% 上钩，从茶屋鱼表钓一条</td><td>32 / 40 / 48 / 56 / 64 条</td><td>范围里的水 + 箱子</td></tr>
+</table></div>
+<ul>
+  <li><strong>养殖员喂什么</strong>：牛、羊、山羊 = 小麦；鸡 = 小麦种子；猪 = 胡萝卜。她<strong>从不伤害动物</strong>，只剪毛、挤奶、捡东西、喂食。范围里同种动物 ≥ 8 只、或一共 ≥ 24 只时不再喂食繁殖，不会挤爆。</li>
+  <li><strong>茶娘冲茶</strong>：只用工坊「茶饮冲泡」配方，不用香料、不冲出窍安神茶；牛奶桶用完退回空桶。茶娘冲奶茶要的牛奶，可以让养殖员挤好放进同一个箱子。</li>
+  <li>外观：农夫 = 农民服、茶娘 = 牧师袍、养殖员 = 牧羊人、渔夫 = 渔夫服。头顶名字「帮工·小麦」这样的随机可爱名字，可以改。</li>
+</ul>
+
+<h2>怎么雇：一步一步</h2>
+<ol>
+  <li><strong>买契约</strong>：主菜单 🛒 商业街（<code class="cmd">/npcshop</code>）第 2 行的 🏢 <strong>茶屋职介所</strong>（或 <code>/bangong agency</code>），选一种工作买 📜 帮工契约。</li>
+  <li><strong>放下她</strong>：拿着契约<strong>右键自己领地里的地面</strong>，她就出现在那一格上（要一格实心地面、上面空两格）。这一格就是她的「岗位」。</li>
+  <li><strong>绑箱子</strong>：右键她打开工作页 → 📦 <strong>绑定箱子</strong>，30 秒内右键一个箱子 / 陷阱箱 / 木桶（离岗位 16 格以内、同一块地里）。也可以先拿着契约 <kbd>Shift</kbd>+右键箱子预绑，放下她时自动绑好。</li>
+  <li><strong>开工</strong>：她每 <strong>30 秒</strong>干一轮活，农夫 / 茶娘 / 养殖员每轮做 <strong>4 件</strong>，收成放进箱子。</li>
+  <li>想看所有帮工：<code class="cmd">/bangong</code>（别名 <code>/helper</code>、<code>/bg</code>、<code>/帮工</code>）打开 👩‍🌾 帮工名单，或 <code class="cmd">/lingdi</code> 领地管理第 2 行的 👩‍🌾 帮工。名单里左键打开她的工作页，右键让她发光 5 秒好找。</li>
+</ol>
+<h3>能放在哪、能放几个</h3>
+<ul>
+  <li><strong>你自己是主人的领地</strong>（在子领地里按整块领地算）。别人的领地、野外、不是自己的地都不行，会告诉你原因。</li>
+  <li><strong>小镇里</strong>：镇长 / 助理可以在镇上任何地方雇「小镇公共帮工」（公共农田）；居民只能雇在自己的子领地里。</li>
+  <li><strong>每人最多 3 个</strong>（所有领地加起来）。镇长 / 助理雇的小镇公共帮工不占名额，只受小镇名额限制。</li>
+  <li><strong>每块地最多几个</strong>：普通领地 / 子领地按面积，≤ 1000 格 1 个、≤ 4000 格 2 个、更大 3 个；小镇公共地按繁荣度 Lv1–5：2 / 2 / 3 / 3 / 4 个。两个帮工的岗位不能紧挨着。</li>
+  <li><strong>作业范围</strong>：以岗位为中心的方块，默认 5×5，熟练度越高能开越大（见下）。范围永远夹在这块地里，岗位贴边时会自动变窄。工作页 🧭 范围：左键扩大、右键缩小。</li>
+</ul>
+
+<h2>熟练度 Lv1–5</h2>
+<div class="table-wrap"><table>
+<tr><th>等级</th><th>累计经验</th><th>最大范围</th><th>额外</th></tr>
+<tr><td>Lv1</td><td>0</td><td>5×5</td><td>—</td></tr>
+<tr><td>Lv2</td><td>500</td><td>7×7</td><td>—</td></tr>
+<tr><td>Lv3</td><td>1,500</td><td>7×7</td><td>—</td></tr>
+<tr><td>Lv4</td><td>3,500</td><td>9×9</td><td>渔夫每轮下竿 2 次</td></tr>
+<tr><td>Lv5</td><td>7,000</td><td>9×9</td><td>—</td></tr>
+</table></div>
+<p>做 1 件 = 1 点经验（冲 1 杯茶 = 2 点）。每日上限和日薪都按等级（见上表）。升级时她会放烟花、头顶冒「熟练度升到 Lv.X 啦！」，聊天里告诉你新范围和新上限。</p>
+
+<h2>工资、心情与辞退</h2>
+<h3>日薪</h3>
+<ul>
+  <li>契约是一次性的；<strong>日薪只在她真的干了活的日子扣</strong>：当天第一轮真要干活时，按她那一刻的工作和等级从你的钱包扣，动作栏会显示「今天开工，日薪 −190 币（农夫 Lv.2，钱包）」。田里没熟、没鱼、没动物可照顾 = 那天不扣。</li>
+  <li>当天中途升级不补扣，第二天按新等级算。</li>
+  <li><strong>欠薪</strong>：钱包扣不到，她就停工、摇头，头顶「💢 欠薪中…」，聊天提醒你（带打开名单的按钮）。到工作页 💰 补发当天那份（谁点谁出钱，搭子也能替你付），补完马上开工。</li>
+</ul>
+<h3>心情 0–100</h3>
+<div class="table-wrap"><table>
+<tr><th>事件</th><th>心情</th></tr>
+<tr><td>新来</td><td>70</td></tr>
+<tr><td>准时发薪</td><td>+3</td></tr>
+<tr><td>补发欠薪</td><td>+5</td></tr>
+<tr><td>欠薪</td><td>−20</td></tr>
+<tr><td>送一杯工坊茶饮（每个帮工每天 1 杯：拿着茶右键她，或工作页点 🍵）</td><td>+15</td></tr>
+</table></div>
+<ul>
+  <li>心情 <strong>≥ 80</strong>：每轮多干 1 件（渔夫上钩率 +10%），偶尔说「老板最好啦！」。</li>
+  <li>心情 <strong>&lt; 30</strong>：闹脾气，每轮少干 1 件（渔夫 −10%），台词「哼，工资呢…」。</li>
+  <li><strong>洒水器</strong>：作业范围里有任意自动洒水器 → 农夫 / 茶娘每轮多干 1 件。</li>
+</ul>
+<h3>辞退与换工作</h3>
+<ul>
+  <li><strong>🗑 辞退</strong>：退<strong>当初签的契约价的 70%</strong>（农夫 2,000 → 1,400、茶娘 / 养殖员 1,500 → 1,050、渔夫 1,200 → 840），欠的薪水从退款里扣。要先过确认页。</li>
+  <li><strong>🔁 换工作</strong>：工作页 🔁，手续费 <strong>300 币</strong>，熟练度保留 <strong>50%</strong>，外观跟着换，今天的计数清零；档案里旧工作的成绩保留。第二天起按新工作、新等级算日薪；以后辞退仍按当初签的契约价退。</li>
+  <li><strong>📍 挪岗位</strong>：工作页 📍（右键可以描一遍作业范围看看）。</li>
+  <li><strong>✏ 改名</strong>：工作页 ✏，或 <code>/bangong rename 名字</code>（给最近打开工作页的那位改名，1–6 个字）。</li>
+</ul>
+
+<h2>平衡：为什么亲手干还是更好</h2>
+<ul>
+  <li><strong>品质封顶 ★★ 银星</strong>：金星、珍品、鱼王、大师品质只有亲手做才有。茶娘冲的茶 70% ★ 凡品、30% ★★。</li>
+  <li><strong>不暴击</strong>：不触发 🌾 黄金大丰收。</li>
+  <li><strong>不吃加成</strong>：专精、天赋、专精锄头、丰收之神、巨型作物、香料、搭子、许愿池、鱼饵 / 拟饵 / 鱼竿 / 连击 / 节日 / 运势一律不算。<strong>肥料照常生效并消耗一茬</strong>（她用的是你的地）。</li>
+  <li><strong>不记收集</strong>：不记农耕图鉴 / 里程碑、钓鱼图鉴 / 个人最佳 / 全服纪录 / 钓鱼大赛，不给你专精经验，也不给公会经验。</li>
+  <li><strong>渔夫不出稀有鱼</strong>：传说 / 稀有鱼（黄金锦鲤王、远古活化石鱼等）和宝物都钓不到，也没有宝箱。</li>
+  <li><strong>每天有上限</strong>，满了头顶「😴 今天收工啦」。</li>
+  <li><strong>不离线挂机</strong>：你在线、她那块区块加载着才干活。</li>
+  <li><strong>💤 老板挂机她也偷懒</strong>：你 <strong>10 分钟</strong>没走动、没转视角、没聊天、没交互，你的所有帮工干活慢一半（隔一轮歇一轮，歇的那轮不干活、不扣薪），头顶「💤 老板不在，偷个懒」。你一动，她最多 2 秒内恢复，还会说「老板回来啦，开工开工！」。被水流冲着走、坐在载具里漂不算动静。小镇公共帮工跟着雇她的那位镇长 / 助理算。</li>
+  <li>她的收成拿去 <code class="cmd">/sell</code> 照常算进<a href="economy.html">每日出货额度</a>。</li>
+</ul>
+
+<h2>值不值？大概能赚多少</h2>
+<p>下面是一天的粗略估算（作物都熟、箱子够大、你在线不挂机、只种一种作物、当天一次卖完；按出货底价和每日饱和算，不算专精 / 天赋 / 热卖 / 季节加成）：</p>
+<div class="table-wrap"><table>
+<tr><th>工作 · 种什么</th><th>Lv1 收成 → 卖钱</th><th>Lv1 净赚</th><th>Lv5 收成 → 卖钱</th><th>Lv5 净赚</th></tr>
+<tr><td>🌾 农夫 · 黑金冬松露（冬季）</td><td>64 格 → 约 2,570</td><td><strong>约 2,420</strong></td><td>128 格 → 约 4,500</td><td><strong>约 4,200</strong></td></tr>
+<tr><td>🌾 农夫 · 樱桃草莓（春季）</td><td>64 格 → 约 1,320</td><td><strong>约 1,170</strong></td><td>128 格 → 约 2,250</td><td><strong>约 1,950</strong></td></tr>
+<tr><td>🌾 农夫 · 小麦</td><td>64 格 → 约 230</td><td><strong>约 80</strong></td><td>128 格 → 约 400</td><td><strong>约 100</strong></td></tr>
+<tr><td>🍵 茶娘 · 抹茶嫩芽</td><td>48 芽 → 约 780</td><td><strong>约 660</strong></td><td>96 芽 → 约 1,440</td><td><strong>约 1,220</strong></td></tr>
+<tr><td>🎣 渔夫</td><td>32 条 → 约 350</td><td><strong>约 290</strong></td><td>64 条 → 约 690</td><td><strong>约 570</strong></td></tr>
+<tr><td>🐔 养殖员 · 剪羊毛</td><td>约 64 羊毛</td><td>省下约 +88（按建材百货羊毛 2 币 / 个）</td><td>约 128 羊毛</td><td>省下约 +176</td></tr>
+</table></div>
+<ul>
+  <li><strong>农夫种特色作物才赚钱</strong>：小麦这类原版作物只够付她的日薪（工作页也有这条小贴士）。高价当季特色作物最值得雇农夫。</li>
+  <li><strong>养殖员是供原料的，不是来赚钱的</strong>：原版蛋、羊毛、牛奶、羽毛出货不收。羊毛建材百货卖 2 币 / 个；<strong>鸡蛋和牛奶全服没有商店卖</strong>，只能自己养——工坊的奶茶、拿铁、肉桂卷、南瓜派，家常料理的松饼、奶昔，季节收集包都要用。</li>
+  <li>要多久：农夫 / 茶娘作物都熟时 Lv1 大约 8 分钟就收满当天上限，真正卡住的是作物生长；渔夫要你在线约 36 分钟才钓满（挂机偷懒时翻倍）。</li>
+  <li>实际成本 = 30% 契约价（辞退退 70%）+ 每天的日薪。</li>
+</ul>
+
+<h2>好玩的小细节</h2>
+<ul>
+  <li><strong>会动</strong>：干活时一格一格走过去，面朝目标、脚下扬起小尘土；收作物有碎屑和干活声，钓鱼有甩竿和水花声，干完走回岗位；闲着时会转头看附近的玩家。</li>
+  <li><strong>头顶小气泡</strong>：📦 箱子满了 / 📦 还没绑箱子 / 💢 欠薪中 / 😴 今天收工啦 / 🏚 领地不在了，偶尔冒一句可爱台词。</li>
+  <li><strong>天气和季节</strong>：下雨且岗位露天时头顶一圈水花，「☂ 雨天也要加油！」；<strong>冬天露天每轮少干 1 件</strong>（渔夫上钩率 −10%），岗位头顶有玻璃（温室）或在室内就不受影响。</li>
+  <li><strong>小惊喜</strong>（每个帮工每天最多一次）：捡到茶屋币袋（5–20 币给你），或农夫 / 茶娘在田埂里捡到一包当季种子 / 抹茶种子。</li>
+  <li><strong>打招呼</strong>：你上线 3 秒后，帮工在聊天里报「老板回来啦！昨天收了 X 格，今天收了 Y 格」。</li>
+  <li><strong>📜 帮工档案</strong>：工作页 📜，看她的名片（工作、熟练度、心情、上工日期）、一辈子的成绩、收到的茶、小惊喜、今天 / 昨天的成绩。</li>
+</ul>
+
+<h2>工作页（右键她）</h2>
+<div class="table-wrap"><table>
+<tr><th>按钮</th><th>作用</th><th>谁能点</th></tr>
+<tr><td>状态卡</td><td>今天干了多少、上限、心情、日薪、是否偷懒</td><td>雇主、搭子</td></tr>
+<tr><td>🧭 范围</td><td>左键扩大、右键缩小作业范围</td><td>雇主</td></tr>
+<tr><td>📦 箱子</td><td>绑定 / 换箱子</td><td>雇主、搭子</td></tr>
+<tr><td>💰 工资</td><td>看日薪、补发欠薪</td><td>雇主、搭子</td></tr>
+<tr><td>🍵 送茶</td><td>送一杯工坊茶饮（每天 1 杯，心情 +15）</td><td>雇主、搭子</td></tr>
+<tr><td>✏ 改名 · 📍 挪岗位 · 🔁 换工作 · 🗑 辞退</td><td>见上</td><td>只有雇主</td></tr>
+<tr><td>📜 档案</td><td>帮工档案</td><td>雇主、搭子</td></tr>
+<tr><td>🛡 公会银行付薪 · 🛡 交货到公会仓库</td><td>雇主在公会里时才有（见下）</td><td>雇主</td></tr>
+</table></div>
+<p>「搭子」指在她岗位上有建造信任的人。小镇公共帮工的镇长 / 助理也能管。陌生人右键只会看到「是 X 家的帮工」。</p>
+
+<h2>和小镇、公会联动</h2>
+<ul>
+  <li><strong>小镇</strong>：镇长 / 助理能雇小镇公共帮工；镇上（含子领地）每个帮工给<a href="towns.html#小镇繁荣度">繁荣度</a> +20（最多算 4 个）。</li>
+  <li><strong>公会</strong>：你在 <a href="guilds.html">🛡 公会</a>里时，工作页多两个按钮——
+    <ul>
+      <li>🛡 <strong>工资从公会银行付</strong>：你的职位要有「💰 取用银行」，占你当天的取钱额度，银行流水会记一条；银行或额度不够时退回扣你的钱包，都不够才欠薪。</li>
+      <li>🛡 <strong>交货到公会仓库</strong>：收成直接放进公会仓库（满了她就停，头顶「公会仓库满啦」）；茶娘 / 养殖员的原料仍从你的箱子拿。</li>
+    </ul>
+  </li>
+</ul>
+
+<h2>她不会被欺负</h2>
+<p>帮工无敌、不能交易（右键永远是工作页）、不繁殖、不能拴、不坐船 / 矿车、不进传送门、不会被雷劈变身或被僵尸感染，怪物不会盯上她，也不会招铁傀儡。推不动，被水冲走或挪开 1 格以上下一秒就回岗位。领地被放弃 / 转手 / 缩小到不含岗位时她会停工，头顶「🏚 领地不在了」，你可以辞退拿退款。</p>
+
+<h2>指令</h2>
+<div class="table-wrap"><table>
+<tr><th>指令</th><th>作用</th></tr>
+<tr><td><code class="cmd">/bangong</code>（<code>/helper</code> <code>/bg</code> <code>/帮工</code>）</td><td>打开 👩‍🌾 帮工名单</td></tr>
+<tr><td><code>/bangong agency</code></td><td>打开 🏢 茶屋职介所（买契约）</td></tr>
+<tr><td><code>/bangong rename 名字</code></td><td>给最近打开工作页的那位帮工改名（1–6 字）</td></tr>
+</table></div>
+
+<h2>常见问题</h2>
+<h3>我下线了她还干活吗？</h3>
+<p>不干。你在线、她那块区块加载着才干活。你挂机 10 分钟以上她也只干一半。</p>
+<h3>她为什么不动了？</h3>
+<p>看她头顶的气泡：箱子满了、没绑箱子、欠薪、今天收工了（到上限）、领地不在了。田里没有成熟作物时她也会闲着。</p>
+<h3>她会帮我种新地吗？</h3>
+<p>农夫只收成熟的作物并<strong>原地补种</strong>，不会开新田；先把田种好。</p>
+<h3>她能钓到传说鱼吗？</h3>
+<p>不能，渔夫只钓普通鱼，品质最高 ★★。</p>
+<h3>雇几个最划算？</h3>
+<p>每人最多 3 个。一般建议：特色作物田一个农夫 + 抹茶田一个茶娘；养殖员按需要原料再雇。</p>
+</main>
+</div>
+<footer class="site-footer">
+  SHUMC鼠鼠茶屋 新手百科 · 内容依据服务器当前版本整理（CozyLife 1.8.0 / CozyAbyss 0.9.6 / CozyFish 1.5.7 / CozySeasons 1.0.4 / CozySpawn 1.1.6）<br>
+  玩家 QQ 群：<strong>666974391</strong> · <a class="qq-join" href="mqqapi://card/show_pslcard?src_type=internal&amp;version=1&amp;uin=666974391&amp;card_type=group&amp;source=qrcode" data-qq="666974391">一键加群</a><br>
+  图片均来自 SHUMC 材质包、菜单预览渲染与模型渲染 · 数值以游戏内菜单为准
+</footer>
+<script src="assets/js/nav.js"></script>
+<script src="assets/js/site.js"></script>
+</body>
+</html>
