@@ -1,0 +1,163 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>茶屋游园会 · SHUMC鼠鼠茶屋 新手百科</title>
+<meta name="description" content="茶屋游园会小游戏：管理员举办，玩家报名加入；家具躲猫猫、碎茶盘、樱花跑酷的玩法，奖励、背包安全、战绩与指令">
+<link rel="icon" href="images/brand/pack.png">
+<link rel="stylesheet" href="assets/css/site.css">
+<!-- meta:start -->
+<meta name="theme-color" content="#603e31">
+<link rel="apple-touch-icon" href="images/brand/pack.png">
+<link rel="canonical" href="https://imleyson.github.io/SHUMCwiki/games.html">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="SHUMC鼠鼠茶屋 新手百科">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:title" content="茶屋游园会 · SHUMC鼠鼠茶屋 新手百科">
+<meta property="og:description" content="茶屋游园会小游戏：管理员举办，玩家报名加入；家具躲猫猫、碎茶盘、樱花跑酷的玩法，奖励、背包安全、战绩与指令">
+<meta property="og:url" content="https://imleyson.github.io/SHUMCwiki/games.html">
+<meta property="og:image" content="https://imleyson.github.io/SHUMCwiki/images/brand/og-card.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<!-- meta:end -->
+</head>
+<body>
+<header class="topbar">
+  <button class="menu-toggle" type="button" aria-label="打开目录">☰ 目录</button>
+  <a class="brand" href="index.html">
+    <img class="logo px" src="images/brand/pack.png" alt="SHUMC">
+    <span class="brand-text"><span class="brand-name">SHUMC鼠鼠茶屋</span><span class="brand-sub">新手百科 · Wiki</span></span>
+  </a>
+  <div class="search-wrap">
+    <img class="search-icon px" src="images/art/journal.png" alt="">
+    <input id="search" type="search" placeholder="搜索玩法、指令、物品…（按 / 聚焦）" autocomplete="off" aria-label="站内搜索">
+    <div id="search-results" class="search-results" role="listbox"></div>
+  </div>
+</header>
+<div class="layout">
+<nav id="sidebar" aria-label="目录"></nav>
+<main class="content">
+<div class="page-head"><img class="px" src="images/items/ui_game_prophunt.png" alt=""><div><h1>茶屋游园会</h1><p class="lead">管理员开一场，大家报名进小游戏世界一起玩：🪑 家具躲猫猫、🫖 碎茶盘、🌸 樱花跑酷，按名次领茶屋币和福气值</p></div></div>
+<div class="callout info"><img class="px" src="images/items/ui_game_join.png" alt=""><div><p class="c-title">一句话</p><p>2026-11-28 起游园会对所有人开放。游戏<strong>由管理员举办</strong>：开场时全服聊天栏会冒出 <code>[🎮 加入]</code> 按钮，点一下（或 <code class="cmd">/youxi join</code>）就报名，被送进专门的小游戏世界。<strong>进场前背包整份存档，离场原样还原</strong>，东西不会丢、也不会多。玩完按名次发 <strong>茶屋币 + 福气值</strong>。</p></div></div>
+
+<h2>怎么参加</h2>
+<ol>
+  <li><strong>等开场广播</strong>：管理员开放报名时，聊天栏会出现「🎮 加入」「❔ 玩法」两个按钮。同一时间只有一场。</li>
+  <li><strong>报名</strong>：点 <code>[🎮 加入]</code>，或输入 <code class="cmd">/youxi join</code>。也可以 <code class="cmd">/youxi</code> 打开游园会菜单点报名。</li>
+  <li><strong>候场</strong>：进场后先到 <strong>候场茶亭</strong>（锦鲤池、樱花、竹子、石灯笼），手上只有 📖 玩法 和 🚪 离开 两样东西。从茶亭掉下去会被拉回来。</li>
+  <li><strong>开始</strong>：人齐后管理员点开始，10 秒倒计时，所有人被送进场地。</li>
+  <li><strong>结束</strong>：一局结束自动还原背包和位置、发奖。中途想走就 <code class="cmd">/youxi leave</code> 或右键 🚪 道具。</li>
+</ol>
+<figure class="menu-shot"><a href="images/models/games/arena_lobby.webp"><img src="images/models/games/arena_lobby.webp" alt="候场茶亭" loading="lazy"></a><figcaption>候场茶亭（场地渲染图）</figcaption></figure>
+
+<h3>什么时候报不了名</h3>
+<p>下面这些情况报名会提示原因，身上东西不动：飞行 / 鞘翅滑翔中（先落地）、睡觉、旁观模式、在星渊秘境里、已经在小游戏世界里、死了还没重生。骑着坐骑会先自动下来；开着的界面会先关掉（光标上的东西回背包）再存档。</p>
+
+<h2>三个小游戏</h2>
+
+<h3 id="躲猫猫">🪑 家具躲猫猫</h3>
+<p><img class="px" src="images/items/ui_game_prophunt.png" alt=""> 2–16 人，一般 2 轮，每轮约 3.5 分钟。场地是 <strong>🏯 鼠鼠大宅</strong>：地下储藏室、一楼九间房绕着露天中庭、二楼回廊和露台，还有阁楼；屋里摆着两百多件家具馆里那些 3D 家具。</p>
+<ul>
+  <li><strong>躲藏者</strong>变成其中一件家具（人本身隐身，别人只看得到家具）。右键换下一件、左键换上一件。</li>
+  <li><strong>蹲一下 = 定住</strong>：自动对齐到格子正中、朝向对齐，和摆设一模一样；再蹲一下解除。走动中的家具会「滑」，一眼露馅，挑好位置再定。</li>
+  <li><strong>👻 灵魂出窍</strong>：定住后右键第 3 格道具，家具本体留在原地，人变成会飞的灵魂飘出去偷看（离本体 14 格内，穿不了墙）；再右键立刻回体。本体被敲中、被揪出或回合结束会自动回体。灵魂状态不能嘲讽、不能换家具。</li>
+  <li><strong>找茶人</strong>先在茶水间闭眼 30 秒，然后拿 🎋 <strong>茶筅</strong>敲家具：敲中躲藏者扣 1 点茶香（每人 3 点，扣光 = 被揪出来，变成找茶人一起抓）；敲到真家具会<strong>烫手</strong>（慢 2 秒、扣 1 分），别乱敲。</li>
+  <li>🔔 <strong>听音铃</strong>（25 秒一次）：告诉你最近的躲藏者在 6 / 12 / 20 格内还是很远，还会说在楼上、楼下还是同一层。</li>
+  <li>🎺 <strong>嘲讽</strong>（15 秒一次）：家具「吱～」一声冒音符，+3 分，定住时 +5 分。越皮越高分，但会暴露位置。</li>
+  <li>每 30 秒所有躲藏者冒一缕<strong>茶烟</strong>（最后 1 分钟每 15 秒），躲死不动也会被发现。</li>
+  <li>所有家具都是<strong>实心的</strong>，钻不进去；定住的躲藏者也一样挡人。</li>
+  <li>剩余时间、还剩几位躲藏者、茶香、自己的分数都在屏幕顶上的 <strong>Boss 栏</strong>；听音铃结果等提示在动作栏停留几秒。</li>
+</ul>
+<p><strong>计分</strong>：躲藏者活着每 10 秒 +1、撑到一轮结束 +15；找茶人敲中 +2、抓到 +8、敲错 −1。两轮后按总分排名，第 2 轮优先让没当过找茶人的人当。找茶人人数约为总人数的四分之一（至少 1 人）。</p>
+
+<h3 id="碎茶盘">🫖 碎茶盘</h3>
+<p><img class="px" src="images/items/ui_game_spleef.png" alt=""> 1–16 人，一般 1–2 分钟，最多 4 分钟。场地是 <strong>温泉茶会</strong>：一池冒热气的温泉上空悬着三层茶盘，🎋 竹编茶盘 → 🔵 青花瓷盘 → 🌸 樱釉陶盘。</p>
+<ul>
+  <li>踩过的瓷砖 <strong>0.4 秒后裂开</strong>掉进温泉，站着不动脚下也会塌，只能一直跑。上层塌了掉到下层还能接着玩；<strong>掉出最底层、飞出茶盘范围或掉进温泉 = 出局</strong>，转观战。</li>
+  <li>盘上隔几秒冒一个发光茶点道具，走过去就捡：
+    <ul>
+      <li>🥄 <strong>茶匙</strong>：拿着打人能把对方拍飞（3 次）；空手推人只有一点点击退。</li>
+      <li>🎋 <strong>竹叶</strong>：空中再按一下空格 = 二段跳（3 次）。</li>
+      <li>🍡 <strong>团子</strong>：右键在脚下补一块 3×3 茶盘，救命用（1 次）。</li>
+    </ul>
+  </li>
+  <li>开局 60 秒后「♨ 茶汤沸腾」：每秒随机裂砖，越往后裂得越多，不会拖成僵局。</li>
+  <li>最后站着的人赢，名次按出局顺序倒过来；4 分钟到了还站着的人并列。</li>
+</ul>
+
+<h3 id="樱花跑酷">🌸 樱花跑酷</h3>
+<p><img class="px" src="images/items/ui_game_parkour.png" alt=""> 1–24 人，最多 5 分钟。所有人一起从<strong>鸟居</strong>出发：① 踏石过溪 → ② 灯笼阶梯 → ③ 樱花枝桥 → ④ 竹林 + <strong>花瓣弹板</strong>（一踩弹上屋顶）→ ⑤ 瓦屋檐 → 🏁 终点茶亭。</p>
+<ul>
+  <li>每段尽头有检查点（金色压板 + 纸灯）。掉下去 / 掉进小溪自动回最近的检查点（计时不停）；🏮 道具随时回检查点。</li>
+  <li>动作栏实时显示用时（精确到 0.1 秒）和当前名次。比赛中玩家之间<strong>不会互相推挤</strong>。</li>
+  <li>按到终点的用时排名，全部到了提前结束；时间到没跑完的按到过的检查点、再按到那儿的时间排。<strong>一个检查点都没到的不算名次、没有奖励</strong>。</li>
+  <li><strong>个人最好成绩</strong>和<strong>全服纪录</strong>会存下来，破纪录全服播报；<code class="cmd">/youxi top</code> 看前 10 名。</li>
+</ul>
+<figure class="menu-shot wide"><a href="images/models/games/arena_parkour.webp"><img src="images/models/games/arena_parkour.webp" alt="樱花跑酷赛道" loading="lazy"></a><figcaption>🌸 樱花跑酷赛道：从右下的鸟居出发，跑到左上的终点茶亭（场地渲染图）</figcaption></figure>
+
+<h2 id="奖励">奖励</h2>
+<p>按名次发，每局只发一次：</p>
+<div class="table-wrap"><table>
+<tr><th>名次</th><th>茶屋币</th><th>福气值</th></tr>
+<tr><td>🥇 第 1 名</td><td>200</td><td>15</td></tr>
+<tr><td>🥈 第 2 名</td><td>120</td><td>10</td></tr>
+<tr><td>🥉 第 3 名</td><td>80</td><td>6</td></tr>
+<tr><td>其余坚持到最后的人</td><td>30</td><td>2</td></tr>
+</table></div>
+<ul>
+  <li>上表是<strong>标准档</strong>。管理员开局时会选档位：小份 ×0.5 / 标准 ×1 / 丰厚 ×1.5（丰厚第 1 名 300 币 + 23 福气），报名广播里能看到。</li>
+  <li><strong>练习局不发奖</strong>：开局不到 2 人、或排上名次的不到 2 人。</li>
+  <li><strong>每人每天（北京时间）前 8 局有奖</strong>，之后照常能玩，只是不发奖。</li>
+  <li>并列的人各拿那个名次的奖。<strong>中途离开 = 弃权</strong>，没有奖励；已经出局（碎茶盘掉下去、跑酷到终点）再离开，名次照算、奖照发。</li>
+  <li>🏮 <strong>游园魁首</strong>称号：在 3 人以上的有奖局里拿第 1 名解锁，到「我的称号」<code class="cmd">/title</code> 里戴。</li>
+  <li>当时没发成功的奖励会在你下次进服时补发。</li>
+</ul>
+
+<h2>背包安全</h2>
+<ul>
+  <li><strong>进场前</strong>把背包（含盔甲、副手）、血量、饱食、经验、药水效果、位置整份存档，<strong>存好了才清空背包</strong>送你进场；存不了就不让进，东西还在身上。</li>
+  <li><strong>场内</strong>：冒险模式、不掉血、不饿、不能丢 / 捡东西、不能放 / 拆方块。</li>
+  <li><strong>离场一律原样还原</strong>：一局结束、自己离开、被请出场、下线、服务器重启，甚至崩服后再进服，都会还原成进场前那一份。小游戏道具还原时一起消失。</li>
+  <li>比赛期间从别处收到的东西（邮件、活动奖励等）还原后会加回背包，背包满了掉在脚下，聊天栏会告诉你。</li>
+</ul>
+
+<h2>场内规矩</h2>
+<ul>
+  <li>小游戏里只能用 <code class="cmd">/youxi</code> 和私聊（<code>/msg</code> <code>/tell</code> <code>/w</code> <code>/r</code> 等），别的指令和传送都会被拦下。</li>
+  <li>出局后是旁观模式，右键不了道具：点聊天栏里的 <code>[🚪 离开]</code> 或输入 <code class="cmd">/youxi leave</code>。</li>
+  <li>小游戏世界里的位置<strong>不能用 <code>/back</code> 回去</strong>，见 <a href="faq.html#死了怎么办">死了怎么办</a>。</li>
+  <li>比赛中管理员可能隐身旁观拍视频，不占名额、不影响比赛。</li>
+</ul>
+
+<h2 id="指令">指令</h2>
+<p><code class="cmd">/youxi</code>（别名 <code>/小游戏</code> <code>/游园会</code> <code>/xiaoyouxi</code> <code>/minigame</code> <code>/yy</code>）打开游园会菜单：现在的一场、三个游戏卡（玩法、我玩过几局、拿过几次第一、跑酷最好 / 全服纪录）、报名 / 离开、我的战绩、跑酷排行。</p>
+<div class="table-wrap"><table>
+<tr><th>指令</th><th>别名</th><th>作用</th></tr>
+<tr><td><code class="cmd">/youxi join</code></td><td>jiaru / 加入 / baoming</td><td>报名（也可以直接点广播里的 [🎮 加入]）</td></tr>
+<tr><td><code class="cmd">/youxi leave</code></td><td>likai / 离开 / tuichu / 退出</td><td>离开，背包和位置马上还原（也可以右键 🚪 道具）</td></tr>
+<tr><td><code class="cmd">/youxi info</code> <code>[游戏]</code></td><td>wanfa / 玩法</td><td>玩法说明 + 奖励表</td></tr>
+<tr><td><code class="cmd">/youxi stats</code></td><td>zhanji / 战绩</td><td>我的战绩</td></tr>
+<tr><td><code class="cmd">/youxi top</code></td><td>paihang / 排行</td><td>樱花跑酷排行（个人最好前 10）</td></tr>
+</table></div>
+<p>开局、开始、中止都<strong>由管理员举办</strong>，普通玩家只需要报名、玩、领奖。想玩可以在 QQ 群里喊管理员开一场。</p>
+
+<h2>常见问题</h2>
+<h3>报名后背包空了，东西去哪了？</h3>
+<p>存档里，离场时原样还原。下线、服务器重启、崩服都会还原，不用担心。</p>
+<h3>一个人能玩吗？</h3>
+<p>碎茶盘和樱花跑酷 1 人就能开（躲猫猫至少 2 人），但不到 2 人算练习局，没有名次奖励。</p>
+<h3>为什么这局没发奖？</h3>
+<p>可能是练习局（不到 2 人排上名次）、你今天已经领满 8 局、或者你中途离开算弃权；跑酷一个检查点都没到也没有奖励。</p>
+</main>
+</div>
+<footer class="site-footer">
+  SHUMC鼠鼠茶屋 新手百科 · 内容依据服务器当前版本整理（CozyLife 1.9.20 / CozyGames 0.1.1 / CozyAbyss 0.9.13 / CozyFish 1.5.10 / CozySeasons 1.0.4 / CozySpawn 1.1.12）<br>
+  玩家 QQ 群：<strong>666974391</strong> · <a class="qq-join" href="mqqapi://card/show_pslcard?src_type=internal&amp;version=1&amp;uin=666974391&amp;card_type=group&amp;source=qrcode" data-qq="666974391">一键加群</a><br>
+  图片均来自 SHUMC 材质包、菜单预览渲染与模型渲染 · 数值以游戏内菜单为准
+</footer>
+<script src="assets/js/nav.js"></script>
+<script src="assets/js/site.js"></script>
+</body>
+</html>

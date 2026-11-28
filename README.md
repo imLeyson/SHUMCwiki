@@ -10,6 +10,7 @@ SHUMC鼠鼠茶屋 Minecraft 服务器的中文新手百科。纯静态网站（H
 index.html          首页 · 前 10 分钟快速上手
 route.html          新手成长路线：第一天 / 第一周 / 之后、每日每周清单、前期赚钱
 town.html           主城与新手引导
+explore.html        资源世界探险：结构箱子按主题奖励、原版怪物掉落
 economy.html        经济 · 茶屋币
 jobs.html           职业专精与天赋
 farming.html        农耕与牧场
@@ -19,7 +20,8 @@ seasons.html        四季与庆典
 crafts.html         工坊 · 料理 · 锻造
 recipes.html        配方与道具图鉴（工坊 17 配方、小吃、大餐、特产香料、合金、神器、家具速查）
 adventure.html      冒险公会
-social.html         社交 · 萌宠 · 许愿池
+social.html         社交 · 萌宠（含宠物照料与亲密度）· 许愿池
+games.html          茶屋游园会：管理员举办的小游戏（家具躲猫猫 / 碎茶盘 / 樱花跑酷）、奖励、背包安全、指令
 land.html           领地与家：环城庄园、商街旺铺、圈地与合并、中心点、领地名字与传送点、箱子商店、回家
 towns.html          私人领地与小镇：建立 / 加入、身份权限、子领地、规则与飞行、繁荣度、改名、传送点、公开地点 /places
 pvp.html            PVP 与安全区：哪里能打、出生区 / 领地安全区、新手保护、同公会免伤、星渊队友保护、伤害系数、打架中限制
