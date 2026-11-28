@@ -48,6 +48,7 @@
 <tr><td>数量</td><td>12 块（H01–H12），每人限 1 块</td><td>8 间（01–08），每人限 1 间</td><td>不限</td></tr>
 <tr><td>到期</td><td colspan="2">不续租就自动收回，变回待租；可以提前续租叠加天数</td><td>永久，不重置</td></tr>
 <tr><td>指令</td><td><code class="cmd">/dipi</code></td><td><code class="cmd">/playershop</code></td><td>金铲子 / <code class="cmd">/lingdi</code></td></tr>
+<tr><td>能建多高</td><td colspan="2"><strong>一直到世界顶 Y 511</strong>（往下：庄园到地坪下 6 格、店铺到地坪下 4 格）</td><td>Y -64 ~ 511</td></tr>
 </table></div>
 <div class="callout tip"><img class="px" src="images/items/mochi_coin.png" alt=""><div><p>新手见面礼的 30 币刚好够租一块庄园 7 天。资源世界每周重置，<strong>千万别在资源世界里盖家</strong>。</p></div></div>
 
@@ -63,6 +64,7 @@
 <tr><td><code>/dipi trust 好友</code> / <code>untrust</code></td><td>授权 / 取消好友在庄园里建造（搭子自动共享）</td></tr>
 <tr><td><code>/dipi unrent</code></td><td>退租</td></tr>
 </table></div>
+<div class="callout warn"><img class="px" src="images/art/cottage.png" alt=""><div><p class="c-title">换装修会清到天上</p><p>庄园和店铺不限高，能盖高楼、空中花园。但<strong>换模板 / 清空草坪</strong>（<code>/dipi template</code>）、<strong>换装修 / 清空地基</strong>（<code>/playershop style</code>）会把这块地正上方<strong>一直到世界顶</strong>的东西都清掉，高处会分几秒慢慢清空，清的时候高处暂时不能放 / 拆方块。换之前先把高处的东西收好。退租不会动你的方块。</p></div></div>
 <figure class="menu-shot"><a href="images/menus/full/home_plots.png"><img src="images/menus/home_plots.png" alt="庄园租赁 H01–H12（/dipi）" loading="lazy"></a><figcaption>庄园租赁 H01–H12（/dipi） · <span class="zoom">点图看每个按钮的说明</span></figcaption></figure>
 
 <h2>商业街旺铺 /playershop</h2>
@@ -117,6 +119,27 @@
 <p>每次传送前都会检查落点安全；传送点已不在领地里或不安全时会被清掉并关掉对外开放，并通知你。</p>
 <figure class="menu-shot"><a href="images/menus/tg_warps_claim_place.png"><img src="images/menus/tg_warps_claim_place.png" alt="领地名字与传送点" loading="lazy"></a><figcaption>📍 名字 / 传送点菜单底图</figcaption></figure>
 
+<h2 id="领地规则">⚑ 领地规则（PVP、防爆、飞行…）</h2>
+<p>每一块普通领地都能自己定规则，和私人领地 / 小镇同一套。站在领地里打开 <code class="cmd">/lingdi</code>，点领地管理的 <strong>⚑ 领地规则</strong>（或 <code>/lingdi rules</code>）。<strong>谁都能看，只有领地主人能改</strong>；子领地跟着整块领地。</p>
+<div class="table-wrap"><table>
+<tr><th>规则</th><th>没改过时</th><th>说明</th></tr>
+<tr><td>⚔ PVP</td><td>关（领地里不能打）</td><td>野外能打，领地里默认是安全区；主人打开后走进来的人会看到「⚔ 这里开着 PVP」。见 <a href="pvp.html">PVP 与安全区</a></td></tr>
+<tr><td>🧟 怪物生成</td><td>照旧（和以前一样）</td><td>开 / 关这块领地里的自然刷怪</td></tr>
+<tr><td>🔥 火势蔓延</td><td>照旧</td><td>开 / 关火在这里蔓延、烧方块</td></tr>
+<tr><td>💥 爆炸破坏</td><td>照旧</td><td>「关」= 防爆，爆炸炸不坏这里的方块。主世界本来就全局防爆，所以在主世界「开」了也炸不坏方块</td></tr>
+<tr><td>🧭 公开传送</td><td>关</td><td>就是下面的「🚪 对外开放」，同一个开关</td></tr>
+<tr><td>🕊 飞行</td><td>关闭</td><td>三档：<strong>关闭 / 仅信任的人 / 所有人</strong>。「仅信任的人」= 主人 + 被你信任的人（建造 / 容器 / 访客 / 管理任一种）。生存模式在领地里双击空格就能飞，飞出范围自动缓降、免一次摔伤</td></tr>
+</table></div>
+<p>菜单里<strong>左键开 / 关</strong>，<strong>右键恢复默认</strong>。也可以站在领地里用指令：</p>
+<div class="table-wrap"><table>
+<tr><th>指令</th><th>作用</th></tr>
+<tr><td><code>/lingdi rules</code></td><td>打开 ⚑ 领地规则页</td></tr>
+<tr><td><code>/lingdi flag pvp|mobs|fire|explosions on|off|default</code></td><td>PVP / 怪物 / 火 / 爆炸：开 · 关 · 恢复默认</td></tr>
+<tr><td><code>/lingdi flag public on|off</code></td><td>公开传送（对外开放）开 / 关</td></tr>
+<tr><td><code>/lingdi fly off|trust|all</code></td><td>飞行：关闭 / 仅信任的人 / 所有人</td></tr>
+</table></div>
+<p>领地总览里还会写「脚下领地飞行」现在是哪一档。</p>
+
 <h2>和朋友一起住、雇帮工</h2>
 <ul>
   <li>领地面积到 1024 格（32×32）就能升级成 <strong>🏡 私人领地</strong>（免费，最多 8 位成员），4096 格（64×64）能建 <strong>🏘 小镇</strong>（500 币，成员不限）：分身份、划子领地、定规则、开飞行。见 <a href="towns.html">私人领地与小镇</a>。</li>
@@ -149,7 +172,7 @@
 </main>
 </div>
 <footer class="site-footer">
-  SHUMC鼠鼠茶屋 新手百科 · 内容依据服务器当前版本整理（CozyLife 1.9.3 / CozyAbyss 0.9.12 / CozyFish 1.5.10 / CozySeasons 1.0.4 / CozySpawn 1.1.9）<br>
+  SHUMC鼠鼠茶屋 新手百科 · 内容依据服务器当前版本整理（CozyLife 1.9.16 / CozyAbyss 0.9.13 / CozyFish 1.5.10 / CozySeasons 1.0.4 / CozySpawn 1.1.12）<br>
   玩家 QQ 群：<strong>666974391</strong> · <a class="qq-join" href="mqqapi://card/show_pslcard?src_type=internal&amp;version=1&amp;uin=666974391&amp;card_type=group&amp;source=qrcode" data-qq="666974391">一键加群</a><br>
   图片均来自 SHUMC 材质包、菜单预览渲染与模型渲染 · 数值以游戏内菜单为准
 </footer>

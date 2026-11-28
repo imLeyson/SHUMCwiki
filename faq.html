@@ -56,7 +56,7 @@
 <p>三种选择：主城里租 31×31 庄园（<code class="cmd">/dipi</code>，30 币 / 7 天）、商业街租旺铺（<code class="cmd">/playershop</code>，50 币 / 7 天），或者走出任意城门去樱花山谷自由建造、用金铲子圈地（永久、免费）。详见 <a href="land.html">领地与家</a>。</p>
 
 <h3>最高能盖到多高？</h3>
-<p>主世界可以建造的范围是 <strong>Y -64 ~ 511</strong>（原版只到 319）。地形没有变，只是天空更高了。</p>
+<p>主世界可以建造的范围是 <strong>Y -64 ~ 511</strong>（原版只到 319）。地形没有变，只是天空更高了。租的环城庄园和商街旺铺也不限高，能一直建到 Y 511（换模板 / 换装修会把正上方清空，见 <a href="land.html">领地与家</a>）。</p>
 
 <h3>可以在资源世界盖房子吗？</h3>
 <p>不要。资源世界、下界、末地每 7 天整个重置，里面的东西都会消失。那里是挖矿、砍树、刷怪用的（死亡不掉落）。家请盖在主世界。</p>
@@ -67,6 +67,12 @@
 
 <h3>死了怎么办？</h3>
 <p>别慌，全服都是<strong>死亡不掉落</strong>：主世界、资源世界、下界、末地都一样，背包和经验都保留。死后可以用 <code class="cmd">/back</code> 回到死亡地点。</p>
+
+<h3>服里能 PVP 吗？会被人偷袭吗？</h3>
+<p>所有世界都开着 PVP，野外能打。但 🌸 茶屋镇出生区和领地（普通领地、私人领地、小镇）里默认不能打；刚进服累计在线 60 分钟内有 🔰 新手保护（自己主动打人会提前结束）；同公会的人互相打不了；玩家打玩家的伤害只算 6 成。见 <a href="pvp.html">PVP 与安全区</a>。</p>
+
+<h3>为什么 /home、/spawn 用不了、东西扔不出去？</h3>
+<p>你刚打中别人或被人打中，15 秒内算「打架中」：不能 <code>/home</code> <code>/spawn</code> <code>/tpa</code>、不能扔东西，<strong>这时下线会直接死亡</strong>。等 15 秒就好。</p>
 
 <h3>怎么回家、回主城、去朋友那？</h3>
 <p><code class="cmd">/spawn</code> 回主城，<code class="cmd">/sethome</code> 设家、<code class="cmd">/home</code> 回家，<code class="cmd">/back</code> 回上一个位置，<code class="cmd">/tpa 玩家名</code> 请求传送到朋友身边。租了庄园可以 <code>/dipi home</code>。</p>
@@ -81,7 +87,7 @@
 <p>自己在农田里种出来的作物、在服里钓起来的鱼才带「星级」标签，按星级卖钱、能进图鉴、能交专精突破任务。打怪掉的、村民换的胡萝卜马铃薯是没有星级的白板原版物品，只能按 1–6 币的原版价卖，也不能交突破任务，喂牧场动物不涨好感。</p>
 
 <h3>选错专精了能换吗？</h3>
-<p>能。<code class="cmd">/job</code> 左键选主修后 7 天内不能再换。每个专精的等级各自保存，换回来不会清空；但只有当前主修的加成和天赋生效，经验也只给当前主修。天赋每周可以免费洗点一次。</p>
+<p>能。<strong>第一次</strong>选专精后 24 小时内可以免费改选 1 次（新手后悔期）；之后每次换专精要隔 7 天。每个专精的等级各自保存，换回来不会清空；但只有当前主修的加成和天赋生效，经验也只给当前主修。天赋每周可以免费洗点一次。</p>
 
 <h3>专精经验卡住不涨了？</h3>
 <p>到 Lv5 / 10 / 15 / 20 时经验会存满停住，要先完成<strong>突破任务</strong>，再去天赋页点「完成突破」。另外每天前 600 经验全额，之后减半。见 <a href="jobs.html#突破任务">突破任务</a>。</p>
@@ -119,6 +125,9 @@
 <p><code class="cmd">/yichu back</code>：🌸 樱瓣羽翼、🐉 墨骨龙翼二选一免费领一副（点两下确认），<strong>选定不能改、每人一次</strong>。另一副在 <code class="cmd">/pool shop</code> 用 350 福气值换。默认自己看不到自己的背饰（F5 也看不到），在背饰页打开「🪞 自己也看得到翅膀」即可，见 <a href="items.html#背饰">背饰</a>。</p>
 <h3>怎么让别人能传送到我家？</h3>
 <p>给领地起名、设传送点并打开「对外开放」（<code>/lingdi name</code> → <code>/lingdi setwarp</code> → <code>/lingdi public</code>），你家就出现在 <code class="cmd">/places</code> 公开地点里，全服都能免费传送过来逛（建造开箱仍按信任）。</p>
+
+<h3>为什么陌生人能传送到我的私人领地 / 小镇？</h3>
+<p>私人领地和小镇的 🧭 公开传送现在默认是开的（老的也统一打开了），别人可以从 🗺 公开地点传过来逛，但不能建造、不能开箱。不想公开：领主 / 镇长在 ⚑ 规则里关掉。见 <a href="towns.html#小镇规则">小镇规则</a>。</p>
 
 <h2>术语表</h2>
 <div class="table-wrap"><table>
@@ -177,7 +186,7 @@
 </main>
 </div>
 <footer class="site-footer">
-  SHUMC鼠鼠茶屋 新手百科 · 内容依据服务器当前版本整理（CozyLife 1.9.3 / CozyAbyss 0.9.12 / CozyFish 1.5.10 / CozySeasons 1.0.4 / CozySpawn 1.1.9）<br>
+  SHUMC鼠鼠茶屋 新手百科 · 内容依据服务器当前版本整理（CozyLife 1.9.16 / CozyAbyss 0.9.13 / CozyFish 1.5.10 / CozySeasons 1.0.4 / CozySpawn 1.1.12）<br>
   玩家 QQ 群：<strong>666974391</strong> · <a class="qq-join" href="mqqapi://card/show_pslcard?src_type=internal&amp;version=1&amp;uin=666974391&amp;card_type=group&amp;source=qrcode" data-qq="666974391">一键加群</a><br>
   图片均来自 SHUMC 材质包、菜单预览渲染与模型渲染 · 数值以游戏内菜单为准
 </footer>

@@ -93,7 +93,7 @@
 
   function buildIndex() {
     if (loading) return loading;
-    var cacheKey = "shumc-search-v9";
+    var cacheKey = "shumc-search-v10";
     try {
       var cached = sessionStorage.getItem(cacheKey);
       if (cached) { index = JSON.parse(cached); return (loading = Promise.resolve(index)); }

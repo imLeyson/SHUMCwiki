@@ -62,9 +62,9 @@
   <li><strong>站进这块地里</strong>，输入 <code class="cmd">/town</code>（别名 <code>/xiaozhen</code>、<code>/小镇</code>），或在主菜单（<kbd>Shift</kbd>+<kbd>F</kbd>）「🏘 领地与社群」那一行点 🏘 小镇。</li>
   <li>点 <strong>🏗 建立</strong>：<strong>左键 = 私人领地，右键 = 小镇</strong>，然后在聊天栏输入名字。也可以直接输入 <code>/town found manor 名字</code> 或 <code>/town found town 名字</code>。</li>
   <li>名字 <strong>2–12 个字</strong>，只能用汉字、字母、数字和下划线，不能和别的私人领地 / 小镇重名（不分大小写）。领地原来的信任名单会保留。</li>
-  <li><strong>设传送点</strong>：站在领地里能站稳的地方，主页点 📍 或输入 <code>/town setspawn</code>。成员以后随时 <code>/town tp</code> 就能回来。</li>
+  <li><strong>传送点</strong>：建好时会<strong>自动设在你脚下</strong>（脚下站不稳就放在领地中心最高处的上一格），聊天栏会写坐标。想换地方：站在领地里能站稳的地方，主页点 📍 或输入 <code>/town setspawn</code>。成员以后随时 <code>/town tp</code> 就能回来。</li>
   <li><strong>邀请朋友</strong>：<code>/town invite 玩家名</code>（对方必须在线，聊天栏会弹出 [✔ 接受] [✖ 拒绝]，5 分钟内有效）。默认以居民身份加入，写 <code>/town invite 玩家名 visitor</code> 就是邀请成访客。</li>
-  <li><strong>定规则</strong>：主页 ⚑ 规则里开关 PVP、怪物、火、爆炸、飞行等（见下）。</li>
+  <li><strong>定规则</strong>：主页 ⚑ 规则里开关 PVP、怪物、火、爆炸、公开传送、飞行等（见下）。新建的私人领地 / 小镇 <strong>🧭 公开传送默认是开的</strong>，全服都能从 🗺 公开地点传送过来逛（不能建造、不能开箱）；不想公开就在 ⚑ 规则里关掉。</li>
 </ol>
 <div class="callout tip"><img class="px" src="images/items/mochi_coin.png" alt=""><div><p>先建<strong>私人领地</strong>（免费）和朋友住着，等人多了、地扩到 4096 格以后，领主在 ⚙ 升级 / 解散 → ⬆ <strong>升级成小镇</strong>（<code>/town upgrade</code>，补 500 币）。私人领地的成员、子领地、设置都会保留。</p></div></div>
 <figure class="menu-shot"><a href="images/menus/tg_town_main.png"><img src="images/menus/tg_town_main.png" alt="小镇主页（/town）" loading="lazy"></a><figcaption>小镇主页（/town）菜单底图 · 名字只是示例</figcaption></figure>
@@ -86,6 +86,13 @@
 <tr><td>领主 / 镇长</td><td>全部：规则、传送点、任免助理、改名、转让、升级、解散</td></tr>
 </table></div>
 <p>在 👥 <strong>成员管理</strong>里：<strong>左键升职</strong>（访客 → 居民 → 助理）、<strong>右键降职</strong>、<kbd>Shift</kbd>+右键<strong>移出</strong>，领主 <kbd>Shift</kbd>+左键可以把领地<strong>转让</strong>给这位成员（接手的人要有足够的圈地额度装下这块地）。助理不能动领主和别的助理。</p>
+<h3 id="被移出的人">🚫 被移出的人</h3>
+<ul>
+  <li>被领主 / 镇长 / 助理<strong>移出</strong>的人，就算这里开着 🧭 公开传送也<strong>传送不过来</strong>，🗺 公开地点、小镇目录、<code>/town tp</code> 的 Tab 补全里也看不到这一处（别的公开地点照常）。自己退出的不算。</li>
+  <li>TA 重新被邀请、申请通过（或随公会驻扎加入）后自动解除。</li>
+  <li><strong>解除</strong>：👥 成员管理里写着「被移出 N 人」，能管成员的人左键打开 🚫 <strong>被移出的人</strong>，点某人「解除」；也可以 <code>/town unblock 玩家名</code>（不写名字 = 打开这一页，名字不分大小写）。只有领主 / 镇长和有「任免 / 移出成员」权限的助理能解除。</li>
+  <li>解除后 TA 又能公开传送过来、又能在公开地点看到这里，但<strong>不会自动重新加入</strong>。没有时限，一直有效到解除或重新加入。名单超过 14 人时菜单只列前 14 个，其余用指令。</li>
+</ul>
 <p>「访客 / 居民 / 助理」这三个叫法可以改成你们自己的（见下面「个性设置」）。</p>
 <figure class="menu-shot"><a href="images/menus/tg_town_members.png"><img src="images/menus/tg_town_members.png" alt="成员管理" loading="lazy"></a><figcaption>👥 成员管理菜单底图</figcaption></figure>
 
@@ -122,15 +129,15 @@
 <figure class="menu-shot"><a href="images/menus/tg_town_plot_owner.png"><img src="images/menus/tg_town_plot_owner.png" alt="我的子领地" loading="lazy"></a><figcaption>我的子领地（主人页）菜单底图</figcaption></figure>
 </div>
 
-<h2>小镇规则 ⚑</h2>
+<h2 id="小镇规则">小镇规则 ⚑</h2>
 <p>领主 / 镇长在主页 ⚑ 规则里改，只在自己这块领地里生效。优先级：<strong>子领地设置 → 小镇设置 → 默认</strong>。</p>
 <div class="table-wrap"><table>
 <tr><th>规则</th><th>默认</th><th>说明</th></tr>
-<tr><td>⚔ PVP</td><td>关</td><td>主世界本身不开 PVP，所以这个开关在主世界里显示为灰色「不可用 · 本世界全局关闭 PVP」，点了也不会打开。茶屋保持温和，放心</td></tr>
+<tr><td>⚔ PVP</td><td>关</td><td>所有世界都开着 PVP，但私人领地 / 小镇里<strong>默认不能打</strong>，是安全区。打开后成员和访客在范围里能互相攻击，走进来的人会看到「⚔ 这里开着 PVP」的提醒。新手保护、同公会免伤照旧生效，见 <a href="pvp.html">PVP 与安全区</a></td></tr>
 <tr><td>🧟 怪物生成</td><td>开</td><td>关掉后自然刷怪、增援、巡逻队、袭击都不会在范围里生成（刷怪笼、刷怪蛋不受影响）</td></tr>
 <tr><td>🔥 火势蔓延</td><td>关</td><td>关着时火不蔓延、不烧方块，岩浆和闪电不点火（打火石照常能用）</td></tr>
 <tr><td>💥 爆炸破坏</td><td>关</td><td>关着时爆炸不炸坏方块（苦力怕再也炸不了房子）</td></tr>
-<tr><td>🧭 公开传送</td><td>关</td><td>就是「对外开放」：开了以后不是成员也能 <code>/town tp</code> 过来，并出现在 🗺 公开地点里。要先设好传送点</td></tr>
+<tr><td>🧭 公开传送</td><td><strong>开</strong></td><td>就是「对外开放」：不是成员也能 <code>/town tp</code> 过来逛（不能建造 / 开箱），并出现在 🗺 公开地点里。新建的默认开；老的私人领地 / 小镇（主人没亲手关过的）也已经统一打开。<strong>有传送点</strong>才会出现在公开地点里</td></tr>
 <tr><td>📬 开放申请</td><td>关</td><td>仅小镇：开了别人才能在小镇目录里申请加入</td></tr>
 <tr><td>🕊 飞行</td><td>关闭</td><td>三档：<strong>关闭 / 仅成员 / 所有人</strong>。生存模式在范围里双击空格就能飞</td></tr>
 </table></div>
@@ -148,7 +155,9 @@
 <ul>
   <li><strong>📍 传送点</strong>：领主 / 镇长 <code>/town setspawn</code>（或主页 📍），必须在范围里、能站稳。成员随时 <code>/town tp</code>（或主页 🚩）<strong>免费</strong>传送，没有冷却。</li>
   <li>每次传送前都会检查落点：传送点已不在范围里、有岩浆、悬空或被方块堵住 → 不传，并清掉传送点、提醒领主重新设置。</li>
-  <li><strong>🧭 对外开放</strong>：规则页打开「公开传送」后，谁都能 <code>/town tp 镇名</code> 或在 <a href="#公开地点-places">🗺 公开地点</a>里点过来逛。外人只是传送过来，建造和开箱仍按身份权限。</li>
+  <li><strong>🧭 对外开放</strong>：规则页的「公开传送」开着时，谁都能 <code>/town tp 镇名</code> 或在 <a href="#公开地点-places">🗺 公开地点</a>里点过来逛，<strong>免费、没有冷却</strong>。外人只是传送过来，建造和开箱仍按身份权限。新建的私人领地 / 小镇默认开，老的也已经统一打开；不想公开在 ⚑ 规则里关掉，关过以后不会被再打开。</li>
+  <li><strong>还没传送点的</strong>：公开传送开着，但<strong>要等领主 / 镇长 <code>/town setspawn</code> 设好传送点</strong>，才会出现在 🗺 公开地点和 <code>/town tp</code> 的 Tab 里；设好后自动出现，不用再做别的。在那之前别人 <code>/town tp</code> 会提示「…还没设传送点（公开传送已打开，等传送点设好后才能传送过去）」。</li>
+  <li>被移出的人不能公开传送过来，见 <a href="#被移出的人">被移出的人</a>。</li>
   <li><strong>✏ 改名</strong>：领主 / 镇长在 ⚙ 升级 / 解散 → ✏（或 <code>/town rename 新名字</code>），确认页确认后从<strong>你自己的钱包扣 300 茶屋币</strong>。规则和起名一样（2–12 字、不重名）；改完会通知成员。</li>
 </ul>
 
@@ -213,6 +222,7 @@
 <tr><td><code>/town invite 玩家 [resident|visitor]</code></td><td>领主 / 镇长 / 助理</td><td>邀请在线玩家当居民 / 访客</td></tr>
 <tr><td><code>/town tp [镇名]</code></td><td>成员；对外开放时所有人</td><td>免费传送到传送点</td></tr>
 <tr><td><code>/town setspawn</code></td><td>领主 / 镇长</td><td>把传送点设在脚下</td></tr>
+<tr><td><code>/town unblock [玩家名]</code></td><td>领主 / 镇长 / 能管成员的助理</td><td>解除被移出的人的公开传送限制（不写名字 = 打开 🚫 被移出的人）</td></tr>
 <tr><td><code>/town plot [pos1|pos2|create|mine]</code></td><td>领主 / 镇长 / 助理（mine = 子领地主人）</td><td>划子领地 / 打开我的子领地</td></tr>
 <tr><td><code>/town plot sell 编号 价格</code></td><td>领主 / 镇长 / 助理</td><td>标价出售（0 = 取消）</td></tr>
 <tr><td><code>/town plot greet 编号 [提示]</code></td><td>子领地主人</td><td>改进入提示（不写 = 清空）</td></tr>
@@ -234,13 +244,15 @@
 <h3>子领地被收回，我的箱子会不会没？</h3>
 <p>收回只清权限和设置，不动任何方块。但收回后你就不能再开那里的箱子了，搬家前先把东西拿走。如果是你花钱买的子领地，只有镇长能收回，而且要按买价退钱给你。</p>
 <h3>开了 PVP 为什么还是打不了人？</h3>
-<p>主世界全局关闭 PVP，小镇的 PVP 开关在主世界显示为「不可用」。</p>
+<p>对方可能还在 🔰 新手保护期（累计在线不满 60 分钟），或者和你是同一个公会；在子领地里，子领地主人也可能把 PVP 关了。见 <a href="pvp.html">PVP 与安全区</a>。</p>
+<h3>我不想让陌生人传送到我家，怎么办？</h3>
+<p>领主 / 镇长在主页 ⚑ 规则里点 🧭 公开传送关掉就行。访客传过来本来也不能建造、不能开箱。某个人你不想让 TA 来，把 TA 移出，TA 就不能公开传送过来了。</p>
 <h3>飞行到小镇边界会摔死吗？</h3>
 <p>不会。飞出范围时会缓降 5 秒，10 秒内还免一次摔伤。</p>
 </main>
 </div>
 <footer class="site-footer">
-  SHUMC鼠鼠茶屋 新手百科 · 内容依据服务器当前版本整理（CozyLife 1.9.3 / CozyAbyss 0.9.12 / CozyFish 1.5.10 / CozySeasons 1.0.4 / CozySpawn 1.1.9）<br>
+  SHUMC鼠鼠茶屋 新手百科 · 内容依据服务器当前版本整理（CozyLife 1.9.16 / CozyAbyss 0.9.13 / CozyFish 1.5.10 / CozySeasons 1.0.4 / CozySpawn 1.1.12）<br>
   玩家 QQ 群：<strong>666974391</strong> · <a class="qq-join" href="mqqapi://card/show_pslcard?src_type=internal&amp;version=1&amp;uin=666974391&amp;card_type=group&amp;source=qrcode" data-qq="666974391">一键加群</a><br>
   图片均来自 SHUMC 材质包、菜单预览渲染与模型渲染 · 数值以游戏内菜单为准
 </footer>
